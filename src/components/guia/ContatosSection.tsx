@@ -1,3 +1,42 @@
+import { Hospital, Building2, Flower2, Instagram, Scale, Handshake } from 'lucide-react';
+
+const contatos = [
+  { icon: Hospital, title: 'CRER — Central de Agendamento', content: (
+    <>
+      <a href="tel:6232323000" className="block text-primary font-semibold no-underline mt-1.5">(62) 3232-3000</a>
+      <a href="https://wa.me/6299955400" className="block text-green-600 font-semibold no-underline mt-1.5">WhatsApp: (62) 3995-5400</a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Diga: "Ex-paciente, queremos reativar o prontuário"</p>
+    </>
+  )},
+  { icon: Building2, title: 'Hospital das Clínicas UFG', content: (
+    <>
+      <p className="text-xs text-guia-text-muted mt-1.5">Via regulação SUS ou encaminhamento do CRER</p>
+      <p className="text-xs text-guia-text-muted mt-1.5">Campus Samambaia, Goiânia</p>
+    </>
+  )},
+  { icon: Flower2, title: 'Pestalozzi de Goiânia', content: (
+    <>
+      <a href="tel:6235155665" className="block text-primary font-semibold no-underline mt-1.5">(62) 3515-5665</a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Av. A, nº 561 – Vila Nova</p>
+    </>
+  )},
+  { icon: Instagram, title: 'APC+ (Apoio Familiar)', content: (
+    <>
+      <a href="https://instagram.com/apc.mais" target="_blank" rel="noreferrer" className="block text-primary font-semibold no-underline mt-1.5">@apc.mais no Instagram</a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Rede de mais de 150 famílias</p>
+    </>
+  )},
+  { icon: Scale, title: 'ADFEGO', content: (
+    <>
+      <a href="tel:6232023313" className="block text-primary font-semibold no-underline mt-1.5">(62) 3202-3313</a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Av. Independência, 3026 – Leste Vila Nova</p>
+    </>
+  )},
+  { icon: Handshake, title: 'CREAS', content: (
+    <p className="text-xs text-guia-text-muted mt-1.5">Procure a unidade mais próxima na Prefeitura de Goiânia pelo bairro onde vão morar</p>
+  )},
+];
+
 const ContatosSection = () => {
   return (
     <div className="container">
@@ -9,42 +48,15 @@ const ContatosSection = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div className="bg-card rounded-lg p-7 shadow-guia text-center">
-            <span className="text-3xl mb-3 block">🏥</span>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-2">CRER — Central de Agendamento</h3>
-            <a href="tel:6232323000" className="block text-primary font-semibold no-underline mt-1.5">(62) 3232-3000</a>
-            <a href="https://wa.me/6299955400" className="block text-green-600 font-semibold no-underline mt-1.5">WhatsApp: (62) 3995-5400</a>
-            <p className="text-xs text-guia-text-muted mt-1.5">Diga: "Ex-paciente, queremos reativar o prontuário"</p>
-          </div>
-          <div className="bg-card rounded-lg p-7 shadow-guia text-center">
-            <span className="text-3xl mb-3 block">🏛️</span>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-2">Hospital das Clínicas UFG</h3>
-            <p className="text-xs text-guia-text-muted mt-1.5">Via regulação SUS ou encaminhamento do CRER</p>
-            <p className="text-xs text-guia-text-muted mt-1.5">Campus Samambaia, Goiânia</p>
-          </div>
-          <div className="bg-card rounded-lg p-7 shadow-guia text-center">
-            <span className="text-3xl mb-3 block">🌻</span>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-2">Pestalozzi de Goiânia</h3>
-            <a href="tel:6235155665" className="block text-primary font-semibold no-underline mt-1.5">(62) 3515-5665</a>
-            <p className="text-xs text-guia-text-muted mt-1.5">Av. A, nº 561 – Vila Nova</p>
-          </div>
-          <div className="bg-card rounded-lg p-7 shadow-guia text-center">
-            <span className="text-3xl mb-3 block">📱</span>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-2">APC+ (Apoio Familiar)</h3>
-            <a href="https://instagram.com/apc.mais" target="_blank" rel="noreferrer" className="block text-primary font-semibold no-underline mt-1.5">@apc.mais no Instagram</a>
-            <p className="text-xs text-guia-text-muted mt-1.5">Rede de mais de 150 famílias</p>
-          </div>
-          <div className="bg-card rounded-lg p-7 shadow-guia text-center">
-            <span className="text-3xl mb-3 block">⚖️</span>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-2">ADFEGO</h3>
-            <a href="tel:6232023313" className="block text-primary font-semibold no-underline mt-1.5">(62) 3202-3313</a>
-            <p className="text-xs text-guia-text-muted mt-1.5">Av. Independência, 3026 – Leste Vila Nova</p>
-          </div>
-          <div className="bg-card rounded-lg p-7 shadow-guia text-center">
-            <span className="text-3xl mb-3 block">🤝</span>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-2">CREAS</h3>
-            <p className="text-xs text-guia-text-muted mt-1.5">Procure a unidade mais próxima na Prefeitura de Goiânia pelo bairro onde vão morar</p>
-          </div>
+          {contatos.map((c, i) => (
+            <div key={i} className="bg-card rounded-lg p-7 shadow-guia text-center">
+              <div className="w-12 h-12 rounded-2xl bg-guia-blue-light flex items-center justify-center mx-auto mb-3">
+                <c.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-serif text-base font-semibold text-foreground mb-2">{c.title}</h3>
+              {c.content}
+            </div>
+          ))}
         </div>
       </section>
     </div>

@@ -1,8 +1,12 @@
+import { BookOpen, Sparkles } from 'lucide-react';
+
 const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3.5 flex items-center justify-between gap-4 flex-wrap">
       <a href="#intro" className="flex items-center gap-3 no-underline">
-        <div className="w-11 h-11 bg-primary rounded-[14px] flex items-center justify-center text-2xl flex-shrink-0">📘</div>
+        <div className="w-11 h-11 bg-primary rounded-[14px] flex items-center justify-center flex-shrink-0">
+          <BookOpen className="w-6 h-6 text-primary-foreground" />
+        </div>
         <div>
           <h1 className="font-serif text-lg font-semibold text-primary leading-tight">Guia do Matheuzinho</h1>
           <p className="text-xs text-guia-text-muted">Mudança para Goiânia • Abril 2026</p>
@@ -30,7 +34,7 @@ const Navbar = () => {
       </div>
       <div className="text-xs font-semibold text-green-600 bg-green-100 px-3.5 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
         <span className="w-2 h-2 bg-green-600 rounded-full animate-pulse-dot inline-block" />
-        ✦ Atualizado Abril 2026
+        <Sparkles className="w-3 h-3" /> Atualizado Abril 2026
       </div>
     </nav>
   );
