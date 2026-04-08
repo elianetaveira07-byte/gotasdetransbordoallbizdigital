@@ -1,3 +1,5 @@
+import { FileText } from 'lucide-react';
+
 const docs = [
   'Laudos e exames antigos do CRER (de 10 anos atrás)',
   'Receitas atuais de TODOS os remédios',
@@ -22,7 +24,7 @@ const DocumentosSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {docs.map((d, i) => (
             <div key={i} className="flex gap-3 items-start bg-card rounded-[14px] p-4 shadow-guia text-sm">
-              <span className="flex-shrink-0 text-xl">📄</span>
+              <FileText className="flex-shrink-0 w-5 h-5 text-primary mt-0.5" />
               {d}
             </div>
           ))}

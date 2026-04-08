@@ -1,3 +1,5 @@
+import { CheckCircle } from 'lucide-react';
+
 const IntroSection = () => {
   return (
     <section className="py-[72px]">
@@ -11,8 +13,9 @@ const IntroSection = () => {
         <div className="bg-card rounded-lg p-10 shadow-guia border-l-[5px] border-primary text-base leading-[1.75]">
           <p>Vocês cuidam do Matheuzinho há muitos anos com tanto amor. Agora a família está pensando em mudar para <strong>Goiânia (GO)</strong> porque lá existe o melhor lugar do Brasil para cuidar de um jovem de 23 anos com paralisia cerebral grave, que não anda, não fala, usa sonda na barriga, tem estenose no esôfago e toma muitos remédios.</p>
           <p className="mt-4">Este guia é para vocês lerem com calma, em voz alta se quiserem, e entenderem tudo. É como um livro que conversa com vocês.</p>
-          <div className="bg-guia-green-light rounded-[10px] p-4 mt-5 text-guia-green font-medium">
-            ✅ O plano é: os pais vão primeiro para Goiânia, alugam uma casa, organizam tudo — e depois levam o Matheuzinho na data da consulta. Assim fica mais tranquilo e sem pressa.
+          <div className="bg-guia-green-light rounded-[10px] p-4 mt-5 text-guia-green font-medium flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
+            O plano é: os pais vão primeiro para Goiânia, alugam uma casa, organizam tudo — e depois levam o Matheuzinho na data da consulta. Assim fica mais tranquilo e sem pressa.
           </div>
         </div>
       </div>

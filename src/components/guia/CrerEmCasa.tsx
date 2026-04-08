@@ -1,7 +1,11 @@
+import { Home } from 'lucide-react';
+
 const CrerEmCasa = () => {
   return (
     <div className="rounded-lg p-8 md:p-[52px] text-white mb-9" style={{ background: 'linear-gradient(135deg, hsl(222,67%,32%) 0%, #2B6CB0 100%)' }}>
-      <h2 className="font-serif text-3xl font-semibold mb-3">🏠 Crer em Casa — atendimento na sua porta</h2>
+      <h2 className="font-serif text-3xl font-semibold mb-3 flex items-center gap-3">
+        <Home className="w-8 h-8" /> Crer em Casa — atendimento na sua porta
+      </h2>
       <p className="text-lg text-white/85 max-w-xl mb-9">
         O programa mais incrível do CRER: uma equipe completa de saúde vai até a casa do Matheuzinho, 2 a 3 vezes por semana. Ele não precisa sair de casa para quase nada.
       </p>
