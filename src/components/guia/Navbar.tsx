@@ -1,0 +1,39 @@
+const Navbar = () => {
+  return (
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3.5 flex items-center justify-between gap-4 flex-wrap">
+      <a href="#intro" className="flex items-center gap-3 no-underline">
+        <div className="w-11 h-11 bg-primary rounded-[14px] flex items-center justify-center text-2xl flex-shrink-0">📘</div>
+        <div>
+          <h1 className="font-serif text-lg font-semibold text-primary leading-tight">Guia do Matheuzinho</h1>
+          <p className="text-xs text-guia-text-muted">Mudança para Goiânia • Abril 2026</p>
+        </div>
+      </a>
+      <div className="hidden md:flex gap-1.5 flex-wrap">
+        {[
+          { href: '#vantagens', label: 'Vantagens' },
+          { href: '#crer', label: 'CRER' },
+          { href: '#hc', label: 'H. Clínicas' },
+          { href: '#pestalozzi', label: 'Pestalozzi' },
+          { href: '#creas', label: 'CREAS' },
+          { href: '#apc', label: 'APC+' },
+          { href: '#adfego', label: 'ADFEGO' },
+          { href: '#passos', label: 'Passo a Passo' },
+        ].map(link => (
+          <a
+            key={link.href}
+            href={link.href}
+            className="text-sm font-medium text-guia-text-muted no-underline px-3 py-1.5 rounded-full transition-all hover:bg-guia-blue-light hover:text-primary"
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+      <div className="text-xs font-semibold text-green-600 bg-green-100 px-3.5 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+        <span className="w-2 h-2 bg-green-600 rounded-full animate-pulse-dot inline-block" />
+        ✦ Atualizado Abril 2026
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
