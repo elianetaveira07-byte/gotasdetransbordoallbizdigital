@@ -6,6 +6,7 @@ import VantagensSection from '@/components/guia/VantagensSection';
 import InstitutionsSection from '@/components/guia/InstitutionsSection';
 import GratuitosSection from '@/components/guia/GratuitosSection';
 import CarouselSection from '@/components/guia/CarouselSection';
+import MissaoSection from '@/components/guia/MissaoSection';
 import PassosSection from '@/components/guia/PassosSection';
 import DocumentosSection from '@/components/guia/DocumentosSection';
 import ContatosSection from '@/components/guia/ContatosSection';
@@ -24,6 +25,7 @@ const Index = () => {
       <InstitutionsSection />
       <GratuitosSection />
       <CarouselSection />
+      <MissaoSection />
       <PassosSection />
       <DocumentosSection />
       <ContatosSection />

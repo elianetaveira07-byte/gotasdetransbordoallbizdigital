@@ -1,9 +1,9 @@
 const passos = [
-  { num: 1, title: 'Pais vão primeiro para Goiânia', desc: 'Alugam uma casa simples com contrato no nome de um dos pais. Isso é obrigatório para atualizar o Cartão SUS em Goiânia.' },
-  { num: 2, title: 'Atualizar o Cartão SUS', desc: 'Levar na UBS de Goiânia: CPF, comprovante de residência (contrato de aluguel), RG e o cartão antigo de Palmas-TO. O SUS é nacional, mas o cadastro precisa estar em Goiânia.' },
-  { num: 3, title: 'Reativar o prontuário no CRER', desc: 'Levar todos os laudos antigos (de 10 anos atrás!) + laudos novos + relatório médico completo do Cariri/Palmas. Como ele já foi paciente, é bem mais rápido — pode sair em dias!' },
-  { num: 4, title: 'Pedir o Crer em Casa na primeira consulta', desc: 'Na primeira consulta já peçam o laudo para o "Crer em Casa". A triagem é feita logo após o cadastro reativado. Quando aprovado, a equipe começa a ir em casa.' },
-  { num: 5, title: 'Trazer o Matheuzinho', desc: 'Só na data da consulta marcada. Enquanto isso, ele fica tranquilo em Palmas com os avós. Sem pressa, tudo organizado antes.' },
+  { num: 1, title: 'Eu e minha esposa vamos primeiro para Goiânia', desc: 'Alugamos uma casa simples com contrato no nosso nome. Levamos nossos dois filhos pequenos e nos instalamos. Isso é obrigatório para atualizar o Cartão SUS em Goiânia.' },
+  { num: 2, title: 'Atualizar o Cartão SUS', desc: 'Levar na UBS de Goiânia: CPF, comprovante de residência (contrato de aluguel), RG e o cartão antigo. O SUS é nacional, mas o cadastro precisa estar em Goiânia.' },
+  { num: 3, title: 'Reativar o prontuário no CRER', desc: 'Levar todos os laudos antigos (de quase 10 anos atrás!) + laudos novos + relatório médico completo. Como ele já foi paciente, é bem mais rápido — pode sair em dias!' },
+  { num: 4, title: 'Pedir o Crer em Casa na primeira consulta', desc: 'Na primeira consulta já pedir o laudo para o "Crer em Casa". A triagem é feita logo após o cadastro reativado. Quando aprovado, a equipe começa a ir em casa.' },
+  { num: 5, title: 'Trazer o Matheuzinho para morar conosco', desc: 'Só na data da consulta marcada. Enquanto isso, ele fica tranquilo com os avós. Quando tudo estiver organizado, trazemos ele para a nova casa em Goiânia.' },
 ];
 
 const PassosSection = () => {

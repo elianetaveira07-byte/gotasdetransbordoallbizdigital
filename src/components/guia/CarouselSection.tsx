@@ -1,9 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, TreePine, Waves, Flower2, Building2, Moon, Landmark } from 'lucide-react';
+import { ChevronLeft, ChevronRight, TreePine, Waves, Flower2, Moon, Landmark } from 'lucide-react';
 import flamboyantLago from '@/assets/goiania_parque_flamboyant_lago.jpg';
 import flamboyantArvore from '@/assets/goiania_parque_flamboyant_arvore.jpg';
 import vacaBrava from '@/assets/goiania_vaca_brava_dia.jpg';
-import skylineFlamboyant from '@/assets/goiania_skyline_flamboyant.jpg';
 import skylineNoite from '@/assets/goiania_skyline_noite.jpg';
 import viaduto from '@/assets/goiania_viaduto_latif_sebba_noite.webp';
 
@@ -11,7 +10,6 @@ const slides = [
   { img: flamboyantLago, caption: 'Parque Flamboyant — Lago e natureza no coração da cidade', icon: Waves },
   { img: flamboyantArvore, caption: 'Parque Flamboyant — Flamboyant em flor', icon: Flower2 },
   { img: vacaBrava, caption: 'Parque Vaca Brava — Um dos parques mais bonitos de Goiânia', icon: TreePine },
-  { img: skylineFlamboyant, caption: 'Vista aérea do Parque Flamboyant e a skyline de Goiânia', icon: Building2 },
   { img: skylineNoite, caption: 'Goiânia à noite — uma metrópole iluminada e acolhedora', icon: Moon },
   { img: viaduto, caption: 'Viaduto Latif Sebba — cartão-postal noturno da cidade', icon: Landmark },
 ];
