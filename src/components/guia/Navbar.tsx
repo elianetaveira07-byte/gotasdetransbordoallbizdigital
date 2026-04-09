@@ -9,7 +9,7 @@ const Navbar = () => {
         </div>
         <div>
           <h1 className="font-serif text-lg font-semibold text-primary leading-tight">Guia do Matheuzinho</h1>
-          <p className="text-xs text-guia-text-muted">Mudança para Goiânia • Abril 2026</p>
+          <p className="text-xs text-guia-text-muted">Mudança para Goiânia • Por Diego Allas • 2026</p>
         </div>
       </a>
       <div className="hidden md:flex gap-1.5 flex-wrap">
@@ -18,9 +18,7 @@ const Navbar = () => {
           { href: '#crer', label: 'CRER' },
           { href: '#hc', label: 'H. Clínicas' },
           { href: '#pestalozzi', label: 'Pestalozzi' },
-          { href: '#creas', label: 'CREAS' },
-          { href: '#apc', label: 'APC+' },
-          { href: '#adfego', label: 'ADFEGO' },
+          { href: '#missao', label: 'A Missão' },
           { href: '#passos', label: 'Passo a Passo' },
         ].map(link => (
           <a

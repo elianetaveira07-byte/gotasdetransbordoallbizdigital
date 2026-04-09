@@ -105,7 +105,7 @@ const InstitutionsSection = () => {
             title="Reabilitação complementar e atividades inclusivas"
             paragraphs={[
               'A Pestalozzi de Goiânia é uma das maiores instituições de apoio à pessoa com deficiência do Centro-Oeste. Oferece <strong>reabilitação complementar</strong> ao CRER, com foco em atividades inclusivas, terapias ocupacionais e suporte à família.',
-              'Enquanto o CRER cuida da parte médica e técnica, a Pestalozzi cuida do dia a dia: atividades de estimulação, convivência social e apoio emocional para o cuidador.',
+              'Enquanto o CRER cuida da parte médica e técnica, a Pestalozzi cuida do dia a dia: atividades de estimulação, convivência social e apoio emocional para os cuidadores.',
             ]}
             features={[
               'Estimulação multissensorial para PCD grave',
@@ -141,7 +141,7 @@ const InstitutionsSection = () => {
             badgeColor="amber"
             title="O apoio que cuida da família toda"
             paragraphs={[
-              'O CREAS (Centro de Referência Especializado de Assistência Social) é muito mais do que um órgão burocrático — é um serviço que <strong>vai até a casa da família</strong> para dar suporte ao cuidador, orientar sobre direitos e ajudar a manter a qualidade de vida de quem cuida e de quem é cuidado.',
+              'O CREAS (Centro de Referência Especializado de Assistência Social) é um serviço que <strong>vai até a casa da família</strong> para dar suporte ao cuidador, orientar sobre direitos e ajudar a manter a qualidade de vida de quem cuida e de quem é cuidado.',
               'Para famílias com PCD de alta dependência, o CREAS oferece atendimento domiciliar especializado, aliviando o peso dos cuidadores e garantindo proteção social completa.',
             ]}
             features={[
@@ -175,8 +175,8 @@ const InstitutionsSection = () => {
             badgeColor="green"
             title="Você não está sozinho nessa jornada"
             paragraphs={[
-              'A APC+ (Associação de Acolhimento à Pessoa com Paralisia Cerebral e Outras Deficiências — Brasil) é uma das maiores redes de apoio para famílias como a de vocês em Goiânia. São mais de <strong>150 famílias</strong> que passaram ou estão passando pelo mesmo caminho.',
-              'Aqui vocês vão encontrar pessoas que entendem o dia a dia de cuidar de um jovem com paralisia cerebral grave, sem precisar explicar tudo do zero. É suporte emocional, troca de experiências reais, dicas práticas e amizades verdadeiras.',
+              'A APC+ (Associação de Acolhimento à Pessoa com Paralisia Cerebral e Outras Deficiências — Brasil) é uma das maiores redes de apoio para famílias em Goiânia. São mais de <strong>150 famílias</strong> que passaram ou estão passando pelo mesmo caminho.',
+              'Aqui vamos encontrar pessoas que entendem o dia a dia de cuidar de um jovem com paralisia cerebral grave, sem precisar explicar tudo do zero. É suporte emocional, troca de experiências reais, dicas práticas e amizades verdadeiras.',
             ]}
             features={[
               'Grupos de apoio para pais, mães e cuidadores',
@@ -213,7 +213,7 @@ const InstitutionsSection = () => {
             title="Seus direitos garantidos em Goiás"
             paragraphs={[
               'A ADFEGO (Associação dos Deficientes Físicos do Estado de Goiás) é uma entidade estadual que atua na <strong>defesa dos direitos das pessoas com deficiência física</strong> em Goiás. É o lugar certo para tirar dúvidas sobre acessibilidade, benefícios, transporte adaptado e qualquer direito que o Matheuzinho tem garantido por lei.',
-              'Se a família tiver dúvidas sobre passe livre, adaptações no ônibus, direitos no trabalho para os pais cuidadores, BPC/LOAS ou qualquer outra questão legal ligada à deficiência — a ADFEGO pode orientar gratuitamente.',
+              'Se tivermos dúvidas sobre passe livre, adaptações no ônibus, direitos no trabalho para pais cuidadores, BPC/LOAS ou qualquer outra questão legal ligada à deficiência — a ADFEGO pode orientar gratuitamente.',
             ]}
             features={[
               'Orientação sobre direitos das pessoas com deficiência física',
