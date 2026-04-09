@@ -36,9 +36,11 @@ const FamilySection = () => {
         <div className="mb-12 text-center">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-white inline-block px-3.5 py-1.5 rounded-full mb-3.5">Nossa família</span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight flex items-center justify-center gap-3">
-            Matheuzinho e nossa família <Heart className="w-7 h-7 text-red-500 fill-red-500" />
+            O peso do amor e a promessa de um recomeço <Heart className="w-7 h-7 text-red-500 fill-red-500" />
           </h2>
-          <p className="text-guia-text-muted mt-2 max-w-lg mx-auto">Uma família unida que luta todos os dias para dar o melhor cuidado ao Matheuzinho. Eu, minha esposa e nossos filhos — juntos nessa missão.</p>
+          <p className="text-guia-text-muted mt-3 max-w-2xl mx-auto text-base leading-relaxed">
+            14 anos cuidando do Matheuzinho — sozinho, com minha esposa, com meus pais. A mãe biológica saiu quando ele tinha 2 anos. Ele nunca conviveu com a irmã e mal conheceu o irmão. Agora meus pais estão idosos e com a saúde frágil. A responsabilidade é toda minha: financeira, emocional, total. Vou primeiro para Goiânia com minha esposa e meus dois filhos pequenos, organizo tudo — e depois trago o Matheuzinho para finalmente viver em família.
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="rounded-lg overflow-hidden shadow-guia-lg">
