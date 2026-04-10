@@ -27,6 +27,7 @@ const Index = () => {
       <GratuitosSection />
       <CarouselSection />
       <MissaoSection />
+      <MarketingSection />
       <PassosSection />
       <DocumentosSection />
       <ContatosSection />
