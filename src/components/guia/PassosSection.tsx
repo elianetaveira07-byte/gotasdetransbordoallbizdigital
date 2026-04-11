@@ -1,9 +1,11 @@
+import { MessageCircle, FolderOpen } from 'lucide-react';
+
 const passos = [
-  { num: 1, title: 'Eu e minha esposa vamos primeiro para Goiânia', desc: 'Alugamos uma casa simples com contrato no nosso nome. Levamos nossos dois filhos pequenos e nos instalamos. Isso é obrigatório para atualizar o Cartão SUS em Goiânia.' },
-  { num: 2, title: 'Atualizar o Cartão SUS', desc: 'Levar na UBS de Goiânia: CPF, comprovante de residência (contrato de aluguel), RG e o cartão antigo. O SUS é nacional, mas o cadastro precisa estar em Goiânia.' },
-  { num: 3, title: 'Reativar o prontuário no CRER', desc: 'Levar todos os laudos antigos (de quase 10 anos atrás!) + laudos novos + relatório médico completo. Como ele já foi paciente, é bem mais rápido — pode sair em dias!' },
-  { num: 4, title: 'Pedir o Crer em Casa na primeira consulta', desc: 'Na primeira consulta já pedir o laudo para o "Crer em Casa". A triagem é feita logo após o cadastro reativado. Quando aprovado, a equipe começa a ir em casa.' },
-  { num: 5, title: 'Trazer o Matheuzinho para morar conosco', desc: 'Só na data da consulta marcada. Enquanto isso, ele fica tranquilo com os avós. Quando tudo estiver organizado, trazemos ele para a nova casa em Goiânia.' },
+  { num: 1, title: 'Diagnóstico gratuito do seu negócio', desc: 'Em 30 minutos de Google Meet, analiso sua presença digital: Google Meu Negócio, iFood, Instagram, WhatsApp Business. Você descobre exatamente onde está perdendo clientes — sem custo.' },
+  { num: 2, title: 'Plano de ação personalizado', desc: 'Após o diagnóstico, entrego um plano com as 3 prioridades que vão gerar resultado mais rápido no seu restaurante. Cada ação é prática e aplicável no mesmo dia.' },
+  { num: 3, title: 'Acesso aos materiais gratuitos', desc: 'Ebooks, planilhas, checklists, vídeos — tudo que investi +R$100k para aprender, organizado e disponível no Google Drive. Conteúdo que estão cobrando por aí, eu entrego grátis.' },
+  { num: 4, title: 'Acompanhamento via Google Meet', desc: 'Disponível 12h por dia para tirar dúvidas, ensinar passo a passo e ajudar na execução. Individual ou em grupo — como se estivesse pegando na sua mão.' },
+  { num: 5, title: 'Resultados documentados em tempo real', desc: 'Cada conquista, cada número, cada evolução é documentada. Quando eu chegar em Goiânia com a credencial ESPM e a Placa 100K — você já vai ter visto tudo acontecer.' },
 ];
 
 const PassosSection = () => {
@@ -11,9 +13,9 @@ const PassosSection = () => {
     <div className="container" id="passos">
       <section className="py-[72px]">
         <div className="mb-12">
-          <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">Plano da mudança</span>
+          <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">Como funciona</span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Passo a passo <span className="text-primary">bem simples</span>
+            O caminho para <span className="text-primary">fazer seu restaurante crescer</span>
           </h2>
         </div>
         <div className="flex flex-col relative">
@@ -29,6 +31,28 @@ const PassosSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA after steps */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="https://drive.google.com/drive/folders/1r8NUEqDhXSoFKOp3V0XEy0vYijdCFxLI?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 bg-primary text-white font-semibold px-7 py-3.5 rounded-full hover:scale-105 transition-transform shadow-lg"
+          >
+            <FolderOpen className="w-5 h-5" />
+            Acessar materiais gratuitos
+          </a>
+          <a
+            href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20apresenta%C3%A7%C3%A3o%20e%20quero%20agendar%20um%20diagn%C3%B3stico%20gratuito."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 bg-green-500 text-white font-semibold px-7 py-3.5 rounded-full hover:scale-105 transition-transform shadow-lg"
+          >
+            <MessageCircle className="w-5 h-5" />
+            Agendar diagnóstico gratuito
+          </a>
         </div>
       </section>
     </div>
