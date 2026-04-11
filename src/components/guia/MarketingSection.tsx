@@ -19,14 +19,14 @@ const photos = [
   { src: imgDiegoChapada, alt: 'Diego na Chapada do Araripe — onde tudo começou', caption: 'Chapada do Araripe — 2 anos de estudo intensivo na serra' },
   { src: imgDiegoCarro, alt: 'Diego Allas', caption: 'Diego Allas — Fundador da ALLBIZ DIGITAL' },
   { src: imgConquista, alt: 'Conquistas e resultados no digital', caption: 'Resultados reais — cada número é documentado' },
-  { src: imgKiwify, alt: 'Conquista Kiwify — resultados comprovados', caption: 'Plataformas e resultados comprovados' },
+  { src: imgKiwify, alt: 'Conquista Kiwify — resultados comprovados', caption: 'Educação sempre em primeiro lugar' },
   { src: imgFamiliaShopping, alt: 'Família no shopping — Matheuzinho estudando', caption: 'Família unida — cada momento é valorizado' },
-  { src: imgFilhoTrofeu, alt: 'Filho com troféu de aluno destaque', caption: 'Educação sempre em primeiro lugar' },
-  { src: imgMatheuzinhoLivros, alt: 'Matheuzinho com seus livros', caption: 'Matheuzinho e seus livros — aprendizado constante' },
-  { src: imgEsposaFilho, alt: 'Esposa e filho estudando juntos', caption: 'A base de tudo: família e educação' },
-  { src: imgPaiFilhoPraia, alt: 'Pai e filho na praia', caption: 'Momentos que valem mais que qualquer certificação' },
-  { src: imgPaiFilhoPiscina, alt: 'Pai e filho na piscina', caption: 'Lazer em família — equilíbrio é essencial' },
-  { src: imgFamilia2, alt: 'Família reunida', caption: 'A família que me motiva todos os dias' },
+  { src: imgFilhoTrofeu, alt: 'Filho com troféu de aluno destaque', caption: 'A família que me motiva todos os dias' },
+  { src: imgMatheuzinhoLivros, alt: 'Matheuzinho com seus livros', caption: 'Elimine o que não te ajudar a crescer e evoluir.' },
+  { src: imgEsposaFilho, alt: 'Esposa e filho estudando juntos', caption: 'Desde o colo, já se constrói o futuro de um filho.' },
+  { src: imgPaiFilhoPraia, alt: 'Pai e filho na praia', caption: 'Lazer em família — equilíbrio é essencial' },
+  { src: imgPaiFilhoPiscina, alt: 'Pai e filho na piscina', caption: 'Momentos que valem mais que qualquer certificação' },
+  { src: imgFamilia2, alt: 'Família reunida', caption: 'Cada momento de ensino é uma semente de futuro.' },
   { src: imgFilhosCarrinho, alt: 'Filhos juntos no shopping', caption: 'Irmãos juntos — a felicidade é simples' },
   { src: imgFamiliaPraiaNoite, alt: 'Família na praia à noite', caption: 'Praia à noite — criando memórias' },
 ];
@@ -81,7 +81,7 @@ const VideoPlayer = ({ src, title }: { src: string; title: string }) => {
         src={src}
         muted={muted}
         playsInline
-        className="w-full aspect-video object-cover"
+        className="w-full aspect-[9/16] object-cover"
         onEnded={() => setPlaying(false)}
       />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 flex items-center gap-2">
@@ -119,12 +119,15 @@ const MarketingSection = () => {
             +R$100k investidos no silêncio da Serra
           </h2>
           <p className="text-guia-text-muted mt-3 max-w-3xl mx-auto text-base leading-relaxed">
-            2 anos isolado na Chapada do Araripe, estudando 12 a 16 horas por dia. +R$30.000 em cursos online, livros, mentorias presenciais e imersões de alta performance. 
+            2 anos isolado na Chapada do Araripe, estudando 12 a 16 horas por dia. +R$100.000 em cursos online, livros, mentorias presenciais e imersões de alta performance. 
             Tudo registrado: emails, comprovantes, passagens aéreas, fotos e vídeos reais. Não é promessa — é preparação documentada para chegar em Goiânia com credencial, resultado e propósito.
           </p>
         </div>
 
         {/* Photo Gallery */}
+        <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6 text-center">
+          Registros reais da minha jornada e da minha família
+        </h3>
         <div className="relative mb-10">
           <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black aspect-[16/10] md:aspect-[16/9]">
             <img
@@ -166,9 +169,9 @@ const MarketingSection = () => {
         {/* Videos */}
         <div className="mb-12">
           <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6 text-center">
-            Registros em vídeo da jornada
+            Alguns registros em vídeo
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {videos.map((v, i) => (
               <VideoPlayer key={i} src={v.src} title={v.title} />
             ))}
