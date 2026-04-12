@@ -1,4 +1,4 @@
-import { Briefcase, Sparkles } from 'lucide-react';
+import { Sparkles, Flame } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -6,14 +6,20 @@ const Navbar = () => {
   const isHome = location.pathname === '/';
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3.5 flex items-center justify-between gap-4 flex-wrap">
-      <Link to="/" className="flex items-center gap-3 no-underline">
-        <div className="w-11 h-11 bg-primary rounded-[14px] flex items-center justify-center flex-shrink-0">
-          <Briefcase className="w-6 h-6 text-primary-foreground" />
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3 flex items-center justify-between gap-4 flex-wrap">
+      <Link to="/" className="flex items-center gap-3 no-underline group">
+        {/* Professional logo mark */}
+        <div className="relative w-12 h-12 flex-shrink-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform" />
+          <div className="relative w-full h-full bg-primary rounded-2xl flex items-center justify-center shadow-md">
+            <span className="text-white font-bold text-xl tracking-tighter" style={{ fontFamily: "'Georgia', serif" }}>A</span>
+          </div>
         </div>
-        <div>
-          <h1 className="font-serif text-lg font-semibold text-primary leading-tight">ALLBIZ DIGITAL</h1>
-          <p className="text-xs text-guia-text-muted">Diego Allas • Marketing para Food Service • 2026</p>
+        <div className="leading-none">
+          <h1 className="text-xl font-bold text-primary tracking-tight leading-tight" style={{ fontFamily: "'Georgia', 'Times New Roman', serif", letterSpacing: '-0.02em' }}>
+            ALLBIZ <span className="font-light">DIGITAL</span>
+          </h1>
+          <p className="text-[11px] text-guia-text-muted tracking-wide uppercase mt-0.5">Diego Allas • Marketing Food Service</p>
         </div>
       </Link>
       {isHome && (
@@ -34,9 +40,9 @@ const Navbar = () => {
           ))}
           <Link
             to="/comunidade"
-            className="text-sm font-semibold text-white no-underline px-4 py-1.5 rounded-full bg-primary hover:bg-primary/90 transition-all"
+            className="text-sm font-semibold text-white no-underline px-4 py-1.5 rounded-full bg-primary hover:bg-primary/90 transition-all inline-flex items-center gap-1.5"
           >
-            🔥 Gotas de Transbordo
+            <Flame className="w-3.5 h-3.5" /> Gotas de Transbordo
           </Link>
         </div>
       )}

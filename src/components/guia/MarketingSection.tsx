@@ -14,6 +14,9 @@ import imgMatheuzinhoLivros from '@/assets/marketing_matheuzinho_livros.jpg';
 import imgConquista from '@/assets/marketing_conquista.png';
 import imgEsposaFilho from '@/assets/marketing_esposa_filho.jpg';
 import imgFamilia2 from '@/assets/marketing_familia2.jpg';
+import imgFamiliaJardim from '@/assets/marketing_familia_jardim.jpg';
+import imgDiegoPiscinaFilhos from '@/assets/marketing_diego_piscina_filhos.jpg';
+import imgCasalPraia from '@/assets/marketing_casal_praia.jpg';
 
 const photos = [
   { src: imgDiegoChapada, alt: 'Diego na Chapada do Araripe — onde tudo começou', caption: 'Chapada do Araripe — 2 anos de estudo intensivo na serra' },
@@ -29,6 +32,9 @@ const photos = [
   { src: imgFamilia2, alt: 'Família reunida', caption: 'Cada momento de ensino é uma semente de futuro.' },
   { src: imgFilhosCarrinho, alt: 'Filhos juntos no shopping', caption: 'Irmãos juntos — a felicidade é simples' },
   { src: imgFamiliaPraiaNoite, alt: 'Família na praia à noite', caption: 'Praia à noite — criando memórias' },
+  { src: imgCasalPraia, alt: 'Casal na praia — amor e parceria', caption: 'Amor e parceria — a base de tudo' },
+  { src: imgDiegoPiscinaFilhos, alt: 'Diego na piscina com os filhos', caption: 'Momentos de lazer com os filhos — o que mais vale' },
+  { src: imgFamiliaJardim, alt: 'Família no jardim', caption: 'Família reunida — cada dia é uma conquista' },
 ];
 
 const videos = [
@@ -38,6 +44,7 @@ const videos = [
   { src: '/videos/marketing_video4.mp4', title: 'Dia a dia na serra' },
   { src: '/videos/marketing_video5.mp4', title: 'Estudos e dedicação' },
   { src: '/videos/marketing_video6.mp4', title: 'Registro da jornada' },
+  { src: '/videos/marketing_video7.mp4', title: 'Família e propósito' },
 ];
 
 const entregas = [
@@ -75,7 +82,7 @@ const VideoPlayer = ({ src, title }: { src: string; title: string }) => {
   };
 
   return (
-    <div className="relative rounded-lg overflow-hidden shadow-guia-lg bg-black">
+    <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black">
       <video
         ref={videoRef}
         src={src}
@@ -116,7 +123,7 @@ const MarketingSection = () => {
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight flex items-center justify-center gap-3">
             <Mountain className="w-7 h-7 text-primary" />
-            +R$100k investidos no silêncio da Serra
+            +R$100.000 investidos no silêncio da Serra
           </h2>
           <p className="text-guia-text-muted mt-3 max-w-3xl mx-auto text-base leading-relaxed">
             2 anos isolado na Chapada do Araripe, estudando 12 a 16 horas por dia. +R$100.000 em cursos online, livros, mentorias presenciais e imersões de alta performance. 
@@ -129,33 +136,33 @@ const MarketingSection = () => {
           Registros reais da minha jornada e da minha família
         </h3>
         <div className="relative mb-10">
-          <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black aspect-[16/10] md:aspect-[16/9]">
+          <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black aspect-[4/3] md:aspect-[16/9]">
             <img
               src={photos[currentPhoto].src}
               alt={photos[currentPhoto].alt}
-              className="w-full h-full object-contain bg-black"
+              className="w-full h-full object-contain bg-black transition-opacity duration-200"
             />
             {/* Caption */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-5">
               <p className="text-white text-sm md:text-base font-medium">{photos[currentPhoto].caption}</p>
               <p className="text-white/60 text-xs mt-1">{currentPhoto + 1} / {photos.length}</p>
             </div>
             {/* Navigation arrows */}
             <button
               onClick={prevPhoto}
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
+              className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform"
             >
               <ChevronLeft className="w-5 h-5 text-primary" />
             </button>
             <button
               onClick={nextPhoto}
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
+              className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform"
             >
               <ChevronRight className="w-5 h-5 text-primary" />
             </button>
           </div>
           {/* Dots */}
-          <div className="flex justify-center gap-1.5 mt-4">
+          <div className="flex justify-center gap-1.5 mt-4 flex-wrap">
             {photos.map((_, i) => (
               <button
                 key={i}
@@ -171,7 +178,7 @@ const MarketingSection = () => {
           <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6 text-center">
             Alguns registros em vídeo
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {videos.map((v, i) => (
               <VideoPlayer key={i} src={v.src} title={v.title} />
             ))}
