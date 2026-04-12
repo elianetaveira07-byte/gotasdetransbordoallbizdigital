@@ -17,6 +17,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          <ScrollToTopOnMount />
           <Route path="/" element={<Index />} />
           <Route path="/comunidade" element={<ComunidadePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
