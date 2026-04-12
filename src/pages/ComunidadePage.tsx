@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import { 
   MessageCircle, ChevronDown, ChevronUp, Users, BookOpen, Video, 
   Zap, BarChart3, Award, Target, Clock, Gift, Shield, TrendingUp,
-  Check, Star, ArrowRight, Briefcase, Sparkles, Phone
+  Check, Star, ArrowRight, Briefcase, Sparkles, Phone, Flame,
+  Settings, ShoppingCart, TrendingDown, DollarSign, Smartphone, Lightbulb,
+  Store, Timer, Utensils, Eye, Lock, Layers, Globe, Cpu, FileText
 } from 'lucide-react';
 
 const temas = [
@@ -23,9 +25,12 @@ const beneficios = [
   'Comunidade exclusiva de donos de restaurantes',
   'Diagnóstico gratuito da sua presença digital',
   'Como usar IA para acelerar tudo no seu negócio',
-  'Certificado de participação',
-  'Acesso ao projeto em tempo real — cada conquista documentada',
   'Suporte contínuo direto com Diego Allas',
+  'Além do marketing: o que você precisa saber sobre o mercado digital em 2026 que ninguém está te contando',
+  'O oculto dos gurus: O que os Gurus do Digital não mostram nos bastidores — e como isso te custou dinheiro e tempo sem você perceber',
+  'A fatia do bolo: As mesmas ferramentas que grandes agências usam estão disponíveis por menos de R$100/mês — e eu vou te mostrar como usar cada uma no seu restaurante',
+  'O mundo tecnológico real: LLMs, SaaS, MicroSaaS, White Label, B2B, B2C — sem jargão. O que realmente importa para o dono de restaurante crescer em 2026 usando tecnologia que já existe e custa quase nada',
+  'e muito mais.',
 ];
 
 const faqs = [
@@ -33,8 +38,10 @@ const faqs = [
   { q: 'Como funcionam as aulas ao vivo?', a: 'São sessões no Google Meet com temas específicos, de 07h às 19h. Você escolhe os que fazem sentido para o seu momento. Pode participar com dúvidas e casos reais.' },
   { q: 'Funciona para delivery sem salão físico?', a: 'Especialmente para você. O método foi construído com delivery no centro: iFood, WhatsApp, Google local, campanhas para horário de pico.' },
   { q: 'Posso participar de qualquer cidade?', a: 'Sim. Tudo é digital — SEO local, Google Meu Negócio, Meta Ads com segmentação por raio. Funciona em qualquer cidade do Brasil.' },
-  { q: 'O valor vai aumentar?', a: 'Sim. O preço de entrada é R$39 na primeira semana. Depois sobe progressivamente. Quem entra primeiro paga menos e tem acesso a tudo.' },
-  { q: 'Tem garantia?', a: 'Se em 7 dias você sentir que não é pra você, devolvemos 100% do valor. Sem burocracia, sem pergunta.' },
+  { q: 'O valor vai aumentar?', a: 'Sim. O preço de entrada é R$97 na primeira semana. Depois sobe progressivamente. Quem entra primeiro paga menos e tem acesso a tudo.' },
+  { q: 'Tem garantia?', a: 'Você entra agora e só paga depois de 7 dias. Se em 7 dias você não sentir que valeu, não paga nada. Simples assim.' },
+  { q: 'O que está incluído na mentoria individual?', a: 'Sessões ao vivo na sua máquina onde fazemos juntos cada setup — Google Ads, iFood, Meta Business, Cardápio Web, Repediu e mais. Disponível exclusivamente para membros ativos da comunidade.' },
+  { q: 'Como funciona o sorteio de 6 meses grátis?', a: 'Uma empresa da comunidade será sorteada para receber audiovisual profissional + tráfego pago (Google e Meta) por 6 meses, com investimento incluso. Basta ser membro ativo.' },
 ];
 
 const FaqItem = ({ q, a }: { q: string; a: string }) => {
@@ -54,13 +61,16 @@ const ComunidadePage = () => {
   return (
     <div className="scroll-smooth">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3.5 flex items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-3 no-underline">
-          <div className="w-11 h-11 bg-primary rounded-[14px] flex items-center justify-center flex-shrink-0">
-            <Briefcase className="w-6 h-6 text-primary-foreground" />
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3 flex items-center justify-between gap-4">
+        <Link to="/" className="flex items-center gap-3 no-underline group">
+          <div className="relative w-11 h-11 flex-shrink-0">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform" />
+            <div className="relative w-full h-full bg-primary rounded-2xl flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-lg" style={{ fontFamily: "'Georgia', serif" }}>A</span>
+            </div>
           </div>
           <div>
-            <h1 className="font-serif text-lg font-semibold text-primary leading-tight">Gotas de Transbordo</h1>
+            <h1 className="text-lg font-bold text-primary leading-tight" style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}>Gotas de Transbordo</h1>
             <p className="text-xs text-guia-text-muted">por Diego Allas • ALLBIZ DIGITAL</p>
           </div>
         </Link>
@@ -79,7 +89,7 @@ const ComunidadePage = () => {
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 70% 50% at 50% 30%, rgba(200,146,42,0.08) 0%, transparent 70%)' }} />
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-yellow-400/15 text-yellow-300 text-sm px-4 py-2 rounded-full mb-6 font-medium">
-            <Sparkles className="w-4 h-4" /> Preço de lançamento — R$39 na primeira semana
+            <Sparkles className="w-4 h-4" /> Preço de lançamento — R$97 na primeira semana
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
             Seu restaurante merece <em className="text-yellow-300 not-italic">transbordar</em> de clientes.
@@ -89,12 +99,12 @@ const ComunidadePage = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-10">
             <a
-              href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20entrar%20na%20comunidade%20Gotas%20de%20Transbordo%20por%20R%2439."
+              href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20entrar%20na%20comunidade%20Gotas%20de%20Transbordo%20por%20R%2497."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-400 text-gray-900 text-base font-bold px-8 py-4 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-yellow-300 hover:-translate-y-0.5 shadow-lg no-underline"
             >
-              Quero entrar por R$39 <ArrowRight className="w-5 h-5" />
+              Quero entrar por R$97 <ArrowRight className="w-5 h-5" />
             </a>
             <a href="#metodo" className="border-2 border-white/30 text-white text-base font-semibold px-8 py-4 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-white/10 no-underline">
               Ver como funciona
@@ -103,7 +113,7 @@ const ComunidadePage = () => {
           <div className="flex flex-wrap gap-6 justify-center text-white/50 text-sm">
             <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> Aulas ao vivo 07h–19h</span>
             <span className="flex items-center gap-1.5"><Users className="w-4 h-4" /> Comunidade exclusiva</span>
-            <span className="flex items-center gap-1.5"><Shield className="w-4 h-4" /> Garantia de 7 dias</span>
+            <span className="flex items-center gap-1.5"><Shield className="w-4 h-4" /> 7 dias grátis para testar</span>
           </div>
         </div>
       </section>
@@ -117,13 +127,15 @@ const ComunidadePage = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { emoji: '⚙️', title: 'Preso no operacional', desc: 'Resolve problema atrás de problema. Zero tempo para pensar em marketing.' },
-              { emoji: '📚', title: 'Comprou cursos, não aplicou', desc: 'Materiais na gaveta que nunca viraram resultado porque o delivery não para.' },
-              { emoji: '📉', title: 'Google Meu Negócio esquecido', desc: 'Sua presença digital desatualizada enquanto o concorrente aparece na frente.' },
-              { emoji: '💸', title: 'iFood comendo a margem', desc: 'Taxa alta, sem saber quem é seu cliente nem como trazê-lo de volta.' },
+              { icon: Settings, title: 'Preso no operacional', desc: 'Resolve problema atrás de problema. Zero tempo para pensar em marketing.' },
+              { icon: BookOpen, title: 'Comprou cursos, não aplicou', desc: 'Materiais na gaveta que nunca viraram resultado porque o delivery não para.' },
+              { icon: TrendingDown, title: 'Google Meu Negócio esquecido', desc: 'Sua presença digital desatualizada enquanto o concorrente aparece na frente.' },
+              { icon: DollarSign, title: 'iFood comendo a margem', desc: 'Taxa alta, sem saber quem é seu cliente nem como trazê-lo de volta.' },
             ].map((p, i) => (
               <div key={i} className="bg-card rounded-lg p-6 shadow-guia flex gap-4 items-start">
-                <span className="text-2xl flex-shrink-0">{p.emoji}</span>
+                <div className="w-10 h-10 rounded-xl bg-guia-blue-light flex items-center justify-center flex-shrink-0">
+                  <p.icon className="w-5 h-5 text-primary" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{p.title}</h3>
                   <p className="text-sm text-guia-text-muted">{p.desc}</p>
@@ -209,15 +221,17 @@ const ComunidadePage = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { emoji: '🍔', title: 'Tem hamburgueria, pizzaria ou restaurante', desc: 'Delivery ou salão — o método funciona para qualquer operação food service.' },
-              { emoji: '📵', title: 'Nunca fez marketing digital de verdade', desc: 'Começamos do zero, passo a passo, sem jargão.' },
-              { emoji: '⏰', title: 'Não tem tempo para estudar sozinho', desc: 'Aulas ao vivo curtas e práticas. Aplique no mesmo dia.' },
-              { emoji: '📱', title: 'Quer aprender a usar IA no negócio', desc: 'Automação, geração de imagens, chatbots — linguagem simples.' },
-              { emoji: '🏪', title: 'iFood esquecido ou mal configurado', desc: 'Otimizamos tudo para você aparecer mais e vender mais.' },
-              { emoji: '💡', title: 'Quer resultado, não só conhecimento', desc: 'Cada aula tem uma ação. O método é para quem executa.' },
+              { icon: Utensils, title: 'Tem hamburgueria, pizzaria ou restaurante', desc: 'Delivery ou salão — o método funciona para qualquer operação food service.' },
+              { icon: Smartphone, title: 'Nunca fez marketing digital de verdade', desc: 'Começamos do zero, passo a passo, sem jargão.' },
+              { icon: Timer, title: 'Não tem tempo para estudar sozinho', desc: 'Aulas ao vivo curtas e práticas. Aplique no mesmo dia.' },
+              { icon: Cpu, title: 'Quer aprender a usar IA no negócio', desc: 'Automação, geração de imagens, chatbots — linguagem simples.' },
+              { icon: Store, title: 'iFood esquecido ou mal configurado', desc: 'Otimizamos tudo para você aparecer mais e vender mais.' },
+              { icon: Lightbulb, title: 'Quer resultado, não só conhecimento', desc: 'Cada aula tem uma ação. O método é para quem executa.' },
             ].map((p, i) => (
               <div key={i} className="bg-card rounded-lg p-6 shadow-guia flex gap-4 items-start">
-                <span className="text-2xl flex-shrink-0">{p.emoji}</span>
+                <div className="w-10 h-10 rounded-xl bg-guia-blue-light flex items-center justify-center flex-shrink-0">
+                  <p.icon className="w-5 h-5 text-primary" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">{p.title}</h3>
                   <p className="text-sm text-guia-text-muted">{p.desc}</p>
@@ -234,7 +248,7 @@ const ComunidadePage = () => {
           <div className="mb-12 text-center">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">O que você recebe</span>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-              Tudo isso por <span className="text-primary">R$39</span> na primeira semana
+              Tudo isso por <span className="text-primary">R$97</span> na primeira semana
             </h2>
             <p className="text-guia-text-muted mt-3 max-w-xl mx-auto">Depois o valor sobe progressivamente. Quem entra primeiro paga menos e tem acesso a tudo — para sempre.</p>
           </div>
@@ -279,13 +293,13 @@ const ComunidadePage = () => {
             <div className="bg-card rounded-xl shadow-guia-lg overflow-hidden border-2 border-primary relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-yellow-400 to-primary" />
               <div className="p-6 bg-primary/5 border-b border-primary/20">
-                <div className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-2">
-                  🔥 Mais popular
+                <div className="inline-flex items-center gap-1.5 bg-primary text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-2">
+                  <Flame className="w-3 h-3" /> Mais popular
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground">Gotas de Transbordo</h3>
                 <div className="flex items-baseline gap-2 mt-2">
-                  <p className="font-serif text-4xl font-bold text-primary">R$39</p>
-                  <span className="text-sm text-guia-text-muted line-through">R$197</span>
+                  <p className="font-serif text-4xl font-bold text-primary">R$97</p>
+                  <span className="text-sm text-guia-text-muted line-through">R$297</span>
                 </div>
                 <p className="text-xs text-guia-text-muted mt-1">Preço de lançamento — sobe após a 1ª semana</p>
               </div>
@@ -299,24 +313,70 @@ const ComunidadePage = () => {
                   ))}
                 </ul>
                 <a
-                  href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20entrar%20na%20comunidade%20Gotas%20de%20Transbordo%20por%20R%2439."
+                  href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20entrar%20na%20comunidade%20Gotas%20de%20Transbordo%20por%20R%2497."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 block text-center bg-primary text-white font-semibold py-3 rounded-full hover:bg-primary/90 transition-colors no-underline"
                 >
-                  Quero entrar por R$39 →
+                  Quero entrar por R$97 →
                 </a>
-                <p className="text-center text-xs text-guia-text-muted mt-3">Garantia de 7 dias • Acesso imediato</p>
+                <p className="text-center text-xs text-guia-text-muted mt-4 leading-relaxed px-2">
+                  Você entra agora. Só paga depois de 7 dias. Acesso imediato à comunidade, aos materiais e às aulas ao vivo — sem cartão, sem compromisso. Se em 7 dias você não sentir que valeu, não paga nada. Simples assim. Fazemos diferente porque acreditamos no que entregamos.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Upsell */}
-          <div className="mt-6 bg-card rounded-lg p-6 shadow-guia flex gap-4 items-start">
-            <Star className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" />
-            <div>
-              <h4 className="font-semibold text-foreground mb-1">Mentoria Individual (para membros)</h4>
-              <p className="text-sm text-guia-text-muted">Quer ir mais rápido? A mentoria individual por <strong className="text-primary">R$500</strong> é o atalho: entramos ao vivo na sua máquina e fazemos juntos cada setup — do Google Ads ao ManyChat.</p>
+          {/* Mentoria Individual */}
+          <div className="mt-8 bg-card rounded-xl p-8 md:p-10 shadow-guia border-l-[5px] border-primary">
+            <div className="flex items-start gap-4 mb-6">
+              <Star className="w-7 h-7 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-2">Mentoria Individual — só para membros da comunidade</h4>
+                <p className="text-base text-guia-text-muted leading-relaxed">
+                  Quer sair do zero mais rápido do que as aulas em grupo permitem? A mentoria individual é o atalho.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-base leading-[1.75] mb-6">
+              Entramos ao vivo na sua máquina — eu e você — e fazemos juntos cada setup do início ao fim. Sem enrolação, sem teoria. Você sai da sessão com tudo funcionando e sabendo o que fazer na semana seguinte.
+            </p>
+
+            <h5 className="font-semibold text-foreground mb-4 flex items-center gap-2">
+              <FileText className="w-5 h-5 text-primary" /> O que resolvemos juntos na mentoria:
+            </h5>
+
+            <div className="space-y-3 mb-8">
+              {[
+                { icon: BarChart3, text: 'Google Meu Negócio + SEO local — seu restaurante aparecendo nas buscas certas, no bairro certo, na hora que o cliente está com fome' },
+                { icon: Target, text: 'Meta Business completo — Instagram, Facebook, WhatsApp Business, Direct e Messenger centralizados num lugar só, sem perder nenhuma conversa' },
+                { icon: ShoppingCart, text: 'iFood na prática — gestão real do painel: fotos, cardápio, avaliações, tempo de entrega, taxa de cancelamento e como usar o iFood Ads sem jogar dinheiro fora' },
+                { icon: Globe, text: 'Cardápio Web — configuração, integração com o delivery e como usar para criar um canal próprio e parar de depender 100% do iFood' },
+                { icon: Users, text: 'Repediu — como usar o CRM para recuperar clientes que sumiram, mandar campanha de WhatsApp que gera pedido de verdade e não virar spam' },
+                { icon: BarChart3, text: 'Reportei e mLabs — entender os dados que aparecem nos relatórios e o que fazer com eles na prática, sem precisar ser analista' },
+                { icon: Layers, text: 'Integração com PDV — como conectar seu sistema de caixa com as plataformas de delivery para parar de digitar pedido na mão e ter dados reais de faturamento' },
+                { icon: MessageCircle, text: 'Gestão do delivery próprio — estrutura de WhatsApp Business, catálogo, mensagem automática, confirmação de pedido e pesquisa de satisfação no piloto automático' },
+                { icon: TrendingUp, text: 'Primeiros anúncios no ar — Meta Ads e Google Ads configurados com verba pequena, segmentação local e rastreamento correto desde o primeiro dia' },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-3 items-start">
+                  <div className="w-8 h-8 rounded-lg bg-guia-blue-light flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <item.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <p className="text-sm text-guia-text-muted leading-relaxed">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-guia-blue-light rounded-lg p-5 mb-4">
+              <p className="text-sm font-semibold text-primary mb-1">A partir de R$97 · Sessão única ou pacote completo</p>
+              <p className="text-xs text-guia-text-muted">Disponível exclusivamente para membros ativos da comunidade. Vagas limitadas por semana — atendimento sob agendamento.</p>
+            </div>
+
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+              <p className="text-sm text-foreground italic leading-relaxed">
+                "Se você paga o Repediu, o Cardápio Web e o iFood todo mês e ainda não sabe se está funcionando — essa mentoria é exatamente para você."
+              </p>
             </div>
           </div>
         </div>
@@ -394,16 +454,16 @@ const ComunidadePage = () => {
             Cada dia sem marketing é dinheiro na mesa do <em className="text-yellow-300 not-italic">concorrente.</em>
           </h2>
           <p className="text-white/70 text-base mb-8 max-w-xl mx-auto">
-            Entre agora por R$39 e comece a transformar seu restaurante. Diagnóstico gratuito incluído. Garantia de 7 dias.
+            Entre agora por R$97 e comece a transformar seu restaurante. Diagnóstico gratuito incluído. 7 dias grátis para testar.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <a
-              href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20entrar%20na%20comunidade%20Gotas%20de%20Transbordo%20por%20R%2439."
+              href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20entrar%20na%20comunidade%20Gotas%20de%20Transbordo%20por%20R%2497."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-400 text-gray-900 text-lg font-bold px-10 py-4 rounded-full inline-flex items-center gap-2.5 hover:bg-yellow-300 hover:-translate-y-0.5 transition-all shadow-lg no-underline"
             >
-              Quero entrar por R$39 <ArrowRight className="w-5 h-5" />
+              Quero entrar por R$97 <ArrowRight className="w-5 h-5" />
             </a>
             <a
               href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!%20Quero%20agendar%20meu%20diagn%C3%B3stico%20gratuito."
@@ -415,17 +475,19 @@ const ComunidadePage = () => {
             </a>
           </div>
           <div className="flex flex-wrap gap-6 justify-center text-white/40 text-sm mt-6">
-            <span>🔒 Pagamento seguro</span>
-            <span>💬 Suporte direto</span>
-            <span>📱 Acesso imediato</span>
-            <span>🤝 Garantia 7 dias</span>
+            <span className="flex items-center gap-1.5"><Lock className="w-4 h-4" /> Pagamento seguro</span>
+            <span className="flex items-center gap-1.5"><MessageCircle className="w-4 h-4" /> Suporte direto</span>
+            <span className="flex items-center gap-1.5"><Smartphone className="w-4 h-4" /> Acesso imediato</span>
+            <span className="flex items-center gap-1.5"><Shield className="w-4 h-4" /> 7 dias grátis</span>
           </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="text-center py-8 px-6 text-sm text-white/60" style={{ background: '#0D1117' }}>
-        <p className="font-semibold text-white/80">💧 Gotas de Transbordo • ALLBIZ DIGITAL</p>
+        <p className="font-semibold text-white/80 flex items-center justify-center gap-2">
+          <Sparkles className="w-4 h-4" /> Gotas de Transbordo • ALLBIZ DIGITAL
+        </p>
         <p className="mt-2">© 2026 Diego Allas • Chapada do Araripe, PE → Goiânia, GO</p>
         <p className="mt-2 text-xs opacity-50">Todos os direitos reservados</p>
       </footer>
