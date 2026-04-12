@@ -19,10 +19,16 @@ const contatos = [
       <p className="text-xs text-guia-text-muted mt-1.5">Ebooks, planilhas, checklists, vídeos — tudo gratuito</p>
     </>
   )},
-  { icon: Instagram, title: 'Instagram', color: 'text-pink-500', content: (
+  { icon: Instagram, title: '@diegoallas', color: 'text-pink-500', content: (
     <>
-      <a href="https://instagram.com/diegoallas" target="_blank" rel="noreferrer" className="block text-primary font-semibold no-underline mt-1.5">@diegoallas</a>
-      <p className="text-xs text-guia-text-muted mt-1.5">Acompanhe a jornada em tempo real</p>
+      <a href="https://instagram.com/diegoallas" target="_blank" rel="noreferrer" className="block text-guia-text-muted font-semibold no-underline mt-1.5">@diegoallas <span className="text-xs font-normal text-orange-500">(desativado temporariamente)</span></a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Conta pausada para manter foco total nos estudos na Chapada do Araripe. Retorno previsto em 2027 com conteúdo completo.</p>
+    </>
+  )},
+  { icon: Instagram, title: '@allbizdigital', color: 'text-primary', content: (
+    <>
+      <a href="https://instagram.com/allbizdigital" target="_blank" rel="noreferrer" className="block text-primary font-semibold no-underline mt-1.5">@allbizdigital</a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Canal ativo para contato via Direct — sem criação de conteúdo por enquanto, foco total na entrega para a comunidade</p>
     </>
   )},
   { icon: Mail, title: 'E-mail Profissional', color: 'text-primary', content: (
@@ -44,11 +50,13 @@ const ContatosSection = () => {
     <div className="container" id="contato">
       <section className="py-[72px]">
         <div className="mb-12">
-          <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">Fale comigo</span>
+          <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">Canais de contato</span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Vamos <span className="text-primary">conversar</span>
+            Fale <span className="text-primary">diretamente comigo</span>
           </h2>
-          <p className="text-guia-text-muted mt-2 text-base">Escolha o canal que preferir — atendo pessoalmente cada mensagem.</p>
+          <p className="text-guia-text-muted mt-2 text-base max-w-2xl">
+            Cada mensagem é respondida por mim, pessoalmente. Sem equipe, sem robô. Escolha o canal que preferir — estou disponível 12h por dia para conversar sobre seu negócio, tirar dúvidas ou agendar um diagnóstico gratuito.
+          </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {contatos.map((c, i) => (
