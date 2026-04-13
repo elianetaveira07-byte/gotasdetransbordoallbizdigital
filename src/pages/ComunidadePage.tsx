@@ -5,9 +5,13 @@ import {
   Zap, BarChart3, Award, Target, Clock, Gift, Shield, TrendingUp,
   Check, Star, ArrowRight, Briefcase, Sparkles, Phone, Flame,
   Settings, ShoppingCart, TrendingDown, DollarSign, Smartphone, Lightbulb,
-  Store, Timer, Utensils, Eye, Lock, Layers, Globe, Cpu, FileText
+  Store, Timer, Utensils, Eye, Lock, Layers, Globe, Cpu, FileText,
+  Mountain, GraduationCap, Heart, MapPin
 } from 'lucide-react';
 import diegoPhoto from '@/assets/diego_comando_estrategico.png';
+import chapadaImg from '@/assets/chapada_serra.png';
+import logoPrincipal from '@/assets/logo_principal.png';
+import isotipo from '@/assets/isotipo.png';
 
 const temas = [
   { icon: BarChart3, title: 'Google Meu Negócio', desc: 'Otimização completa para aparecer nas buscas locais — fotos, avaliações, posts, palavras-chave.' },
@@ -43,6 +47,8 @@ const faqs = [
   { q: 'Tem garantia?', a: 'Você entra agora e só paga depois de 7 dias. Se em 7 dias você não sentir que valeu, não paga nada. Simples assim.' },
   { q: 'O que está incluído na mentoria individual?', a: 'Sessões ao vivo na sua máquina onde fazemos juntos cada setup — Google Ads, iFood, Meta Business, Cardápio Web, Repediu e mais. Disponível exclusivamente para membros ativos da comunidade.' },
   { q: 'Como funciona o sorteio de 6 meses grátis?', a: 'Uma empresa da comunidade será sorteada para receber audiovisual profissional + tráfego pago (Google e Meta) por 6 meses, com investimento incluso. Basta ser membro ativo.' },
+  { q: 'Diego tem experiência prática ou só teoria?', a: 'São 12 anos no chão do food service e logística — cozinha, balcão, expedição, câmara fria, comércio exterior. Mais 10.000 horas em marketing 360°. Tudo documentado e comprovável ao vivo.' },
+  { q: 'O que é "transparência total"?', a: 'Mostro ao vivo: comprovantes de cursos, passagens, certificações, investimentos, resultados de campanhas. Pessoalmente ou via Google Meet — sem filtro, sem edição.' },
 ];
 
 const FaqItem = ({ q, a }: { q: string; a: string }) => {
@@ -62,17 +68,12 @@ const ComunidadePage = () => {
   return (
     <div className="scroll-smooth">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-primary/10 px-6 py-3 flex items-center justify-between gap-4">
+      <nav className="sticky top-0 z-50 bg-[#0D1117]/95 backdrop-blur-md border-b border-yellow-600/20 px-6 py-3 flex items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-3 no-underline group">
-          <div className="relative w-11 h-11 flex-shrink-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/80 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform" />
-            <div className="relative w-full h-full bg-primary rounded-2xl flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-lg" style={{ fontFamily: "'Georgia', serif" }}>A</span>
-            </div>
-          </div>
+          <img src={isotipo} alt="DA" className="w-10 h-10 flex-shrink-0" />
           <div>
-            <h1 className="text-lg font-bold text-primary leading-tight" style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}>Gotas de Transbordo</h1>
-            <p className="text-xs text-guia-text-muted">por Diego Allas • ALLBIZ DIGITAL</p>
+            <h1 className="text-lg font-bold text-yellow-400 leading-tight tracking-tight">Gotas de Transbordo</h1>
+            <p className="text-xs text-white/50">por Diego Allas • ALLBIZ DIGITAL</p>
           </div>
         </Link>
         <a
@@ -148,7 +149,7 @@ const ComunidadePage = () => {
             <p className="font-serif text-xl md:text-2xl text-foreground italic leading-relaxed">
               "O básico bem feito no digital já coloca você <span className="text-primary font-semibold">na frente de 80% dos restaurantes</span> que não fazem nada direito."
             </p>
-            <p className="text-sm text-guia-text-muted mt-3">— Diego Allas, 12 anos em logística, supply chain e food service</p>
+            <p className="text-sm text-guia-text-muted mt-3">— Diego Allas, 24 anos entre food service, logística e marketing 360°</p>
           </div>
         </div>
       </section>
@@ -404,9 +405,18 @@ const ComunidadePage = () => {
           <div className="mb-12 text-center">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">Quem está por trás</span>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-              Da ponta da Serra para <span className="text-primary">transformar negócios</span>
+              Da ponta da Serra na Chapada do Araripe para <span className="text-primary">transformar negócios</span>
             </h2>
           </div>
+
+          {/* Serra image */}
+          <div className="rounded-2xl overflow-hidden shadow-guia-lg mb-10">
+            <img src={chapadaImg} alt="Serra da Chapada do Araripe — onde Diego estuda isolado há mais de 2 anos" className="w-full h-auto object-cover max-h-[400px]" />
+            <div className="bg-card px-6 py-3 text-center">
+              <p className="text-xs text-guia-text-muted italic">Chapada do Araripe, PE — onde o silêncio vira foco e o foco vira resultado</p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
             {/* Photo */}
             <div className="md:col-span-2">
@@ -421,19 +431,34 @@ const ComunidadePage = () => {
             {/* Bio */}
             <div className="md:col-span-3 bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary">
               <p className="text-base leading-[1.75] mb-4">
-                Sou <strong>Diego Allas</strong> — consultor empresarial especializado em marketing digital para food service, com <strong>12 anos de experiência em operações logísticas e supply chain</strong>.
+                Sou <strong>Diego Allas</strong> — consultor empresarial especializado em marketing digital e operações para food service.
               </p>
               <p className="text-base leading-[1.75] mb-4">
-                Minha carreira começou no chão de operação: transporte, armazém, estoque, câmara fria, produção, comércio exterior e despacho aduaneiro. Atuei lado a lado com times de Qualidade e Conformidade em certificações para exportação — <strong>MAPA, ANVISA, INMETRO e certificadoras internacionais</strong>. Sei o que é rigor operacional porque vivi isso por mais de uma década.
+                Não cheguei aqui pelo caminho curto. São <strong>12 anos no chão do food service</strong> — cozinha, balcão, delivery, expedição, cliente reclamando na porta, motoboy sumindo, pedido errado saindo. Não como consultor. Como operador. Como quem viveu cada problema que hoje ajuda a resolver.
               </p>
               <p className="text-base leading-[1.75] mb-4">
-                Hoje estudo <strong>12 horas por dia</strong> isolado na Chapada do Araripe, dominando cada ferramenta do marketing digital moderno — para chegar em Goiânia pronto para transformar negócios com <strong>resultado real, não promessa</strong>.
+                São também <strong>12 anos em logística e supply chain</strong> — transporte, armazenagem, câmara fria, produção, comércio exterior e despacho aduaneiro. Atuei lado a lado com times de Qualidade e Conformidade em processos de certificação e atendimento regulatório junto ao <strong>MAPA e à ANVISA</strong>, além da aplicação de padrões internacionais como <strong>GlobalG.A.P., HACCP e ISO 22000</strong>, garantindo requisitos para exportação, rastreabilidade e segurança de alimentos.
               </p>
               <p className="text-base leading-[1.75] mb-4">
-                Tenho um filho especial que precisa de cuidados contínuos em Goiânia. Cada restaurante que cresce com meu método é um passo nessa missão maior. <strong>Não é só negócio — é propósito.</strong>
+                Também participei de processos ligados ao <strong>OEA</strong> e auditorias internas e externas de qualidade, com foco em conformidade regulatória e melhoria contínua. Essa vivência consolidou um olhar crítico e preventivo — o <strong>"olho de auditor"</strong> — capaz de identificar desvios, mitigar riscos operacionais e assegurar a integridade dos processos antes que se tornem problemas.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Desde 2023, isolado na Chapada do Araripe, mergulhei numa terceira jornada. Mais de <strong>10.000 horas</strong> — não só de marketing digital, mas de marketing em sua visão mais completa: online e offline, imprensa e influência, audiovisual e produção de conteúdo, automação e inteligência artificial, programação básica e no-code, SaaS, MicroSaaS, White Label, B2B e B2C. Estudei os grandes nomes do mercado e os pequenos que já estão pegando a fatia sem que ninguém tenha percebido. Fui fundo no que está oculto por trás dos bastidores — o que funciona de verdade, o que é promessa embrulhada em palco e o que está mudando o jogo em silêncio.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Sou pai de três filhos. Um deles, <strong>Matheus</strong>, tem síndrome de Dandy-Walker e precisa de cuidados e especialistas que só existem em Goiânia — <strong>CRER, Pestalozzi, Hospital das Clínicas</strong>. A mudança planejada até dezembro de 2026 não é só estratégia de mercado. É missão de família. Cada restaurante que cresce com esse método é um passo nessa direção.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Não trabalho com volume. Trabalho com precisão. Não subo o volume antes de saber se a operação aguenta. Como um botão de temperatura que sobe devagar — no ritmo certo, na dose certa, sem queimar o que foi construído.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Porque número é consequência. A causa mora no processo, na equipe, na cozinha, no estoque e na cabeça do dono.
+              </p>
+              <p className="text-base leading-[1.75]">
+                E eu conheço esse lugar. <strong>Porque já estive lá.</strong>
               </p>
               <div className="flex flex-wrap gap-3 mt-6">
-                {['ESPM Marketing Digital', 'Google Certified', 'Meta Blueprint', 'Placa 100K', '12 anos Logística & Food Service'].map((tag) => (
+                {['ESPM Marketing Digital', 'Google Certified', 'Meta Blueprint', 'Placa 100K', '12 anos Food & Logística', '10.000h Marketing Digital'].map((tag) => (
                   <span key={tag} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-guia-blue-light text-primary">{tag}</span>
                 ))}
               </div>

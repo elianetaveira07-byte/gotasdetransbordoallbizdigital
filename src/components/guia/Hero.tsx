@@ -9,11 +9,10 @@ const Hero = () => {
           <Briefcase className="w-4 h-4" /> Diego Allas — ALLBIZ DIGITAL
         </div>
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight max-w-4xl mx-auto mb-6">
-          O profissional que vai <em className="text-yellow-300 not-italic">transformar o marketing</em> do seu restaurante em Goiânia
+          Seu restaurante está perdendo dinheiro todo dia. <em className="text-yellow-300 not-italic">Eu sei exatamente onde.</em>
         </h1>
         <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10">
-          +R$100.000 investidos em formação. 12 anos de experiência em operações logísticas, supply chain e food service. Certificações ESPM, Google e Meta. 
-          Conheça a história, os resultados e por que estou dedicando tudo para chegar em Goiânia pronto para fazer seu negócio crescer.
+          24 anos entre o chão do food service e a logística. Mais de 10.000 horas em marketing 360°. R$15.000 do próprio bolso num case real — para provar o método antes de vender qualquer coisa.
         </p>
         <div className="flex flex-wrap gap-3.5 justify-center mb-10">
           <a href="#missao" className="bg-white text-primary text-base font-semibold px-8 py-4 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-yellow-300 hover:-translate-y-0.5 shadow-lg">
@@ -29,9 +28,6 @@ const Hero = () => {
           </div>
           <div className="flex items-center gap-2 text-white/70 text-sm">
             <Award className="w-4 h-4 text-yellow-300" /> Google & Meta Certified
-          </div>
-          <div className="flex items-center gap-2 text-white/70 text-sm">
-            <Award className="w-4 h-4 text-yellow-300" /> Placa 100K — DeliveryAds
           </div>
         </div>
       </div>
