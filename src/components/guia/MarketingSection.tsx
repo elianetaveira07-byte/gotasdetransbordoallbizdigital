@@ -38,13 +38,15 @@ const photos = [
 ];
 
 const videos = [
-  { src: '/videos/marketing_video1.mp4', title: 'Jornada espiritual e familiar' },
-  { src: '/videos/marketing_video2.mp4', title: 'Bastidores da preparação' },
-  { src: '/videos/marketing_video3.mp4', title: 'Momentos em família' },
-  { src: '/videos/marketing_video4.mp4', title: 'Dia a dia na serra' },
-  { src: '/videos/marketing_video5.mp4', title: 'Estudos e dedicação' },
-  { src: '/videos/marketing_video6.mp4', title: 'Registro da jornada' },
-  { src: '/videos/marketing_video7.mp4', title: 'Família e propósito' },
+  { src: '/videos/marketing_video1.mp4' },
+  { src: '/videos/marketing_video2.mp4' },
+  { src: '/videos/marketing_video3.mp4' },
+  { src: '/videos/marketing_video4.mp4' },
+  { src: '/videos/marketing_video5.mp4' },
+  { src: '/videos/marketing_video6.mp4' },
+  { src: '/videos/marketing_video7.mp4' },
+  { src: '/videos/marketing_video8.mp4' },
+  { src: '/videos/marketing_video9.mp4' },
 ];
 
 const entregas = [
@@ -56,7 +58,7 @@ const entregas = [
   { icon: Clock, title: 'Depoimentos e provas ao vivo', desc: 'Mostro tudo: comprovantes de cursos, passagens aéreas, emails, resultados. Transparência total.' },
 ];
 
-const VideoPlayer = ({ src, title }: { src: string; title: string }) => {
+const VideoPlayer = ({ src }: { src: string }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
@@ -82,7 +84,7 @@ const VideoPlayer = ({ src, title }: { src: string; title: string }) => {
   };
 
   return (
-    <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black">
+    <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black max-w-sm mx-auto">
       <video
         ref={videoRef}
         src={src}
@@ -101,7 +103,6 @@ const VideoPlayer = ({ src, title }: { src: string; title: string }) => {
         <button onClick={toggleMute} className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 transition-colors">
           {muted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
         </button>
-        <span className="text-white/70 text-xs ml-auto truncate">{title}</span>
       </div>
     </div>
   );
@@ -133,7 +134,7 @@ const MarketingSection = () => {
 
         {/* Photo Gallery */}
         <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6 text-center">
-          Registros reais da minha jornada e da minha família
+          Registros reais. Sem filtro de rede social.
         </h3>
         <div className="relative mb-10">
           <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black aspect-[4/3] md:aspect-[16/9]">
@@ -175,12 +176,20 @@ const MarketingSection = () => {
 
         {/* Videos */}
         <div className="mb-12">
-          <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6 text-center">
-            Alguns registros em vídeo
-          </h3>
+          <div className="mb-8 max-w-3xl mx-auto text-center">
+            <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-4">
+              Minhas redes sociais estão inativas — e foi uma escolha consciente.
+            </h3>
+            <p className="text-guia-text-muted text-sm md:text-base leading-relaxed">
+              Depois de estudar profundamente como a dopamina digital funciona — e como plataformas são projetadas para viciar atenção, não gerar valor — decidi que o meu tempo de 12 horas por dia seria investido em construção real, não em presença virtual.
+            </p>
+            <p className="text-guia-text-muted text-sm md:text-base leading-relaxed mt-3">
+              O que você vê aqui não passou por filtro, por estratégia de engajamento ou por algoritmo. São registros da família que me move e da jornada que estou construindo — porque resultado não precisa de vitrine. Precisa de prova.
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {videos.map((v, i) => (
-              <VideoPlayer key={i} src={v.src} title={v.title} />
+              <VideoPlayer key={i} src={v.src} />
             ))}
           </div>
         </div>
@@ -197,7 +206,7 @@ const MarketingSection = () => {
             Em troca de cada trabalho gratuito, peço apenas o depoimento. Cada número, cada resultado, cada conquista está sendo documentada em tempo real para construir o <strong>maior case de sucesso do food delivery em Goiânia</strong>.
           </p>
           <p className="text-base leading-[1.75]">
-            Quando eu chegar em Goiânia com a <strong>certificação ESPM, a Placa 100K, certificações Google e Meta</strong> — o acesso vai custar outro preço. Agora é a janela para me conhecer, entender minha história e ter acesso direto a tudo que sei.
+            Quando eu chegar em Goiânia com a <strong>certificação ESPM, certificações Google e Meta</strong> — o acesso vai custar outro preço. Agora é a janela para me conhecer, entender minha história e ter acesso direto a tudo que sei.
           </p>
         </div>
 
