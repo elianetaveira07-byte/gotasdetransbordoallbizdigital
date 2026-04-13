@@ -2,7 +2,7 @@ import { Award, BookOpen, BarChart3, Users, Zap, Shield } from 'lucide-react';
 
 const diferenciais = [
   { icon: Award, title: 'Certificações reais', desc: 'ESPM, Google Ads, Meta Blueprint, Placa 100K. Cada credencial é comprovada — não é selo decorativo.' },
-  { icon: BookOpen, title: '12 anos no chão de food', desc: 'Cozinha, balcão, delivery, operação. Eu sei o que é estar no seu lugar porque já estive lá.' },
+  { icon: BookOpen, title: '12 anos de operação real', desc: 'Logística, supply chain, câmara fria, comércio exterior, despacho aduaneiro e food service. Eu sei o que é estar no chão porque vivi 12 anos lá.' },
   { icon: BarChart3, title: 'Dados, não achismo', desc: 'Dashboard com métricas reais, relatórios transparentes, resultados documentados em tempo real.' },
   { icon: Users, title: 'Atendimento pessoal', desc: 'Não sou agência com 50 clientes. Atendo poucos para entregar muito. Google Meet 12h por dia.' },
   { icon: Zap, title: 'IA aplicada ao food', desc: 'Ensino a usar LLMs, automação, geração de imagem — ferramentas que economizam horas todo dia.' },

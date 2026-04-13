@@ -7,6 +7,7 @@ import {
   Settings, ShoppingCart, TrendingDown, DollarSign, Smartphone, Lightbulb,
   Store, Timer, Utensils, Eye, Lock, Layers, Globe, Cpu, FileText
 } from 'lucide-react';
+import diegoPhoto from '@/assets/diego_comando_estrategico.png';
 
 const temas = [
   { icon: BarChart3, title: 'Google Meu Negócio', desc: 'Otimização completa para aparecer nas buscas locais — fotos, avaliações, posts, palavras-chave.' },
@@ -147,7 +148,7 @@ const ComunidadePage = () => {
             <p className="font-serif text-xl md:text-2xl text-foreground italic leading-relaxed">
               "O básico bem feito no digital já coloca você <span className="text-primary font-semibold">na frente de 80% dos restaurantes</span> que não fazem nada direito."
             </p>
-            <p className="text-sm text-guia-text-muted mt-3">— Diego Allas, após 12 anos no chão de food service</p>
+            <p className="text-sm text-guia-text-muted mt-3">— Diego Allas, 12 anos em logística, supply chain e food service</p>
           </div>
         </div>
       </section>
@@ -399,27 +400,43 @@ const ComunidadePage = () => {
 
       {/* Quem está por trás */}
       <section className="py-[72px]">
-        <div className="container max-w-4xl">
-          <div className="mb-12">
+        <div className="container max-w-5xl">
+          <div className="mb-12 text-center">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">Quem está por trás</span>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
               Da ponta da Serra para <span className="text-primary">transformar negócios</span>
             </h2>
           </div>
-          <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary">
-            <p className="text-base leading-[1.75] mb-4">
-              Sou <strong>Diego Allas</strong> — consultor empresarial especializado em marketing digital para food service. <strong>12 anos dentro do chão de restaurante</strong>: cozinha, balcão, delivery, operação. Não falo sobre o que li — eu vivi.
-            </p>
-            <p className="text-base leading-[1.75] mb-4">
-              Hoje estudo <strong>12 horas por dia</strong> isolado na Chapada do Araripe, dominando cada ferramenta do marketing digital moderno — para chegar em Goiânia pronto para transformar negócios com <strong>resultado real, não promessa</strong>.
-            </p>
-            <p className="text-base leading-[1.75] mb-4">
-              Tenho um filho especial que precisa de cuidados contínuos em Goiânia. Cada restaurante que cresce com meu método é um passo nessa missão maior. <strong>Não é só negócio — é propósito.</strong>
-            </p>
-            <div className="flex flex-wrap gap-3 mt-6">
-              {['ESPM Marketing Digital', 'Google Certified', 'Meta Blueprint', 'Placa 100K', '12 anos Food Service'].map((tag) => (
-                <span key={tag} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-guia-blue-light text-primary">{tag}</span>
-              ))}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
+            {/* Photo */}
+            <div className="md:col-span-2">
+              <div className="rounded-2xl overflow-hidden shadow-guia-lg">
+                <img 
+                  src={diegoPhoto} 
+                  alt="Diego Allas — Estratégia & Escala" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+            {/* Bio */}
+            <div className="md:col-span-3 bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary">
+              <p className="text-base leading-[1.75] mb-4">
+                Sou <strong>Diego Allas</strong> — consultor empresarial especializado em marketing digital para food service, com <strong>12 anos de experiência em operações logísticas e supply chain</strong>.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Minha carreira começou no chão de operação: transporte, armazém, estoque, câmara fria, produção, comércio exterior e despacho aduaneiro. Atuei lado a lado com times de Qualidade e Conformidade em certificações para exportação — <strong>MAPA, ANVISA, INMETRO e certificadoras internacionais</strong>. Sei o que é rigor operacional porque vivi isso por mais de uma década.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Hoje estudo <strong>12 horas por dia</strong> isolado na Chapada do Araripe, dominando cada ferramenta do marketing digital moderno — para chegar em Goiânia pronto para transformar negócios com <strong>resultado real, não promessa</strong>.
+              </p>
+              <p className="text-base leading-[1.75] mb-4">
+                Tenho um filho especial que precisa de cuidados contínuos em Goiânia. Cada restaurante que cresce com meu método é um passo nessa missão maior. <strong>Não é só negócio — é propósito.</strong>
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                {['ESPM Marketing Digital', 'Google Certified', 'Meta Blueprint', 'Placa 100K', '12 anos Logística & Food Service'].map((tag) => (
+                  <span key={tag} className="text-xs font-semibold px-3 py-1.5 rounded-full bg-guia-blue-light text-primary">{tag}</span>
+                ))}
+              </div>
             </div>
           </div>
           <div className="mt-6 text-center">

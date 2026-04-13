@@ -31,10 +31,10 @@ const contatos = [
       <p className="text-xs text-guia-text-muted mt-1.5">Canal ativo para contato via Direct — sem criação de conteúdo por enquanto, foco total na entrega para a comunidade</p>
     </>
   )},
-  { icon: Mail, title: 'E-mail Profissional', color: 'text-primary', content: (
+  { icon: Mail, title: 'E-mail — Google Drive & Suporte', color: 'text-primary', content: (
     <>
-      <a href="mailto:contato@allbizdigital.com" className="block text-primary font-semibold no-underline mt-1.5">contato@allbizdigital.com</a>
-      <p className="text-xs text-guia-text-muted mt-1.5">Para propostas comerciais e parcerias</p>
+      <a href="mailto:anfitriaonexialista@gmail.com" className="block text-primary font-semibold no-underline mt-1.5">anfitriaonexialista@gmail.com</a>
+      <p className="text-xs text-guia-text-muted mt-1.5">Canal direto para dúvidas, propostas, parcerias e acesso à pasta compartilhada do Google Drive com materiais exclusivos para membros da comunidade</p>
     </>
   )},
   { icon: Phone, title: 'Ligação Direta', color: 'text-primary', content: (

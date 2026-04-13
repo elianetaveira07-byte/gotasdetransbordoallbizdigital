@@ -12,7 +12,7 @@ const Hero = () => {
           O profissional que vai <em className="text-yellow-300 not-italic">transformar o marketing</em> do seu restaurante em Goiânia
         </h1>
         <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10">
-          +R$100.000 investidos em formação. 12 anos no chão de food service. Certificações ESPM, Google e Meta. 
+          +R$100.000 investidos em formação. 12 anos de experiência em operações logísticas, supply chain e food service. Certificações ESPM, Google e Meta. 
           Conheça a história, os resultados e por que estou dedicando tudo para chegar em Goiânia pronto para fazer seu negócio crescer.
         </p>
         <div className="flex flex-wrap gap-3.5 justify-center mb-10">
