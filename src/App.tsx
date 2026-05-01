@@ -5,7 +5,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ScrollToTopOnMount from "./components/ScrollToTopOnMount";
 import Index from "./pages/Index.tsx";
-import ComunidadePage from "./pages/ComunidadePage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -19,7 +18,6 @@ const App = () => (
         <ScrollToTopOnMount />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/comunidade" element={<ComunidadePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
