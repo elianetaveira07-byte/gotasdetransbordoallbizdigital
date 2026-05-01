@@ -6,10 +6,7 @@ import VantagensSection from '@/components/guia/VantagensSection';
 import InstitutionsSection from '@/components/guia/InstitutionsSection';
 import GratuitosSection from '@/components/guia/GratuitosSection';
 import CarouselSection from '@/components/guia/CarouselSection';
-import MissaoSection from '@/components/guia/MissaoSection';
 import MarketingSection from '@/components/guia/MarketingSection';
-import PassosSection from '@/components/guia/PassosSection';
-import DocumentosSection from '@/components/guia/DocumentosSection';
 import ContatosSection from '@/components/guia/ContatosSection';
 import ConclusaoSection from '@/components/guia/ConclusaoSection';
 import Footer from '@/components/guia/Footer';
@@ -26,10 +23,7 @@ const Index = () => {
       <InstitutionsSection />
       <GratuitosSection />
       <CarouselSection />
-      <MissaoSection />
       <MarketingSection />
-      <PassosSection />
-      <DocumentosSection />
       <ContatosSection />
       <ConclusaoSection />
       <Footer />
