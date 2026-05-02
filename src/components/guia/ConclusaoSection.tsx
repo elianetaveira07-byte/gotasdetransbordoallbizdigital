@@ -19,10 +19,6 @@ const ConclusaoSection = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-5 flex items-center justify-center gap-3">
             Obrigado por chegar até aqui <Heart className="w-7 h-7 text-red-400 fill-red-400" />
           </h2>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto mb-4">
-            Se algo dessa história tocou você, me manda uma mensagem. Adoro conhecer gente nova,
-            ouvir histórias e trocar ideia sobre família, mudança, vida.
-          </p>
           <p className="text-base text-white/60 max-w-xl mx-auto">
             Da Chapada do Araripe pra você — com carinho.
           </p>
