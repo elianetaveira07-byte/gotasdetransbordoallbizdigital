@@ -51,16 +51,22 @@ const VideoPlayer = ({ src }: { src: string }) => {
   const [muted, setMuted] = useState(true);
 
   const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (playing) videoRef.current.pause();
-    else videoRef.current.play();
-    setPlaying(!playing);
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) {
+      v.play().catch(() => {});
+      setPlaying(true);
+    } else {
+      v.pause();
+      setPlaying(false);
+    }
   };
 
   const restart = () => {
-    if (!videoRef.current) return;
-    videoRef.current.currentTime = 0;
-    videoRef.current.play();
+    const v = videoRef.current;
+    if (!v) return;
+    v.currentTime = 0;
+    v.play().catch(() => {});
     setPlaying(true);
   };
 
@@ -77,8 +83,11 @@ const VideoPlayer = ({ src }: { src: string }) => {
         src={src}
         muted={muted}
         playsInline
+        preload="auto"
         className="w-full aspect-[9/16] object-cover"
         onEnded={() => setPlaying(false)}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
       />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 flex items-center gap-2">
         <button onClick={togglePlay} className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center text-primary hover:scale-110 transition-transform">
@@ -121,11 +130,17 @@ const MarketingSection = () => {
         {/* Photo Gallery */}
         <div className="relative mb-16">
           <div className="relative rounded-xl overflow-hidden shadow-guia-lg bg-black aspect-[4/3] md:aspect-[16/9] max-w-4xl mx-auto">
-            <img
-              src={photos[currentPhoto]}
-              alt={`Foto ${currentPhoto + 1} de ${photos.length}`}
-              className="w-full h-full object-contain bg-black transition-opacity duration-200"
-            />
+            {/* Pré-carrega todas as fotos para troca instantânea */}
+            {photos.map((p, i) => (
+              <img
+                key={i}
+                src={p}
+                alt={`Foto ${i + 1} de ${photos.length}`}
+                loading="eager"
+                decoding="async"
+                className={`absolute inset-0 w-full h-full object-contain bg-black ${i === currentPhoto ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+              />
+            ))}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4 md:p-5">
               <p className="text-white/70 text-xs">{currentPhoto + 1} / {photos.length}</p>
             </div>
