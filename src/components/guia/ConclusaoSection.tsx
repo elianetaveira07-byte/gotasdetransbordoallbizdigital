@@ -13,8 +13,12 @@ const ConclusaoSection = () => {
           style={{ background: 'radial-gradient(ellipse 60% 60% at 50% 0%, rgba(212,175,55,0.18) 0%, transparent 70%)' }}
         />
         <div className="relative">
-          <div className="flex justify-center mb-5">
-            <img src={iconeLogo} alt="Diego Allas" className="h-16 w-auto" />
+          <div className="flex justify-center mb-7">
+            <div className="relative inline-block p-[2px] rounded-2xl bg-gradient-to-br from-yellow-300 via-yellow-500 to-yellow-700 shadow-[0_0_30px_-6px_rgba(212,175,55,0.5)]">
+              <div className="rounded-2xl bg-[#0D1117] px-6 py-4 flex items-center justify-center">
+                <img src={iconeLogo} alt="Diego Allas" className="h-24 md:h-28 w-auto" />
+              </div>
+            </div>
           </div>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-5 flex items-center justify-center gap-3">
             Obrigado por chegar até aqui <Heart className="w-7 h-7 text-red-400 fill-red-400" />
