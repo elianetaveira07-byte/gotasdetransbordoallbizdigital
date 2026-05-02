@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Youtube, MessageCircle, Music2, Link2 } from 'lucide-react';
-import logoSecundario from '@/assets/logo_secundario.png';
+import logoFull from '@/assets/logo_diego_allas_full.png';
 
 const socialLinks = [
   { icon: Link2, href: 'https://linktr.ee/allbizdigitalconsultoria', label: 'Linktree' },
@@ -14,9 +14,8 @@ const Footer = () => {
   return (
     <footer className="text-center py-10 px-6 text-sm text-white/60" style={{ background: '#0D1117' }}>
       <div className="flex justify-center mb-5">
-        <img src={logoSecundario} alt="Diego Allas — Estratégia & Escala" className="h-16 w-auto" />
+        <img src={logoFull} alt="Diego Allas — Estratégia & Escala" className="h-32 md:h-40 w-auto" />
       </div>
-      <p className="font-semibold text-white/80">Diego Allas — Estratégia & Escala</p>
 
       <div className="flex justify-center gap-3 mt-5 flex-wrap">
         {socialLinks.map((s) => (
