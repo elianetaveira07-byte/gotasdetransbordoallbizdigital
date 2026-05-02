@@ -16,11 +16,11 @@ const Footer = () => {
       {/* Logo principal com borda estratégica dourada */}
       <div className="flex justify-center mb-6">
         <div className="relative inline-block p-[2px] rounded-2xl bg-gradient-to-br from-yellow-300 via-yellow-500 to-yellow-700 shadow-[0_0_30px_-6px_rgba(212,175,55,0.5)]">
-          <div className="rounded-2xl bg-[#0D1117] px-8 py-5">
+          <div className="rounded-2xl bg-[#0D1117] px-4 py-2 md:px-5 md:py-2.5">
             <img
               src={logoFull}
               alt="Diego Allas — Estratégia & Escala"
-              className="h-32 md:h-40 w-auto mx-auto"
+              className="h-48 md:h-60 w-auto mx-auto block"
             />
           </div>
         </div>
