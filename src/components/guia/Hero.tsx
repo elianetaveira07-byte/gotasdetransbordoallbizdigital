@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
               <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse-dot" />
-              Diego Allas — perfil pessoal
+              Perfil pessoal
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Pai, marido, filho.
