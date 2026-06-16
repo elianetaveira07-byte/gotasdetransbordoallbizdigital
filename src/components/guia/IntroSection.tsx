@@ -23,8 +23,7 @@ const IntroSection = () => {
           </p>
           <p className="mt-4">
             Esta página não está vendendo nada. É apenas um espaço para você me conhecer melhor — minha família,
-            o lugar onde vivo hoje, para onde estou indo e o porquê dessa caminhada. Se quiser conversar, minhas
-            redes sociais e meu WhatsApp estão logo abaixo. Pode me chamar.
+            o lugar onde vivo hoje, para onde estou indo e o porquê dessa caminhada.
           </p>
           <div className="bg-guia-blue-light rounded-[10px] p-4 mt-5 text-primary font-medium flex items-start gap-2">
             <Heart className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-500 fill-red-500" />
