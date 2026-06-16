@@ -8,7 +8,6 @@ import GratuitosSection from '@/components/guia/GratuitosSection';
 import CarouselSection from '@/components/guia/CarouselSection';
 import MarketingSection from '@/components/guia/MarketingSection';
 import ContatosSection from '@/components/guia/ContatosSection';
-import PodcastSection from '@/components/guia/PodcastSection';
 import ConclusaoSection from '@/components/guia/ConclusaoSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
@@ -26,7 +25,6 @@ const Index = () => {
       <CarouselSection />
       <MarketingSection />
       <ContatosSection />
-      <PodcastSection />
       <ConclusaoSection />
       <Footer />
       <ScrollToTop />
