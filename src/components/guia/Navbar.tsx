@@ -25,7 +25,6 @@ const Navbar = () => {
           { href: '#familia', label: 'Família' },
           { href: '#vantagens', label: 'Goiânia' },
           { href: '#galeria', label: 'Galeria' },
-          { href: '#redes', label: 'Me siga' },
         ].map(link => (
           <a
             key={link.href}
