@@ -1,5 +1,5 @@
-import { Heart, ArrowDown, Instagram, MessageCircle } from 'lucide-react';
-import diegoPerfil from '@/assets/diego_allas_perfil.png';
+import { Heart, ArrowDown, MessageCircle } from 'lucide-react';
+import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-yellow-400/20 via-amber-500/10 to-transparent rounded-3xl blur-2xl" />
               <img
-                src={diegoPerfil}
+                src={diegoPerfil.url}
                 alt="Diego Allas — Estratégia & Escala"
                 className="relative w-full max-w-sm md:max-w-md h-auto object-contain rounded-2xl shadow-2xl"
               />
@@ -42,12 +42,6 @@ const Hero = () => {
               quem eu sou, quem é minha família e por que estamos nos mudando para Goiânia.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-              <a
-                href="#redes"
-                className="bg-yellow-400 text-gray-900 text-base font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-yellow-300 hover:-translate-y-0.5 shadow-lg no-underline"
-              >
-                <Instagram className="w-5 h-5" /> Me siga nas redes
-              </a>
               <a
                 href="#familia"
                 className="border-2 border-white/30 text-white text-base font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-white/10 no-underline"
