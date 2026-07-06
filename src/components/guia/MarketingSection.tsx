@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw, Volume2, VolumeX, Ca
 import imgFilhosCarrinho from '@/assets/marketing_filhos_carrinho.jpg';
 import imgPaiFilhoPraia from '@/assets/marketing_pai_filho_praia.jpg';
 import imgPaiFilhoPiscina from '@/assets/marketing_pai_filho_piscina.jpg';
-import imgDiegoCarro from '@/assets/marketing_diego_carro.jpg';
+
 import imgDiegoChapada from '@/assets/marketing_diego_chapada.jpg';
 import imgFamiliaPraiaNoite from '@/assets/marketing_familia_praia_noite.jpg';
 import imgFamiliaShopping from '@/assets/marketing_familia_shopping.jpg';
@@ -18,7 +18,7 @@ import imgCasalPraia from '@/assets/marketing_casal_praia.jpg';
 
 const photos = [
   imgDiegoChapada,
-  imgDiegoCarro,
+  
   imgFamiliaShopping,
   imgFilhoTrofeu,
   imgMatheuzinhoLivros,
