@@ -16,9 +16,29 @@ import imgFamiliaJardim from '@/assets/marketing_familia_jardim.jpg';
 import imgDiegoPiscinaFilhos from '@/assets/marketing_diego_piscina_filhos.jpg';
 import imgCasalPraia from '@/assets/marketing_casal_praia.jpg';
 
+import momentoFogao from '@/assets/momento_fogao_lenha.jpg.asset.json';
+import momentoCarroEscritorio from '@/assets/momento_diego_carro_escritorio.jpg.asset.json';
+import momentoFilhosArvore from '@/assets/momento_filhos_arvore.jpg.asset.json';
+import momentoTrilhaCarro from '@/assets/momento_diego_trilha_carro.jpg.asset.json';
+import momentoLivrosEstudo from '@/assets/momento_diego_livros_estudo.jpg.asset.json';
+import momentoLivrosCisterna from '@/assets/momento_diego_livros_cisterna.jpg.asset.json';
+import momentoEscritorioSitio from '@/assets/momento_diego_escritorio_sitio.jpg.asset.json';
+import momentoTrilhaFlona from '@/assets/momento_diego_trilha_flona.jpg.asset.json';
+import momentoSerraVista from '@/assets/momento_diego_serra_vista.jpg.asset.json';
+import momentoLaptopSitio from '@/assets/momento_diego_laptop_sitio.jpg.asset.json';
+
 const photos = [
+  momentoSerraVista.url,
+  momentoTrilhaFlona.url,
+  momentoFilhosArvore.url,
+  momentoLaptopSitio.url,
+  momentoEscritorioSitio.url,
+  momentoLivrosCisterna.url,
+  momentoLivrosEstudo.url,
+  momentoTrilhaCarro.url,
+  momentoCarroEscritorio.url,
+  momentoFogao.url,
   imgDiegoChapada,
-  
   imgFamiliaShopping,
   imgFilhoTrofeu,
   imgMatheuzinhoLivros,
