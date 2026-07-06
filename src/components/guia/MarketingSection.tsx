@@ -27,7 +27,26 @@ import momentoTrilhaFlona from '@/assets/momento_diego_trilha_flona.jpg.asset.js
 import momentoSerraVista from '@/assets/momento_diego_serra_vista.jpg.asset.json';
 import momentoLaptopSitio from '@/assets/momento_diego_laptop_sitio.jpg.asset.json';
 
+import momentoPiscinaUmbrella from '@/assets/momento_piscina_umbrella.jpg.asset.json';
+import momentoNoiteMangueira from '@/assets/momento_noite_mangueira.jpg.asset.json';
+import momentoFilhoRestaurante from '@/assets/momento_filho_restaurante.jpg.asset.json';
+import momentoDiegoSerraVerde from '@/assets/momento_diego_serra_verde.jpg.asset.json';
+import momentoEsposaFilhoMirante from '@/assets/momento_esposa_filho_mirante.jpg.asset.json';
+import momentoAcaiFilho from '@/assets/momento_acai_filho.jpg.asset.json';
+import momentoFamiliaPraiaDia from '@/assets/momento_familia_praia_dia.jpg.asset.json';
+import momentoFamiliaBarco from '@/assets/momento_familia_barco.jpg.asset.json';
+import momentoPaiFilhoEstrelaNatal from '@/assets/momento_pai_filho_estrela_natal.jpg.asset.json';
+
 const photos = [
+  momentoFamiliaBarco.url,
+  momentoEsposaFilhoMirante.url,
+  momentoFamiliaPraiaDia.url,
+  momentoPaiFilhoEstrelaNatal.url,
+  momentoDiegoSerraVerde.url,
+  momentoFilhoRestaurante.url,
+  momentoAcaiFilho.url,
+  momentoNoiteMangueira.url,
+  momentoPiscinaUmbrella.url,
   momentoSerraVista.url,
   momentoTrilhaFlona.url,
   momentoFilhosArvore.url,
