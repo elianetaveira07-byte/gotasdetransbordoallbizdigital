@@ -145,7 +145,7 @@ const FormacaoAcademicaSection = () => {
           </div>
 
 
-          <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mt-8 pt-6 border-t border-border">
+          <p className="text-[0.98rem] text-guia-text-muted leading-[1.8]">
             <strong>No meu caso específico</strong>, a graduação é um passo consciente dentro de um plano
             maior — soma-se ao que já venho construindo, amplia o alcance profissional e abre portas
             institucionais. Não é pré-requisito para nada do que faço hoje; é continuidade natural do que
