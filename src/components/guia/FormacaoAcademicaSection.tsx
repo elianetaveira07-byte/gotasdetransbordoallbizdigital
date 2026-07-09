@@ -142,22 +142,8 @@ const FormacaoAcademicaSection = () => {
               profundidade acadêmica, acesso a pesquisa, laboratórios especializados, iniciação científica
               e uma rede que o autodidatismo, por mais intenso, não entrega sozinho.
             </p>
-            <p>
-              É importante deixar claro: <strong>é plenamente possível se desenvolver muito bem sem
-              faculdade</strong>. O mercado está cheio de formações acessíveis, sérias e reconhecidas
-              internacionalmente, que capacitam qualquer pessoa disposta a estudar com consistência.
-              Alguns exemplos reais que uso como referência:
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5">
-            {formacoesAcessiveis.map((item, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-guia-amber flex-shrink-0" />
-                <span className="text-[0.95rem] text-foreground leading-[1.65]">{item}</span>
-              </div>
-            ))}
-          </div>
 
           <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mt-8 pt-6 border-t border-border">
             <strong>No meu caso específico</strong>, a graduação é um passo consciente dentro de um plano
