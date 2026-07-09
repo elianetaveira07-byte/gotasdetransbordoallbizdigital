@@ -19,18 +19,6 @@ const cursoInfo = [
   { icon: Clock, label: 'Turno', value: 'Noturno' },
 ];
 
-const formacoesAcessiveis = [
-  'Google — Data Analytics, Advanced Data Analytics e Machine Learning Crash Course',
-  'IBM SkillsBuild e Cognitive Class — Data Science e Python for Data Science',
-  'Microsoft Learn — AI-900, DP-900 e Azure AI Fundamentals',
-  'AWS Skill Builder — Cloud Practitioner e Machine Learning Foundations',
-  'DeepLearning.AI e Coursera (Andrew Ng) — Machine Learning e Deep Learning Specializations',
-  'Kaggle Learn — trilhas práticas de Pandas, ML e Deep Learning',
-  'Hugging Face Learn — NLP, LLMs e Agents',
-  'fast.ai — Practical Deep Learning for Coders',
-  'Alura, Rocketseat e Data Science Academy (DSA) no cenário nacional',
-  'freeCodeCamp, CS50 (Harvard) e MIT OpenCourseWare — base sólida e gratuita',
-];
 
 const eixos = [
   {
