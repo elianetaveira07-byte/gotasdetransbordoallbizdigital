@@ -1,4 +1,4 @@
-import { TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet } from 'lucide-react';
+import { TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
 const trajetoria = [
   {
@@ -10,15 +10,25 @@ const trajetoria = [
   {
     icon: ChefHat,
     period: '~10 anos',
-    role: 'Gestor de Operações — Food Service',
-    detail: 'Operação completa de food service: gestão de equipes, padronização de processos, controle de custos, compras e experiência do cliente.',
+    role: 'Food Service — operação completa',
+    detail: 'Vivi o food service por inteiro: cozinha, salão, atendimento, gestão de equipes, padronização de processos, compras, custos, escritório administrativo e gerência de unidade. Do balcão à tomada de decisão.',
   },
   {
     icon: Truck,
     period: '~6 anos',
     role: 'Logística & Supply Chain',
-    detail: 'Atuação em três empresas do setor: Special Fruit, Agronogueira e MAXPET (Goiânia), com foco em planejamento, distribuição e eficiência da cadeia.',
+    detail: 'Atuação em três empresas do setor: Special Fruit, Agronogueira e MAXPET (Goiânia), com foco em planejamento, distribuição, roteirização e eficiência da cadeia.',
   },
+];
+
+const areasAbertas = [
+  'Gerência de unidade e operações (food service, varejo, franquias)',
+  'Escritório: administrativo, compras, comercial, back-office',
+  'Logística, expedição, planejamento e supply chain',
+  'Marketing, growth, mídia paga e conteúdo',
+  'IA aplicada, automações e construção de produto digital',
+  'Atendimento, relacionamento e experiência do cliente',
+  'Posições iniciais em novas áreas — quero aprender a sua operação por dentro',
 ];
 
 const numeros = [
@@ -68,6 +78,38 @@ const PerfilProfissionalSection = () => {
             );
           })}
         </div>
+
+        {/* Áreas abertas */}
+        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary mb-12">
+          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-3">
+            Áreas em que posso somar
+          </span>
+          <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
+            Food service é gigante — e eu vivi ele por completo
+          </h3>
+          <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-6">
+            Envio esta página como currículo aberto para diferentes tipos de empresa. Por isso, não me
+            limito a uma única área: se sua empresa precisa de alguém preparado, comprometido e disposto a
+            aprender a operação por dentro, provavelmente há um encaixe. Estou aberto para posições
+            iniciais em áreas novas para conhecer melhor o seu negócio, e também para cargos onde já
+            entrego há muitos anos.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+            {areasAbertas.map((a, i) => (
+              <div key={i} className="flex items-start gap-2.5">
+                <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
+                <span className="text-[0.95rem] text-foreground leading-[1.6]">{a}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
+            <strong>Compromisso real:</strong> me preparei fisicamente, mentalmente e psicologicamente para
+            entregar até <strong>16 horas por dia, de segunda a segunda</strong>, sem comprometer saúde nem
+            família. No horário da empresa, foco total no que ela precisa. Fora dele, sigo estudando e
+            construindo minhas frentes próprias — sem que uma coisa atrapalhe a outra.
+          </p>
+        </div>
+
 
         {/* Startup em construção */}
         <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-guia-amber mb-12">

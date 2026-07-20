@@ -15,15 +15,19 @@ const IntroSection = () => {
 
         <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary text-base leading-[1.8]">
           <p>
-            Meu nome é <strong>Diego Allas</strong>. Sou pernambucano e vivo hoje no alto da Chapada do Araripe,
-            num sítio onde o silêncio é o maior luxo do dia. Sou casado e pai de três filhos:
-            <strong> Matheuzinho</strong>, que tem síndrome de Dandy-Walker e sofreu uma paralisia cerebral grave
-            ao nascer — sendo a razão de muitas das minhas escolhas —, <strong>Lucas Gabriel</strong>, de 11 anos,
-            e <strong>Sarah Gabrielly</strong>, de 3 anos.
+            Meu nome é <strong>Diego Allas</strong>. Sou pernambucano e, desde 19/07/2026, vivo com minha
+            família em <strong>Goiânia</strong>, depois de quase três anos de imersão de estudo no alto da
+            Chapada do Araripe — um sítio onde o silêncio virou minha maior escola. Sou casado e pai de três
+            filhos: <strong>Matheuzinho</strong>, que tem síndrome de Dandy-Walker e sofreu uma paralisia
+            cerebral grave ao nascer — sendo a razão de muitas das minhas escolhas —, <strong>Lucas
+            Gabriel</strong>, de 11 anos, e <strong>Sarah Gabrielly</strong>, de 3 anos.
           </p>
           <p className="mt-4">
-            Esta página não está vendendo nada. É apenas um espaço para você me conhecer melhor — minha família,
-            o lugar onde vivo hoje, para onde estou indo e o porquê dessa caminhada.
+            Esta página é, ao mesmo tempo, meu espaço pessoal e meu currículo aberto: aqui você conhece minha
+            família, o lugar de onde vim, para onde estou indo e por que estou pronto para somar em uma nova
+            empresa. Cheguei inteiro, com mais de 15 anos de operação real e quase 3 anos de reconstrução
+            técnica contínua — preparado para trabalhar duro e devolver, em resultado, muito mais do que me
+            for pedido.
           </p>
           <div className="bg-guia-blue-light rounded-[10px] p-4 mt-5 text-primary font-medium flex items-start gap-2">
             <Heart className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-500 fill-red-500" />

@@ -35,11 +35,12 @@ const Hero = () => {
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Pai, marido, filho.
               <br />
-              <em className="text-yellow-300 not-italic">Em transição</em> da Chapada do Araripe para Goiânia.
+              Agora <em className="text-yellow-300 not-italic">em Goiânia</em>, pronto para somar.
             </h1>
             <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Esta página é meu cantinho na internet. Como meu Instagram pessoal está em pausa, é aqui que conto
-              quem eu sou, quem é minha família e por que estamos nos mudando para Goiânia.
+              Cheguei com minha família em 19/07/2026, encerrando quase 3 anos de imersão na Chapada do
+              Araripe. Esta página é meu cantinho na internet — e também meu currículo aberto: se sua empresa
+              precisa de alguém preparado para servir de verdade, a janela está aberta agora.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
