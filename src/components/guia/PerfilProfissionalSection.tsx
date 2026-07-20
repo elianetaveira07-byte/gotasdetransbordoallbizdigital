@@ -1,4 +1,4 @@
-import { TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet } from 'lucide-react';
+import { TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
 const trajetoria = [
   {
