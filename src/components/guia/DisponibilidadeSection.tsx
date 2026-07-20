@@ -1,16 +1,38 @@
 import { useEffect, useMemo, useState } from 'react';
-import { BriefcaseBusiness, CalendarCheck2, CheckCircle2, DoorOpen, Handshake, MapPin, PartyPopper, Sparkles, Trophy } from 'lucide-react';
+import {
+  BriefcaseBusiness,
+  CalendarCheck2,
+  CheckCircle2,
+  DoorOpen,
+  Handshake,
+  Lock,
+  MapPin,
+  PartyPopper,
+  Sparkles,
+  Trophy,
+  X,
+} from 'lucide-react';
 
 const STORAGE_KEY = 'diego-allas-busca-emprego-v1';
-const START_DATE = new Date(2026, 6, 20); // 20/07/2026 (mês 0-index)
-const ARRIVAL_DATE = new Date(2026, 6, 19); // 19/07/2026
-const IMERSAO_END = new Date(2026, 6, 15); // 15/07/2026
+const HIRE_PASSWORD = 'da846321';
+const START_DATE = new Date(2026, 6, 20); // 20/07/2026
+const ARRIVAL_DATE = new Date(2026, 6, 19);
+const IMERSAO_END = new Date(2026, 6, 15);
 
 type DayStatus = 'idle' | 'contacted';
 
+interface HireInfo {
+  date: string; // dia em que marcou
+  company?: string;
+  role?: string;
+  startDate?: string; // início na empresa
+  format?: string; // CLT, PJ, etc.
+  message?: string;
+}
+
 interface State {
-  days: Record<string, DayStatus>; // yyyy-mm-dd -> status
-  hired: null | { date: string; company?: string };
+  days: Record<string, DayStatus>;
+  hired: null | HireInfo;
 }
 
 const fmtKey = (d: Date) => {
@@ -52,6 +74,19 @@ const DisponibilidadeSection = () => {
   const [state, setState] = useState<State>({ days: {}, hired: null });
   const [mounted, setMounted] = useState(false);
 
+  // Modal de contratação
+  const [modalOpen, setModalOpen] = useState(false);
+  const [step, setStep] = useState<'password' | 'form'>('password');
+  const [passwordInput, setPasswordInput] = useState('');
+  const [pwError, setPwError] = useState('');
+  const [form, setForm] = useState({
+    company: '',
+    role: '',
+    startDate: '',
+    format: '',
+    message: '',
+  });
+
   useEffect(() => {
     setState(loadState());
     setMounted(true);
@@ -69,7 +104,6 @@ const DisponibilidadeSection = () => {
       list.push(new Date(cur));
       cur.setDate(cur.getDate() + 1);
     }
-    // garantir ao menos 14 dias visíveis (grade cheia)
     while (list.length < 14) {
       const next = new Date(list[list.length - 1]);
       next.setDate(next.getDate() + 1);
@@ -94,22 +128,65 @@ const DisponibilidadeSection = () => {
     });
   };
 
-  const marcarContratado = () => {
-    if (state.hired) {
-      if (!confirm('Deseja desmarcar a contratação e reabrir a janela?')) return;
-      setState((prev) => ({ ...prev, hired: null }));
+  const isHired = !!state.hired;
+
+  const openModal = () => {
+    if (isHired) {
+      // Reabrir requer senha também
+      setStep('password');
+      setPasswordInput('');
+      setPwError('');
+      setModalOpen(true);
       return;
     }
-    const empresa = prompt('Qual empresa (opcional)? Você pode deixar em branco.') || undefined;
-    setState((prev) => ({ ...prev, hired: { date: fmtKey(today()), company: empresa } }));
+    setStep('password');
+    setPasswordInput('');
+    setPwError('');
+    setForm({ company: '', role: '', startDate: '', format: '', message: '' });
+    setModalOpen(true);
   };
 
-  const isHired = !!state.hired;
+  const closeModal = () => {
+    setModalOpen(false);
+    setPasswordInput('');
+    setPwError('');
+  };
+
+  const submitPassword = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passwordInput !== HIRE_PASSWORD) {
+      setPwError('Senha incorreta. Só o Diego pode marcar isso.');
+      return;
+    }
+    if (isHired) {
+      // Reabrir janela
+      setState((prev) => ({ ...prev, hired: null }));
+      closeModal();
+      return;
+    }
+    setPwError('');
+    setStep('form');
+  };
+
+  const submitHire = (e: React.FormEvent) => {
+    e.preventDefault();
+    setState((prev) => ({
+      ...prev,
+      hired: {
+        date: fmtKey(today()),
+        company: form.company.trim() || undefined,
+        role: form.role.trim() || undefined,
+        startDate: form.startDate || undefined,
+        format: form.format.trim() || undefined,
+        message: form.message.trim() || undefined,
+      },
+    }));
+    closeModal();
+  };
 
   return (
     <section id="disponibilidade" className="py-[72px] bg-background">
       <div className="container">
-        {/* Cabeçalho */}
         <div className="mb-10 max-w-3xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             {isHired ? 'Janela encerrada · contratado' : 'Janela aberta · disponível agora'}
@@ -127,9 +204,9 @@ const DisponibilidadeSection = () => {
           </h2>
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
             Cheguei em <strong>Goiânia no dia 19/07/2026</strong> com minha família, encerrando a imersão de
-            estudo na Chapada do Araripe em 15/07/2026. A partir de <strong>20/07/2026</strong> comecei a
-            conversar com empresas todos os dias. Se você chegou até aqui, provavelmente é um sinal — a janela
-            está aberta e o momento certo de conversarmos é agora.
+            estudo na Chapada do Araripe em 15/07/2026. Desde <strong>20/07/2026</strong> estou entrando em
+            contato com empresas todos os dias. Envio esta página como currículo aberto — se você chegou até
+            aqui, provavelmente é um sinal. A janela está aberta e o momento certo de conversarmos é agora.
           </p>
         </div>
 
@@ -139,24 +216,27 @@ const DisponibilidadeSection = () => {
             <Handshake className="w-6 h-6 text-primary mb-3" />
             <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Vim para somar</h3>
             <p className="text-sm text-guia-text-muted leading-[1.7]">
-              Não busco um lugar para me acomodar — busco uma empresa que entenda que estou preparado para
-              contribuir de verdade, evoluir com o time e devolver, em resultado, muito mais do que recebo.
+              Não busco um lugar para me acomodar. Busco uma empresa que entenda que estou preparado para
+              servir de verdade, contribuir, aprender a operação por dentro e devolver, em resultado, muito
+              mais do que me for pedido.
             </p>
           </div>
           <div className="bg-card rounded-lg p-6 shadow-guia border-t-[4px] border-guia-green">
             <BriefcaseBusiness className="w-6 h-6 text-guia-green mb-3" />
-            <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Formatos abertos</h3>
+            <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Áreas e formatos abertos</h3>
             <p className="text-sm text-guia-text-muted leading-[1.7]">
-              CLT, PJ, parceria estratégica ou freelancer pontual. Presencial em Goiânia, híbrido ou 100%
-              remoto. O que importa é encontrar o encaixe certo entre o que entrego e o que a empresa precisa.
+              Food service completo (gerência, escritório, operação), logística, marketing, IA, atendimento
+              — e posições iniciais em áreas novas. CLT, PJ, parceria ou freelancer. Presencial em Goiânia,
+              híbrido ou 100% remoto.
             </p>
           </div>
           <div className="bg-card rounded-lg p-6 shadow-guia border-t-[4px] border-guia-amber">
             <Sparkles className="w-6 h-6 text-guia-amber mb-3" />
-            <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Momento raro</h3>
+            <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Preparado de verdade</h3>
             <p className="text-sm text-guia-text-muted leading-[1.7]">
-              2026 está delicado. Mão de obra realmente qualificada, comprometida e madura ficou escassa.
-              Chego inteiro, com quase 3 anos de imersão contínua e mais de 15 anos de operação real por trás.
+              Me preparei fisicamente, mentalmente e psicologicamente para trabalhar até <strong>16h por dia
+              de segunda a segunda</strong>, sem comprometer saúde nem família. Chego inteiro, com quase 3
+              anos de imersão contínua e mais de 15 anos de operação real.
             </p>
           </div>
         </div>
@@ -173,12 +253,13 @@ const DisponibilidadeSection = () => {
                   Acompanhe minha busca em tempo real
                 </h3>
                 <p className="text-sm text-guia-text-muted mt-0.5">
-                  Marco cada dia em que estou ativamente conversando com empresas. Quando fechar, marco aqui.
+                  Marco cada dia em que estou ativamente conversando com empresas. Quando fechar, registro
+                  aqui — protegido por senha, só eu preencho.
                 </p>
               </div>
             </div>
             <button
-              onClick={marcarContratado}
+              onClick={openModal}
               className={`inline-flex items-center gap-2 px-5 py-3 rounded-full font-semibold text-sm transition-all ${
                 isHired
                   ? 'bg-guia-green text-white hover:opacity-90'
@@ -187,11 +268,11 @@ const DisponibilidadeSection = () => {
             >
               {isHired ? (
                 <>
-                  <Trophy className="w-4 h-4" /> Contratado — clique para reabrir
+                  <Lock className="w-4 h-4" /> Reabrir janela (senha)
                 </>
               ) : (
                 <>
-                  <PartyPopper className="w-4 h-4" /> Marcar como contratado
+                  <Lock className="w-4 h-4" /> Marcar como contratado
                 </>
               )}
             </button>
@@ -309,14 +390,28 @@ const DisponibilidadeSection = () => {
             <div className="mt-6 rounded-lg bg-guia-green-light border border-guia-green p-5">
               <div className="flex items-start gap-3">
                 <Trophy className="w-6 h-6 text-guia-green flex-shrink-0 mt-0.5" />
-                <div>
+                <div className="flex-1">
                   <h4 className="font-serif text-lg font-semibold text-foreground mb-1">
                     Porta aberta{state.hired?.company ? ` — ${state.hired.company}` : ''}
                   </h4>
+                  {state.hired?.role && (
+                    <p className="text-sm text-foreground font-medium mb-1">
+                      Cargo: {state.hired.role}
+                      {state.hired.format ? ` · ${state.hired.format}` : ''}
+                    </p>
+                  )}
                   <p className="text-sm text-guia-text-muted leading-[1.7]">
-                    Registro oficial em {new Date(state.hired!.date).toLocaleDateString('pt-BR')}. Obrigado a
-                    todos que conversaram comigo durante a janela — cada mensagem contou.
+                    Registro em {new Date(state.hired!.date).toLocaleDateString('pt-BR')}
+                    {state.hired?.startDate
+                      ? ` · início em ${new Date(state.hired.startDate).toLocaleDateString('pt-BR')}`
+                      : ''}
+                    . Obrigado a todos que conversaram comigo durante a janela — cada mensagem contou.
                   </p>
+                  {state.hired?.message && (
+                    <p className="text-sm text-foreground italic leading-[1.7] mt-2 border-l-2 border-guia-green pl-3">
+                      “{state.hired.message}”
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
@@ -324,14 +419,155 @@ const DisponibilidadeSection = () => {
 
           {!isHired && (
             <p className="mt-6 text-sm text-guia-text-muted leading-[1.7] border-t border-border pt-5">
-              Se a sua empresa precisa de alguém para <strong>somar de verdade</strong> — em marketing, IA
-              aplicada, operação ou construção de produto — este é o momento certo. Sou confiante de que a
-              porta vai abrir rápido, e prefiro que abra na empresa certa. Vamos conversar antes que a janela
-              feche.
+              Se sua empresa precisa de alguém para <strong>somar de verdade</strong>, este é o momento.
+              Sou confiante de que a porta vai abrir rápido, e prefiro que abra na empresa certa. Vamos
+              conversar antes que a janela feche.
             </p>
           )}
         </div>
       </div>
+
+      {/* Modal senha + formulário */}
+      {modalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <div className="bg-card rounded-xl shadow-2xl max-w-md w-full p-6 md:p-7 relative border border-border">
+            <button
+              onClick={closeModal}
+              className="absolute top-3 right-3 w-9 h-9 rounded-full hover:bg-secondary flex items-center justify-center text-guia-text-muted"
+              aria-label="Fechar"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {step === 'password' ? (
+              <form onSubmit={submitPassword}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-11 h-11 rounded-full bg-guia-amber-light flex items-center justify-center">
+                    <Lock className="w-5 h-5 text-guia-amber" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-foreground leading-tight">
+                      {isHired ? 'Reabrir janela' : 'Área restrita'}
+                    </h3>
+                    <p className="text-xs text-guia-text-muted">
+                      Só o Diego marca esta seção.
+                    </p>
+                  </div>
+                </div>
+                <label className="block text-sm font-semibold text-foreground mb-2">Senha</label>
+                <input
+                  type="password"
+                  autoFocus
+                  value={passwordInput}
+                  onChange={(e) => {
+                    setPasswordInput(e.target.value);
+                    setPwError('');
+                  }}
+                  className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground focus:outline-none focus:border-primary"
+                  placeholder="Digite sua senha"
+                />
+                {pwError && <p className="text-sm text-red-600 mt-2">{pwError}</p>}
+                <button
+                  type="submit"
+                  className="mt-5 w-full inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-5 py-3 rounded-full hover:opacity-90"
+                >
+                  {isHired ? 'Reabrir janela' : 'Continuar'}
+                </button>
+              </form>
+            ) : (
+              <form onSubmit={submitHire}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-11 h-11 rounded-full bg-guia-green-light flex items-center justify-center">
+                    <PartyPopper className="w-5 h-5 text-guia-green" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold text-foreground leading-tight">
+                      Registrar contratação
+                    </h3>
+                    <p className="text-xs text-guia-text-muted">
+                      Estes dados aparecerão em destaque na página.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div>
+                    <label className="block text-xs font-semibold text-foreground mb-1">Empresa</label>
+                    <input
+                      type="text"
+                      value={form.company}
+                      onChange={(e) => setForm({ ...form, company: e.target.value })}
+                      className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:border-primary"
+                      placeholder="Nome da empresa"
+                    />
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-semibold text-foreground mb-1">Cargo</label>
+                      <input
+                        type="text"
+                        value={form.role}
+                        onChange={(e) => setForm({ ...form, role: e.target.value })}
+                        className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:border-primary"
+                        placeholder="Ex.: Gerente"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold text-foreground mb-1">Formato</label>
+                      <input
+                        type="text"
+                        value={form.format}
+                        onChange={(e) => setForm({ ...form, format: e.target.value })}
+                        className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:border-primary"
+                        placeholder="CLT, PJ, freela..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-foreground mb-1">
+                      Data de início
+                    </label>
+                    <input
+                      type="date"
+                      value={form.startDate}
+                      onChange={(e) => setForm({ ...form, startDate: e.target.value })}
+                      className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-foreground mb-1">
+                      Mensagem pública (opcional)
+                    </label>
+                    <textarea
+                      value={form.message}
+                      onChange={(e) => setForm({ ...form, message: e.target.value })}
+                      rows={3}
+                      className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:border-primary resize-none"
+                      placeholder="Ex.: obrigado a todos que conversaram comigo…"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex gap-2 mt-5">
+                  <button
+                    type="button"
+                    onClick={closeModal}
+                    className="flex-1 px-4 py-3 rounded-full border border-border text-foreground font-semibold text-sm hover:bg-secondary"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    type="submit"
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-guia-green text-white font-semibold px-4 py-3 rounded-full hover:opacity-90 text-sm"
+                  >
+                    <Trophy className="w-4 h-4" /> Registrar
+                  </button>
+                </div>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   );
 };
