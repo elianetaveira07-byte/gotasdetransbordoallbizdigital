@@ -10,15 +10,25 @@ const trajetoria = [
   {
     icon: ChefHat,
     period: '~10 anos',
-    role: 'Gestor de Operações — Food Service',
-    detail: 'Operação completa de food service: gestão de equipes, padronização de processos, controle de custos, compras e experiência do cliente.',
+    role: 'Food Service — operação completa',
+    detail: 'Vivi o food service por inteiro: cozinha, salão, atendimento, gestão de equipes, padronização de processos, compras, custos, escritório administrativo e gerência de unidade. Do balcão à tomada de decisão.',
   },
   {
     icon: Truck,
     period: '~6 anos',
     role: 'Logística & Supply Chain',
-    detail: 'Atuação em três empresas do setor: Special Fruit, Agronogueira e MAXPET (Goiânia), com foco em planejamento, distribuição e eficiência da cadeia.',
+    detail: 'Atuação em três empresas do setor: Special Fruit, Agronogueira e MAXPET (Goiânia), com foco em planejamento, distribuição, roteirização e eficiência da cadeia.',
   },
+];
+
+const areasAbertas = [
+  'Gerência de unidade e operações (food service, varejo, franquias)',
+  'Escritório: administrativo, compras, comercial, back-office',
+  'Logística, expedição, planejamento e supply chain',
+  'Marketing, growth, mídia paga e conteúdo',
+  'IA aplicada, automações e construção de produto digital',
+  'Atendimento, relacionamento e experiência do cliente',
+  'Posições iniciais em novas áreas — quero aprender a sua operação por dentro',
 ];
 
 const numeros = [
