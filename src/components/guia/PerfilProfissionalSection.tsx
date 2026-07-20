@@ -79,6 +79,38 @@ const PerfilProfissionalSection = () => {
           })}
         </div>
 
+        {/* Áreas abertas */}
+        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary mb-12">
+          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-3">
+            Áreas em que posso somar
+          </span>
+          <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
+            Food service é gigante — e eu vivi ele por completo
+          </h3>
+          <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-6">
+            Envio esta página como currículo aberto para diferentes tipos de empresa. Por isso, não me
+            limito a uma única área: se sua empresa precisa de alguém preparado, comprometido e disposto a
+            aprender a operação por dentro, provavelmente há um encaixe. Estou aberto para posições
+            iniciais em áreas novas para conhecer melhor o seu negócio, e também para cargos onde já
+            entrego há muitos anos.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+            {areasAbertas.map((a, i) => (
+              <div key={i} className="flex items-start gap-2.5">
+                <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
+                <span className="text-[0.95rem] text-foreground leading-[1.6]">{a}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
+            <strong>Compromisso real:</strong> me preparei fisicamente, mentalmente e psicologicamente para
+            entregar até <strong>16 horas por dia, de segunda a segunda</strong>, sem comprometer saúde nem
+            família. No horário da empresa, foco total no que ela precisa. Fora dele, sigo estudando e
+            construindo minhas frentes próprias — sem que uma coisa atrapalhe a outra.
+          </p>
+        </div>
+
+
         {/* Startup em construção */}
         <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-guia-amber mb-12">
           <div className="flex items-start gap-4 mb-4">
