@@ -2,6 +2,7 @@ import Navbar from '@/components/guia/Navbar';
 import Hero from '@/components/guia/Hero';
 import IntroSection from '@/components/guia/IntroSection';
 import PerfilProfissionalSection from '@/components/guia/PerfilProfissionalSection';
+import DisponibilidadeSection from '@/components/guia/DisponibilidadeSection';
 import FamilySection from '@/components/guia/FamilySection';
 import VantagensSection from '@/components/guia/VantagensSection';
 import InstitutionsSection from '@/components/guia/InstitutionsSection';
@@ -19,6 +20,7 @@ const Index = () => {
       <Hero />
       <IntroSection />
       <PerfilProfissionalSection />
+      <DisponibilidadeSection />
       <FamilySection />
       <VantagensSection />
       <InstitutionsSection />
