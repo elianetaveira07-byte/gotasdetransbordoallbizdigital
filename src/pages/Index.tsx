@@ -2,7 +2,6 @@ import Navbar from '@/components/guia/Navbar';
 import Hero from '@/components/guia/Hero';
 import IntroSection from '@/components/guia/IntroSection';
 import PerfilProfissionalSection from '@/components/guia/PerfilProfissionalSection';
-import FormacaoAcademicaSection from '@/components/guia/FormacaoAcademicaSection';
 import FamilySection from '@/components/guia/FamilySection';
 import VantagensSection from '@/components/guia/VantagensSection';
 import InstitutionsSection from '@/components/guia/InstitutionsSection';
@@ -20,7 +19,6 @@ const Index = () => {
       <Hero />
       <IntroSection />
       <PerfilProfissionalSection />
-      <FormacaoAcademicaSection />
       <FamilySection />
       <VantagensSection />
       <InstitutionsSection />
