@@ -7,7 +7,9 @@ const Footer = () => {
             DIEGO ALLAS
           </span>
         </div>
-        <p className="text-center text-xs text-white/30">
+        <p className="text-center text-xs text-white/30 leading-relaxed">
+          Avenida Independência, 1.615 · Bloco B · Apto 404 · Condomínio Juliana<br />
+          Setor Leste Vila Nova · Goiânia-GO · CEP 74645-010<br />
           Chapada do Araripe, PE → Goiânia, GO • {new Date().getFullYear()}
         </p>
       </div>
