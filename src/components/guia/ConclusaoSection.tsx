@@ -1,5 +1,4 @@
 import { Heart } from 'lucide-react';
-import iconeLogo from '@/assets/icone_logo.png';
 
 const ConclusaoSection = () => {
   return (
@@ -23,15 +22,6 @@ const ConclusaoSection = () => {
       />
 
       <div className="relative max-w-3xl mx-auto text-center">
-        {/* Logo with golden border */}
-        <div className="flex justify-center mb-10">
-          <div className="relative inline-block p-[2px] rounded-3xl bg-gradient-to-br from-yellow-200 via-yellow-500 to-yellow-700 shadow-[0_0_50px_-8px_rgba(212,175,55,0.6)]">
-            <div className="rounded-3xl bg-[#0D1117] px-10 py-8 flex items-center justify-center">
-              <img src={iconeLogo} alt="Diego Allas" className="h-28 md:h-32 w-auto" />
-            </div>
-          </div>
-        </div>
-
         {/* Decorative ornament */}
         <div className="flex items-center justify-center gap-3 mb-6">
           <span className="h-px w-12 bg-gradient-to-r from-transparent to-yellow-400/60" />
@@ -44,7 +34,11 @@ const ConclusaoSection = () => {
         </h2>
 
         <p className="text-base md:text-lg text-white/60 max-w-xl mx-auto leading-relaxed">
-          Da Chapada do Araripe pra você — com carinho.
+          Da Chapada do Araripe para Goiânia — com fé, família e muita vontade de construir.
+        </p>
+
+        <p className="mt-6 text-sm md:text-base text-white/40 tracking-wide">
+          DIEGO ALLAS
         </p>
       </div>
     </section>

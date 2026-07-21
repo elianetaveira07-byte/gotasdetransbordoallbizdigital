@@ -20,7 +20,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-br from-yellow-400/20 via-amber-500/10 to-transparent rounded-3xl blur-2xl" />
               <img
                 src={diegoPerfil.url}
-                alt="Diego Allas — Estratégia & Escala"
+                alt="Diego Allas"
                 className="relative w-full max-w-sm md:max-w-md h-auto object-contain rounded-2xl shadow-2xl"
               />
             </div>
