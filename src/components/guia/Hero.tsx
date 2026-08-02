@@ -1,4 +1,4 @@
-import { Heart, ArrowDown, MessageCircle } from 'lucide-react';
+import { Heart, ArrowDown, MessageCircle, AlertCircle } from 'lucide-react';
 import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
 
 const Hero = () => {
@@ -50,14 +50,19 @@ const Hero = () => {
                 <Heart className="w-5 h-5 text-red-400" /> Conheça minha história
               </a>
             </div>
-            <a
-              href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-green-400/90 hover:text-green-300 text-sm mt-6 no-underline"
-            >
-              <MessageCircle className="w-4 h-4" /> WhatsApp: (62) 99968-8700
-            </a>
+            <div className="mt-6 inline-flex flex-col sm:flex-row sm:items-center gap-3">
+              <a
+                href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-green-400/90 hover:text-green-300 text-sm no-underline"
+              >
+                <MessageCircle className="w-4 h-4" /> WhatsApp: (62) 99968-8700
+              </a>
+              <span className="inline-flex items-center gap-1.5 bg-yellow-500/15 border border-yellow-500/30 text-yellow-300 text-xs font-bold px-2.5 py-1 rounded-full animate-attention-pulse">
+                <AlertCircle className="w-3.5 h-3.5" /> Número novo
+              </span>
+            </div>
           </div>
         </div>
 
