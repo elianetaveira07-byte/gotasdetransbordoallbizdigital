@@ -45,9 +45,9 @@ const socials = [
   {
     icon: MessageCircle,
     title: 'WhatsApp',
-    handle: '(88) 98834-8700',
+    handle: '(62) 99968-8700',
     desc: 'Fale comigo direto. Sem robô.',
-    href: 'https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!',
+    href: 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!',
     gradient: 'from-green-500 to-emerald-600',
   },
   {

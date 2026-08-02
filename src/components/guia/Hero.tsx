@@ -51,12 +51,12 @@ const Hero = () => {
               </a>
             </div>
             <a
-              href="https://wa.me/5588988348700?text=Ol%C3%A1%20Diego!"
+              href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-green-400/90 hover:text-green-300 text-sm mt-6 no-underline"
             >
-              <MessageCircle className="w-4 h-4" /> WhatsApp: (88) 98834-8700
+              <MessageCircle className="w-4 h-4" /> WhatsApp: (62) 99968-8700
             </a>
           </div>
         </div>
