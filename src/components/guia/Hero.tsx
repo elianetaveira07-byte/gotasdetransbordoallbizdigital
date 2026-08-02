@@ -1,4 +1,4 @@
-import { Heart, ArrowDown, MessageCircle } from 'lucide-react';
+import { Heart, ArrowDown, MessageCircle, AlertCircle } from 'lucide-react';
 import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
 
 const Hero = () => {
