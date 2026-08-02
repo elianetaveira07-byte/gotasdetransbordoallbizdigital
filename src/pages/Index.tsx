@@ -18,7 +18,9 @@ import ScrollToTop from '@/components/guia/ScrollToTop';
 const Index = () => {
   return (
     <div className="scroll-smooth">
+      <AlertaModal />
       <Navbar />
+      <AlertaBanner />
       <Hero />
       <IntroSection />
       <PerfilProfissionalSection />
