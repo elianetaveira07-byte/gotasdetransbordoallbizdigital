@@ -1,3 +1,5 @@
+import { AlertTriangle, MessageCircle, Phone } from 'lucide-react';
+
 const Footer = () => {
   return (
     <footer style={{ background: '#0a0e14' }} className="pt-8 pb-10 px-4 md:px-6 border-t border-yellow-600/10">
