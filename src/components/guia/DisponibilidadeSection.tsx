@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Handshake, Sparkles } from 'lucide-react';
+import { BriefcaseBusiness, Handshake, Sparkles, AlertTriangle, Phone } from 'lucide-react';
 
 const DisponibilidadeSection = () => {
   return (
