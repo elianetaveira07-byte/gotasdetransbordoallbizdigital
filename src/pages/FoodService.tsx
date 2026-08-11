@@ -22,6 +22,7 @@ import {
   Clock,
   TrendingUp,
 } from 'lucide-react';
+import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
 
@@ -164,6 +165,12 @@ const FoodServicePage = () => {
               <MessageCircle className="w-4 h-4" /> Falar comigo no WhatsApp
             </a>
             <a
+              href="#biblioteca"
+              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
+            >
+              Biblioteca gratuita
+            </a>
+            <a
               href="#servicos"
               className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/10 text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
@@ -269,6 +276,10 @@ const FoodServicePage = () => {
           </div>
         </div>
       </section>
+
+      <BibliotecaFoodSection />
+
+
 
       {/* Formatos */}
       <section className="py-[72px] bg-secondary/40">
