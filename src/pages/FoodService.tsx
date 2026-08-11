@@ -22,6 +22,7 @@ import {
   Clock,
   TrendingUp,
 } from 'lucide-react';
+import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
 
