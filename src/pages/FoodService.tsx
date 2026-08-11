@@ -271,6 +271,10 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+      <BibliotecaFoodSection />
+
+
+
       {/* Formatos */}
       <section className="py-[72px] bg-secondary/40">
         <div className="container">
