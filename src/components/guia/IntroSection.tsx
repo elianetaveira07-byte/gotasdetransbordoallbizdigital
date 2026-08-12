@@ -23,11 +23,11 @@ const IntroSection = () => {
             Gabriel</strong>, de 11 anos, e <strong>Sarah Gabrielly</strong>, de 3 anos.
           </p>
           <p className="mt-4">
-            Esta página é, ao mesmo tempo, meu espaço pessoal e meu currículo aberto: aqui você conhece minha
-            família, o lugar de onde vim, para onde estou indo e por que estou pronto para somar em uma nova
-            empresa. Cheguei inteiro, com mais de 15 anos de operação real e quase 3 anos de reconstrução
-            técnica contínua — preparado para trabalhar duro e devolver, em resultado, muito mais do que me
-            for pedido.
+            Esta página é meu espaço pessoal e também minha história profissional: aqui você conhece minha
+            família, o lugar de onde vim e para onde estou indo. Cheguei inteiro, com mais de 15 anos de
+            operação real e quase 3 anos de reconstrução técnica contínua — e desde <strong>03/08/2026</strong>
+            estou aplicando tudo isso na prática, liderando a criação do setor de marketing interno de uma
+            empresa no Setor Sul, em Goiânia.
           </p>
           <div className="bg-guia-blue-light rounded-[10px] p-4 mt-5 text-primary font-medium flex items-start gap-2">
             <Heart className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-500 fill-red-500" />
