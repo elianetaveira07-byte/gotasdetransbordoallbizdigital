@@ -133,10 +133,11 @@ const PerfilProfissionalSection = () => {
             Operação por dentro + marketing por inteiro
           </h3>
           <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-6">
-            Meu diferencial é ter vivido a operação de verdade antes de assumir o marketing. Isso muda a
-            forma de construir um setor interno: campanha, CRM, automação e treinamento comercial nascem
-            colados na realidade de quem vende, atende e entrega todos os dias. Estas são as frentes que
-            domino e que hoje aplico na empresa em que atuo.
+            Meu diferencial vem de ter vivido a operação de verdade antes de assumir o marketing — food
+            service, logística e gestão de equipe. Esse histórico muda a forma de construir um setor
+            interno: campanha, CRM, automação e treinamento comercial nascem colados na realidade de quem
+            vende, atende e entrega. Hoje aplico esse repertório na empresa em que atuo, que é de outro
+            segmento, fora do food service.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
             {areasAbertas.map((a, i) => (
