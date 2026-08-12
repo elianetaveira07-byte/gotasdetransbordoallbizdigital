@@ -30,17 +30,18 @@ const Hero = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
               <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse-dot" />
-              Perfil pessoal
+              Perfil pessoal · contratado desde 03/08/2026
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Pai, marido, filho.
               <br />
-              Agora <em className="text-yellow-300 not-italic">em Goiânia</em>, pronto para somar.
+              Agora <em className="text-yellow-300 not-italic">em Goiânia</em>, construindo do zero.
             </h1>
             <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
               Cheguei com minha família em 19/07/2026, encerrando quase 3 anos de imersão na Chapada do
-              Araripe. Esta página é meu cantinho na internet — e também meu currículo aberto: se sua empresa
-              precisa de alguém preparado para servir de verdade, a janela está aberta agora.
+              Araripe. Poucos dias depois, fui contratado: desde 03/08/2026 sou o responsável por criar o
+              setor de marketing interno de uma empresa no Setor Sul, em Goiânia — estrutura completa, do CRM
+              à automação, do web design ao treinamento do comercial.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
