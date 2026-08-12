@@ -13,6 +13,7 @@ const Navbar = () => {
       <div className="hidden md:flex gap-1.5 flex-wrap">
         {[
           { href: '#intro-bio', label: 'Sobre mim' },
+          { href: '#contratado', label: 'Onde estou hoje' },
           { href: '#familia', label: 'Família' },
           { href: '#vantagens', label: 'Goiânia' },
           { href: '#galeria', label: 'Galeria' },
