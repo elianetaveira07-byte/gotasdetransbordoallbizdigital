@@ -1,12 +1,15 @@
 import { Building2, TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
-const trajetoria = [
+const trajetoriaAtual = [
   {
     icon: Building2,
     period: 'Desde 08/2026',
     role: 'Responsável pelo setor de Marketing interno — Goiânia (Setor Sul)',
-    detail: 'Criação do setor de marketing da empresa de ponta a ponta: estrutura, processos, CRM, automação, web design, campanhas e treinamento do time comercial.',
+    detail: 'Criação do setor de marketing da empresa de ponta a ponta: estrutura, processos, CRM, automação, web design, campanhas e treinamento do time comercial. Empresa de outro segmento, fora do food service.',
   },
+];
+
+const trajetoriaAnterior = [
   {
     icon: TrendingUp,
     period: '~2 anos',
