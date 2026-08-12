@@ -58,34 +58,70 @@ const PerfilProfissionalSection = () => {
             Trajetória, <span className="text-primary">transição</span> e o que estou construindo agora
           </h2>
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75] max-w-3xl">
-            Uma leitura honesta de onde venho, o que entrego hoje e para onde estou caminhando. Sem retoques
-            de vitrine — apenas o histórico real e o trabalho que segue em curso.
+            Uma leitura honesta de onde venho, o que entrego hoje e para onde estou caminhando. A empresa
+            atual é de outro segmento — fora do food service — e o histórico em operação, logística e food
+            service é o que sustenta a forma como eu construo o marketing interno.
           </p>
         </div>
 
-        {/* Trajetória */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {trajetoria.map((item, i) => {
-            const Icon = item.icon;
-            return (
-              <div key={i} className="bg-card rounded-lg p-7 shadow-guia border-t-[4px] border-primary flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-11 h-11 rounded-full bg-guia-blue-light flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-primary" />
+        {/* Onde estou hoje */}
+        <div className="mb-8">
+          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-green-light text-guia-green mb-4">
+            Onde estou hoje
+          </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {trajetoriaAtual.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={i} className="md:col-span-2 lg:col-span-4 bg-card rounded-lg p-7 shadow-guia border-t-[4px] border-guia-green flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-full bg-guia-green-light flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-guia-green" />
+                    </div>
+                    <span className="text-xs font-bold tracking-wider uppercase text-guia-text-muted">
+                      {item.period}
+                    </span>
                   </div>
-                  <span className="text-xs font-bold tracking-wider uppercase text-guia-text-muted">
-                    {item.period}
-                  </span>
+                  <h3 className="font-serif text-xl font-semibold text-foreground leading-snug mb-2">
+                    {item.role}
+                  </h3>
+                  <p className="text-[0.95rem] text-guia-text-muted leading-[1.7]">
+                    {item.detail}
+                  </p>
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground leading-snug mb-2">
-                  {item.role}
-                </h3>
-                <p className="text-[0.95rem] text-guia-text-muted leading-[1.7]">
-                  {item.detail}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Histórico */}
+        <div className="mb-12">
+          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-4">
+            Histórico que sustenta a entrega
+          </span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {trajetoriaAnterior.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={i} className="bg-card rounded-lg p-7 shadow-guia border-t-[4px] border-primary flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-full bg-guia-blue-light flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <span className="text-xs font-bold tracking-wider uppercase text-guia-text-muted">
+                      {item.period}
+                    </span>
+                  </div>
+                  <h3 className="font-serif text-xl font-semibold text-foreground leading-snug mb-2">
+                    {item.role}
+                  </h3>
+                  <p className="text-[0.95rem] text-guia-text-muted leading-[1.7]">
+                    {item.detail}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Áreas abertas */}
