@@ -40,8 +40,8 @@ const Hero = () => {
             <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
               Cheguei com minha família em 19/07/2026, encerrando quase 3 anos de imersão na Chapada do
               Araripe. Poucos dias depois, fui contratado: desde 03/08/2026 sou o responsável por criar o
-              setor de marketing interno de uma empresa no Setor Sul, em Goiânia — estrutura completa, do CRM
-              à automação, do web design ao treinamento do comercial.
+              setor de marketing interno de uma empresa no Setor Sul, em Goiânia — fora do food service, com
+              estrutura completa do CRM à automação, do web design ao treinamento do comercial.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
