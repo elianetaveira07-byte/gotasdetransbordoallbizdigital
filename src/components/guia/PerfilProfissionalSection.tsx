@@ -1,6 +1,12 @@
-import { TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
+import { Building2, TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
 const trajetoria = [
+  {
+    icon: Building2,
+    period: 'Desde 08/2026',
+    role: 'Responsável pelo setor de Marketing interno — Goiânia (Setor Sul)',
+    detail: 'Criação do setor de marketing da empresa de ponta a ponta: estrutura, processos, CRM, automação, web design, campanhas e treinamento do time comercial.',
+  },
   {
     icon: TrendingUp,
     period: '~2 anos',
@@ -22,13 +28,13 @@ const trajetoria = [
 ];
 
 const areasAbertas = [
-  'Gerência de unidade e operações (food service, varejo, franquias)',
-  'Escritório: administrativo, compras, comercial, back-office',
-  'Logística, expedição, planejamento e supply chain',
-  'Marketing, growth, mídia paga e conteúdo',
-  'IA aplicada, automações e construção de produto digital',
-  'Atendimento, relacionamento e experiência do cliente',
-  'Posições iniciais em novas áreas — quero aprender a sua operação por dentro',
+  'Estruturação de setor de marketing interno do zero',
+  'CRM, funis, cadências e relatórios de origem de venda',
+  'Automação, integrações e IA aplicada à rotina comercial',
+  'Web design, landing pages, SEO local e Perfil da Empresa',
+  'Mídia paga (Google e Meta), conteúdo e branding aplicado',
+  'Treinamento e alinhamento do setor comercial',
+  'Food service completo, logística e gestão de operação',
 ];
 
 const numeros = [
@@ -82,17 +88,16 @@ const PerfilProfissionalSection = () => {
         {/* Áreas abertas */}
         <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary mb-12">
           <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-3">
-            Áreas em que posso somar
+            Repertório que sustenta a entrega
           </span>
           <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
-            Food service é gigante — e eu vivi ele por completo
+            Operação por dentro + marketing por inteiro
           </h3>
           <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-6">
-            Envio esta página como currículo aberto para diferentes tipos de empresa. Por isso, não me
-            limito a uma única área: se sua empresa precisa de alguém preparado, comprometido e disposto a
-            aprender a operação por dentro, provavelmente há um encaixe. Estou aberto para posições
-            iniciais em áreas novas para conhecer melhor o seu negócio, e também para cargos onde já
-            entrego há muitos anos.
+            Meu diferencial é ter vivido a operação de verdade antes de assumir o marketing. Isso muda a
+            forma de construir um setor interno: campanha, CRM, automação e treinamento comercial nascem
+            colados na realidade de quem vende, atende e entrega todos os dias. Estas são as frentes que
+            domino e que hoje aplico na empresa em que atuo.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
             {areasAbertas.map((a, i) => (
@@ -104,9 +109,9 @@ const PerfilProfissionalSection = () => {
           </div>
           <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
             <strong>Compromisso real:</strong> me preparei fisicamente, mentalmente e psicologicamente para
-            entregar até <strong>16 horas por dia, de segunda a segunda</strong>, sem comprometer saúde nem
-            família. No horário da empresa, foco total no que ela precisa. Fora dele, sigo estudando e
-            construindo minhas frentes próprias — sem que uma coisa atrapalhe a outra.
+            entregar em alto ritmo, sem comprometer saúde nem família. No horário da empresa, foco total no
+            que ela precisa. Fora dele, sigo estudando e construindo minhas frentes próprias — sem que uma
+            coisa atrapalhe a outra.
           </p>
         </div>
 
