@@ -21,7 +21,22 @@ import {
   Handshake,
   Clock,
   TrendingUp,
+  Network,
+  Search,
+  Bot,
+  Sparkles,
+  Camera,
+  Star,
+  QrCode,
+  Percent,
+  Repeat,
+  BarChart3,
+  Package,
+  Globe,
+  Smartphone,
+  Presentation,
 } from 'lucide-react';
+
 import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
