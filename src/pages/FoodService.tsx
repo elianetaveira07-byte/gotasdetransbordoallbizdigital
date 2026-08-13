@@ -366,7 +366,231 @@ const FoodServicePage = () => {
         </div>
       </section>
 
-      <BibliotecaFoodSection />
+      {/* Multicanal */}
+      <section id="canais" className="py-[72px] bg-secondary/40">
+        <div className="container">
+          <div className="max-w-3xl mb-10">
+            <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
+              Canais de aquisição
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
+              Sua casa não pode viver de <span className="text-primary">um canal só</span>
+            </h2>
+            <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
+              A conta é dura: dependendo do plano, o marketplace fica com algo entre ~12% e 30% do pedido — e ainda
+              guarda o cliente. Marketplace é vitrine, e vitrine boa. Mas quem só tem vitrine não tem negócio. Meu
+              trabalho é abrir o maior número possível de canais e fazer todos apontarem para o canal próprio e para a
+              base da casa.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {canais.map((c, i) => {
+              const Icon = c.icon;
+              return (
+                <div key={i} className="bg-card rounded-lg p-6 shadow-guia border-t-[4px] border-primary">
+                  <Icon className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-serif text-base font-semibold text-foreground mb-2 leading-snug">{c.title}</h3>
+                  <p className="text-sm text-guia-text-muted leading-[1.7]">{c.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-8 bg-card rounded-lg p-7 md:p-9 shadow-guia border-l-[5px] border-guia-green">
+            <div className="flex items-center gap-3 mb-3">
+              <Percent className="w-6 h-6 text-guia-green" />
+              <h3 className="font-serif text-xl font-semibold text-foreground">
+                Canal próprio: implantação, atualização ou manutenção
+              </h3>
+            </div>
+            <p className="text-[0.98rem] text-guia-text-muted leading-[1.8]">
+              Se a casa não tem canal próprio, eu implanto do zero. Se tem e está abandonado, eu atualizo. Se está
+              rodando, eu faço a manutenção viva — cardápio, foto, preço, área de entrega, taxa, cupom, integração
+              com WhatsApp e impressão na cozinha. E, junto, a migração inteligente: cada pedido do app vira uma
+              chance de trazer aquele cliente para o canal direto na próxima compra.
+            </p>
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2.5">
+              {[
+                'Cardápio digital próprio com link e QR Code da casa',
+                'Cupom de primeira compra direta e clube de recompra',
+                'Área de entrega e taxa por raio, com margem calculada',
+                'Integração com PDV, WhatsApp e impressão automática',
+                'Encarte na embalagem levando o cliente para o canal direto',
+                'Comparativo real de margem: app x direto x salão',
+              ].map((t, i) => (
+                <div key={i} className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
+                  <span className="text-[0.95rem] text-foreground leading-[1.6]">{t}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO local + GEO */}
+      <section id="seo-geo" className="py-[72px] bg-background">
+        <div className="container">
+          <div className="max-w-3xl mb-10">
+            <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
+              SEO local · GEO 2026
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
+              Ser achado no mapa — e agora também{' '}
+              <span className="text-guia-amber">dentro das respostas de IA</span>
+            </h2>
+            <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
+              Quase ninguém faz SEO local bem feito no food service, e em 2026 o trabalho até cresceu: além do mapa do
+              Google, o cliente pergunta ao ChatGPT, ao Gemini e ao Perplexity onde comer. Isso é GEO — otimizar para
+              ser citado por mecanismos generativos. Quem organiza os dados da casa agora sai na frente enquanto o
+              vizinho ainda nem descobriu que esse canal existe.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                icon: MapPinned,
+                title: 'Perfil da Empresa no Google',
+                desc: 'Categorias corretas, horário, atributos, área de atendimento, fotos reais em rotina, posts semanais, perguntas e respostas e produtos cadastrados.',
+              },
+              {
+                icon: Star,
+                title: 'Avaliações como ativo',
+                desc: 'Processo de pedido de avaliação no salão e no delivery, resposta a 100% dos comentários e recuperação de cliente insatisfeito antes de virar nota 1.',
+              },
+              {
+                icon: Search,
+                title: 'Site e dados estruturados',
+                desc: 'Página local rápida, NAP consistente em todos os diretórios, schema de restaurante, cardápio e horário legíveis por máquina.',
+              },
+              {
+                icon: Sparkles,
+                title: 'GEO / busca generativa',
+                desc: 'Conteúdo que responde perguntas reais ("melhor pizza no Setor Sul", "restaurante que entrega até 23h") em formato que a IA consegue citar, com fonte e consistência de informação.',
+              },
+              {
+                icon: Globe,
+                title: 'Presença distribuída',
+                desc: 'Google, Apple Maps, Waze, TripAdvisor, marketplaces, guias locais e redes — a mesma informação, sem divergência, alimentando os modelos.',
+              },
+              {
+                icon: BarChart3,
+                title: 'Medição do local',
+                desc: 'Ligações, rotas, cliques no site, termos de descoberta e evolução da posição no mapa do bairro — relatório mensal simples.',
+              },
+            ].map((c, i) => {
+              const Icon = c.icon;
+              return (
+                <div key={i} className="bg-card rounded-lg p-6 shadow-guia border-t-[4px] border-guia-amber">
+                  <Icon className="w-6 h-6 text-guia-amber mb-3" />
+                  <h3 className="font-serif text-base font-semibold text-foreground mb-2 leading-snug">{c.title}</h3>
+                  <p className="text-sm text-guia-text-muted leading-[1.7]">{c.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* IA */}
+      <section id="ia" className="py-[72px] bg-[#0D1117] text-white">
+        <div className="container">
+          <div className="max-w-3xl mb-10">
+            <span className="text-[11px] font-bold tracking-widest uppercase text-yellow-400 bg-yellow-500/10 border border-yellow-500/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
+              IA aplicada · não é modinha
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
+              As LLMs entraram na cozinha —{' '}
+              <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                e eu sei usar
+              </span>
+            </h2>
+            <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
+              O próprio iFood já colocou inteligência artificial no WhatsApp do parceiro. A diferença não está mais em
+              ter acesso à IA — está em quem sabe aplicar dentro da operação. Eu uso IA todos os dias há mais de dois
+              anos, e trago isso para dentro da casa de forma prática: menos trabalho manual, mais velocidade e
+              decisão baseada em dado.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { icon: Bot, t: 'Atendimento e triagem', d: 'Automação no WhatsApp para dúvida, cardápio, status de pedido e reserva — sem perder o toque humano no que importa.' },
+              { icon: Star, t: 'Leitura de avaliações', d: 'Análise em massa dos comentários do Google e dos apps para achar o padrão real de reclamação e elogio.' },
+              { icon: Package, t: 'Demanda e compras', d: 'Previsão por dia e por item, apoio na lista de compras e no combate à ruptura e ao desperdício.' },
+              { icon: Sparkles, t: 'Conteúdo em escala', d: 'Roteiro, legenda, descrição de prato, resposta padrão e criativo de anúncio produzidos em minutos.' },
+              { icon: Calculator, t: 'Apoio a custo e preço', d: 'Simulação de cenário de CMV, taxa e margem por canal para decidir preço com segurança.' },
+              { icon: BarChart3, t: 'Relatório automático', d: 'Resumo semanal de vendas, canais e indicadores em linguagem que o dono entende.' },
+              { icon: Users2, t: 'Segmentação de base', d: 'Classificação de clientes por frequência, ticket e recência para campanha de recompra certeira.' },
+              { icon: Presentation, t: 'Treino da equipe', d: 'Material de treinamento, script de atendimento e simulação de situação real do salão.' },
+            ].map((c, i) => {
+              const Icon = c.icon;
+              return (
+                <div key={i} className="bg-white/[0.04] border border-white/10 rounded-xl p-5">
+                  <Icon className="w-5 h-5 text-yellow-400 mb-2.5" />
+                  <h3 className="text-sm font-bold text-white mb-1.5">{c.t}</h3>
+                  <p className="text-xs text-white/55 leading-[1.7]">{c.d}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Offline + parcerias */}
+      <section className="py-[72px] bg-background">
+        <div className="container">
+          <div className="max-w-3xl mb-10">
+            <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
+              Offline e ponto de venda
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
+              Marketing não acaba na tela — <span className="text-guia-green">acaba na mesa</span>
+            </h2>
+            <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
+              Muita agência para no anúncio. Eu venho do salão, então enxergo o que acontece depois do clique: como o
+              cliente é recebido, o que o cardápio comunica, o que a equipe oferece e o motivo pelo qual ele volta —
+              ou não.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+            {[
+              'Engenharia de cardápio: destaque para o que dá margem, retirada dos itens que só ocupam espaço',
+              'Cardápio impresso e digital com foto, descrição e ordem que aumentam ticket',
+              'QR Code e NFC na mesa ligados a cardápio, avaliação e cadastro no CRM',
+              'Treinamento de atendimento e venda sugestiva com a equipe de salão',
+              'Materiais de PDV: display, encarte na embalagem, adesivo de fachada e sinalização',
+              'Ações de bairro, parceria com o comércio vizinho, empresas e condomínios do entorno',
+              'Panfletagem e mídia geolocalizada com QR rastreável (dá para medir de verdade)',
+              'Datas comemorativas, eventos na casa e calendário de ações para os dias fracos',
+              'Padrão de embalagem e experiência de entrega — o delivery também é vitrine',
+              'Captação de cadastro no balcão e no salão para alimentar a base própria',
+            ].map((t, i) => (
+              <div key={i} className="flex items-start gap-2.5 py-1">
+                <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
+                <span className="text-[0.95rem] text-foreground leading-[1.65]">{t}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 bg-card rounded-lg p-7 md:p-9 shadow-guia border-l-[5px] border-primary">
+            <div className="flex items-center gap-3 mb-3">
+              <Camera className="w-6 h-6 text-primary" />
+              <h3 className="font-serif text-xl font-semibold text-foreground">
+                Social media e audiovisual: estratégia comigo, produção com parceiros
+              </h3>
+            </div>
+            <p className="text-[0.98rem] text-guia-text-muted leading-[1.8]">
+              Linha editorial, calendário, roteiro, direção de conteúdo e leitura de resultado são meus. Para a
+              produção pesada de foto e vídeo, estou montando uma rede de parceiros de confiança em Goiânia — e, em
+              paralelo, me estruturando financeiramente para ter equipamento próprio: câmera fotográfica
+              profissional, iluminação, microfone de lapela, drone e o restante do kit. Prefiro dizer isso na cara do
+              que prometer o que ainda não entrego sozinho.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
 
 
 
