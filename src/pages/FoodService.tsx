@@ -44,65 +44,138 @@ import ScrollToTop from '@/components/guia/ScrollToTop';
 const WA = 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20p%C3%A1gina%20de%20food%20service.';
 
 const dores = [
-  'Não existe setor interno de marketing — tudo é feito no improviso, sem responsável e sem rotina.',
-  'Delivery e marketplaces (iFood e afins) rodando sem gestão: comissão alta, cardápio desatualizado, avaliações mal cuidadas.',
+  'Não existe setor interno de marketing — tudo é feito no improviso, sem responsável, sem rotina e sem calendário.',
+  'Dependência quase total do iFood: a casa vive de um único canal e paga comissão que hoje vai de ~12% (entrega própria) a 27–30% quando entra a logística do app.',
+  'Não existe canal próprio de delivery — nenhum cardápio digital, nenhum link direto, nenhum pedido chegando sem intermediário.',
   'Preço definido "no olho", sem ficha técnica nem CMV real — o prato que mais vende costuma ser o que menos dá lucro.',
-  'Perfil da Empresa no Google abandonado: sem fotos, sem posts, sem respostas e fora do ranking do bairro.',
-  'Tráfego pago sem setup técnico correto — pixel, conversões e contas mal configuradas queimando verba.',
+  'Margem por canal desconhecida: ninguém sabe quanto sobra de um pedido do salão, do app e do WhatsApp.',
+  'Perfil da Empresa no Google abandonado: sem fotos, sem posts, sem categorias certas, sem responder avaliação — fora do mapa do bairro.',
+  'A casa não aparece quando alguém pergunta ao ChatGPT, Gemini ou Perplexity onde comer na região — e em 2026 isso já é canal de descoberta.',
+  'Tráfego pago sem setup técnico correto — pixel, conversões e catálogo mal configurados queimando verba.',
   'Base de clientes perdida: nenhum CRM, nenhuma recompra trabalhada, nenhuma lista para reativar em dia fraco.',
-  'Equipe de salão sem treinamento de atendimento e de venda sugestiva, que é onde o ticket médio nasce.',
+  'WhatsApp bagunçado: pedido, reserva, reclamação e fornecedor no mesmo lugar, sem etiqueta, sem funil e sem histórico.',
+  'Segunda a quinta com salão vazio e nenhuma ação estruturada para preencher os horários fracos.',
+  'Avaliações negativas sem resposta e sem processo de recuperação do cliente insatisfeito.',
+  'Rotatividade alta e equipe de salão sem treinamento de atendimento e venda sugestiva — que é onde o ticket médio nasce.',
+  'Conteúdo social feito quando "dá tempo": sem linha editorial, sem foto boa do prato e sem vídeo que gere pedido.',
+  'Cardápio sem engenharia: itens âncora, campeões e "abacaxis" misturados, sem destaque visual para o que dá margem.',
+  'Ruptura de item e cardápio desatualizado no app, derrubando posicionamento e gerando cancelamento.',
+  'Zero leitura de dados: nada de origem de venda, curva ABC, ticket por canal ou taxa de recompra.',
 ];
 
 const servicos = [
   {
     icon: Megaphone,
-    title: 'Marketing 360º interno',
+    title: 'Marketing 360º interno — online e offline',
     desc: 'Implantação completa do setor de marketing dentro da casa: rotina, calendário, responsáveis, métricas e processos que continuam rodando mesmo quando eu não estou lá.',
   },
   {
-    icon: Users2,
-    title: 'CRM e recompra',
-    desc: 'Estruturação da base de clientes, cadastro, segmentação, campanhas de reativação, aniversariantes e fidelidade. Cliente que já comprou é o mais barato de trazer de volta.',
-  },
-  {
-    icon: Bike,
-    title: 'Gestão de delivery',
-    desc: 'Operação de delivery organizada de ponta a ponta: cardápio, fotos, tempos, embalagem, taxa, promoções, canal próprio e redução da dependência de terceiros.',
+    icon: Network,
+    title: 'Canal próprio de delivery',
+    desc: 'Implantação, atualização ou manutenção do canal próprio (Cardápio Web, Repediu, Goomer, Anota AI, Delivery Direto, Saipos e similares): link direto, cupons, área de entrega, taxa, integração com WhatsApp e impressão na cozinha. O objetivo é simples — parar de depender só de marketplace.',
   },
   {
     icon: Store,
-    title: 'Marketplaces (iFood e outros)',
-    desc: 'Gestão da loja no iFood e demais marketplaces: posicionamento, campanhas, cupons, avaliações, curva de produtos, margem por canal e correção de rupturas.',
+    title: 'Gestão de iFood e marketplaces',
+    desc: 'Posicionamento, campanhas e cupons, curva de produtos, fotos, tempo de preparo, avaliações, disputas, leitura de margem por canal e correção de ruptura. Marketplace é vitrine — não pode ser o negócio inteiro.',
+  },
+  {
+    icon: Users2,
+    title: 'CRM, recompra e fidelidade',
+    desc: 'Cadastro e segmentação da base, funil no WhatsApp, campanhas de reativação, aniversariantes, clube de vantagens e cashback. Cliente que já comprou é o mais barato de trazer de volta.',
   },
   {
     icon: Calculator,
-    title: 'Precificação e ficha técnica',
-    desc: 'Ficha técnica prato a prato, CMV, custo real por canal e precificação com margem definida. Aqui eu não só oriento — se precisar, eu boto a mão e faço.',
+    title: 'Precificação, ficha técnica e CMV',
+    desc: 'Ficha técnica prato a prato, CMV real, custo por canal, engenharia de cardápio e precificação com margem definida. Aqui eu não só oriento — se precisar, eu boto a mão e faço.',
   },
   {
     icon: Target,
     title: 'Tráfego pago Google e Meta',
-    desc: 'Gestão de campanhas no Google Ads e Meta Ads com foco em movimento de salão, delivery e pedidos diretos — verba controlada e leitura de resultado real.',
+    desc: 'Campanhas com foco em movimento de salão, delivery próprio e pedido direto: geolocalização por raio, públicos de recompra, catálogo, criativos testados e verba controlada.',
+  },
+  {
+    icon: Search,
+    title: 'SEO local + GEO (busca por IA)',
+    desc: 'Perfil da Empresa no Google trabalhado de verdade (categorias, fotos, posts, avaliações, perguntas) somado a site com dados estruturados, NAP consistente e conteúdo local — para ranquear no mapa e também ser citado por ChatGPT, Gemini, Perplexity e AI Overviews.',
+  },
+  {
+    icon: Bot,
+    title: 'IA e automação aplicadas à operação',
+    desc: 'Uso prático de LLMs no dia a dia: atendimento e triagem no WhatsApp, respostas a avaliações, análise de comentários, previsão de demanda, criação de conteúdo, relatórios automáticos e apoio à decisão do dono.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Dados e indicadores',
+    desc: 'Painel simples com o que importa: origem da venda, ticket médio por canal, curva ABC, taxa de recompra, custo de aquisição e margem real. Decisão com número, não com achismo.',
   },
   {
     icon: MapPinned,
-    title: 'Perfil da Empresa no Google e SEO local',
-    desc: 'Cadastro, verificação, atualização, fotos, posts, avaliações e trabalho de SEO local para ranquear no mapa do bairro e da região.',
+    title: 'Presença offline e ponto de venda',
+    desc: 'Cardápio impresso e engenharia visual, sinalização e fachada, QR Code e NFC na mesa, materiais de PDV, parcerias com o comércio da região, ações de bairro e eventos.',
+  },
+  {
+    icon: Wrench,
+    title: 'Implantação de ferramentas e integrações',
+    desc: 'Escolha, configuração e integração dos sistemas do setor (cardápio digital, PDV, robô de WhatsApp, CRM, fidelidade) — com treino da equipe para usar de verdade.',
   },
   {
     icon: Settings2,
     title: 'Setup técnico ponta a ponta',
-    desc: 'Contas, pixel, tags, eventos, conversões, catálogo, integrações e rastreamento — Google e Meta configurados corretamente desde a base.',
-  },
-  {
-    icon: Wrench,
-    title: 'Implantação de ferramentas',
-    desc: 'Repediu, Cardápio Web e outras plataformas do food service: escolha, configuração, integração com a operação e treino da equipe para usar de verdade.',
+    desc: 'Contas, pixel, tags, eventos, conversões, catálogo, UTMs e rastreamento — Google e Meta configurados corretamente desde a base.',
   },
   {
     icon: GraduationCap,
-    title: 'Treinamento e consultoria presencial',
-    desc: 'Aulas, treinamentos e consultoria presencial para dono, gestão e equipe. Presencial sempre — nada online. O aprendizado acontece dentro da operação.',
+    title: 'Treinamento, consultoria e aulas presenciais',
+    desc: 'Aulas e treinamento para dono, gestão, cozinha e salão: atendimento, venda sugestiva, padrão de serviço, uso das ferramentas e leitura de indicadores. Presencial sempre.',
+  },
+  {
+    icon: Camera,
+    title: 'Social media e audiovisual (com parceiros)',
+    desc: 'Linha editorial, calendário e roteiro eu faço. Produção pesada de foto e vídeo entra com minha rede de parceiros — e estou montando estrutura própria de câmera, iluminação, lapela e drone.',
+  },
+];
+
+const canais = [
+  {
+    icon: Network,
+    title: 'Canal próprio (site/cardápio digital)',
+    desc: 'Pedido direto, sem comissão de app, com dados do cliente ficando com a casa. É o ativo mais importante e o mais esquecido.',
+  },
+  {
+    icon: Store,
+    title: 'Marketplaces (iFood e outros)',
+    desc: 'Continuam sendo vitrine e descoberta. A meta não é sair — é reduzir a dependência e transformar cliente de app em cliente da casa.',
+  },
+  {
+    icon: Smartphone,
+    title: 'WhatsApp organizado',
+    desc: 'Catálogo, atendimento com automação, etiquetas, listas de transmissão segmentadas e recompra ativa.',
+  },
+  {
+    icon: Globe,
+    title: 'Google: mapa, busca e IA',
+    desc: 'Perfil da Empresa otimizado, SEO local e GEO para aparecer também nas respostas geradas por inteligência artificial.',
+  },
+  {
+    icon: Target,
+    title: 'Mídia paga',
+    desc: 'Meta e Google segmentados por raio, com criativo de comida que dá fome e destino no canal próprio.',
+  },
+  {
+    icon: Repeat,
+    title: 'Base própria (CRM)',
+    desc: 'A lista de clientes é o canal mais barato do mundo. Aniversário, reativação, clube e campanha de dia fraco.',
+  },
+  {
+    icon: QrCode,
+    title: 'Presencial e PDV',
+    desc: 'QR Code e NFC na mesa, cardápio bem construído, venda sugestiva no salão e captação de cadastro no balcão.',
+  },
+  {
+    icon: Handshake,
+    title: 'Parcerias e comunidade local',
+    desc: 'Comércio vizinho, empresas do entorno, condomínios, eventos de bairro e criadores locais.',
   },
 ];
 
@@ -115,7 +188,7 @@ const formatos = [
   {
     icon: Handshake,
     title: 'Serviço ou projeto pontual',
-    desc: 'Diagnóstico, implantação ou correção de uma frente específica (delivery, iFood, Google, precificação, tráfego). Escopo fechado, prazo e entrega definidos.',
+    desc: 'Diagnóstico, implantação ou correção de uma frente específica (canal próprio, delivery, iFood, Google, SEO local, precificação, tráfego). Escopo fechado, prazo e entrega definidos.',
   },
   {
     icon: TrendingUp,
@@ -123,6 +196,7 @@ const formatos = [
     desc: 'Estruturação e condução do marketing e da gestão comercial da casa com rotina mensal, indicadores e reuniões presenciais.',
   },
 ];
+
 
 const FoodServicePage = () => {
   useEffect(() => {
