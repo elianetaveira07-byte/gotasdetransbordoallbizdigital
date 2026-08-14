@@ -590,8 +590,98 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+      {/* Setup técnico Meta + Google */}
+      <section id="setup-tecnico" className="py-[72px] bg-[#0B1220] text-white">
+        <div className="container">
+          <div className="max-w-3xl mb-10">
+            <span className="text-[11px] font-bold tracking-widest uppercase text-sky-300 bg-sky-500/10 border border-sky-400/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
+              Serviço exclusivo · Meta + Google
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
+              Setup técnico completo —{' '}
+              <span className="bg-gradient-to-b from-sky-200 via-sky-400 to-sky-600 bg-clip-text text-transparent">
+                a base que quase nenhum negócio local tem
+              </span>
+            </h2>
+            <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
+              Antes de qualquer verba entrar, a casa precisa de estrutura. Business Manager organizado, contas ligadas
+              corretamente, pixel e API de conversões funcionando, catálogo íntegro, Google Ads com conversões reais e
+              o Perfil da Empresa no Google configurado para o tipo certo de negócio. Aqui no Brasil a maioria dos
+              negócios locais nunca teve isso feito por inteiro — e muita agência cobra à parte ou entrega pela metade.
+              Eu faço esse setup do começo ao fim, para qualquer negócio local, com atenção especial ao food service.
+            </p>
+          </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <Settings2 className="w-6 h-6 text-sky-300" />
+                <h3 className="font-serif text-xl font-semibold">Meta (Facebook e Instagram)</h3>
+              </div>
+              <div className="space-y-2.5">
+                {[
+                  'Business Manager criado e organizado: ativos, permissões, usuários, parceiros e níveis de acesso',
+                  'Verificação do negócio, domínio verificado e propriedade dos ativos no nome do dono — nunca da agência',
+                  'Conta de anúncios, formas de pagamento, limite de gasto, fuso e moeda corretos',
+                  'Pixel instalado, eventos padronizados e API de Conversões (server-side) para não perder dado',
+                  'Priorização de eventos com Agregação de Eventos e domínio de destino configurado',
+                  'Catálogo de produtos/cardápio, conjuntos e integração com o canal próprio de delivery',
+                  'Instagram e página ligados ao BM, caixa unificada, mensagens e botões de ação',
+                  'Públicos personalizados, similares, exclusões e regras de remarketing por comportamento',
+                  'Nomenclatura de campanha, UTMs e estrutura de conta que dá para ler no relatório',
+                ].map((t, i) => (
+                  <div key={i} className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-[18px] h-[18px] text-sky-300 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white/70 leading-[1.7]">{t}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
 
+            <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <Globe className="w-6 h-6 text-sky-300" />
+                <h3 className="font-serif text-xl font-semibold">Google (Ads, Analytics e Perfil da Empresa)</h3>
+              </div>
+              <div className="space-y-2.5">
+                {[
+                  'Conta Google Ads estruturada, faturamento, fuso, moeda e acesso administrativo do dono',
+                  'GA4 + Google Tag Manager instalados, eventos e conversões importadas de verdade',
+                  'Conversões que importam: pedido no canal próprio, clique no WhatsApp, ligação, rota e reserva',
+                  'Merchant Center e feed quando o negócio comporta, além de extensões e ativos completos',
+                  'Perfil da Empresa no Google: criação, verificação, reivindicação e recuperação de perfil perdido',
+                  'Categoria principal e secundárias corretas para o tipo de negócio local (aqui muita casa erra)',
+                  'NAP consistente, horários, feriados, área de atendimento, atributos, serviços e cardápio no perfil',
+                  'Fotos, posts, perguntas e respostas, produtos e rotina de avaliações com resposta',
+                  'Search Console, sitemap, dados estruturados e monitoramento de chamadas e rotas',
+                ].map((t, i) => (
+                  <div key={i} className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-[18px] h-[18px] text-sky-300 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white/70 leading-[1.7]">{t}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { icon: AlertTriangle, t: 'Diagnóstico antes de tudo', d: 'Auditoria do que existe hoje: contas duplicadas, pixel morto, conversão fantasma, perfil suspenso e acesso perdido.' },
+              { icon: Utensils, t: 'Food service em destaque', d: 'Setup pensado para pedido: raio de entrega, horário de pico, catálogo do cardápio, rota, ligação e pedido direto.' },
+              { icon: Handshake, t: 'Tudo no nome do dono', d: 'Entrego documentado, com acessos no CNPJ do cliente. Se um dia a gente parar, a estrutura fica com a empresa.' },
+            ].map((c, i) => {
+              const Icon = c.icon;
+              return (
+                <div key={i} className="bg-white/[0.04] border border-white/10 rounded-xl p-5">
+                  <Icon className="w-5 h-5 text-sky-300 mb-2.5" />
+                  <h3 className="text-sm font-bold text-white mb-1.5">{c.t}</h3>
+                  <p className="text-xs text-white/55 leading-[1.7]">{c.d}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
 
       <BibliotecaFoodSection />
