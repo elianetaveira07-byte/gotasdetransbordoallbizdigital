@@ -38,6 +38,7 @@ import {
 } from 'lucide-react';
 
 import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
+import ParceriasSection from '@/components/guia/ParceriasSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
 
@@ -685,6 +686,8 @@ const FoodServicePage = () => {
 
 
       <BibliotecaFoodSection />
+
+      <ParceriasSection />
 
       {/* Formatos */}
       <section className="py-[72px] bg-secondary/40">
