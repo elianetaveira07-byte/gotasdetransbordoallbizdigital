@@ -287,8 +287,38 @@ const FoodServicePage = () => {
         </div>
       </header>
 
+      {/* Índice */}
+      <nav className="bg-[#0D1117] border-b border-white/10 px-4 md:px-6 py-4">
+        <div className="container max-w-5xl">
+          <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-3">Navegue pela página</p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: '#como-eu-comeco', label: 'Como eu começo' },
+              { href: '#dores', label: 'Dores do food service' },
+              { href: '#servicos', label: 'O que eu implanto' },
+              { href: '#canais', label: 'Canais de aquisição' },
+              { href: '#seo-geo', label: 'SEO local + GEO' },
+              { href: '#ia', label: 'IA aplicada' },
+              { href: '#setup-tecnico', label: 'Setup Meta + Google' },
+              { href: '#biblioteca', label: 'Biblioteca gratuita' },
+              { href: '#parcerias', label: 'Programa de Parcerias' },
+              { href: '#formatos', label: 'Formatos de trabalho' },
+              { href: '#contato', label: 'Falar comigo' },
+            ].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-xs font-medium text-white/60 hover:text-white bg-white/[0.04] hover:bg-white/10 border border-white/10 hover:border-yellow-500/40 px-3 py-1.5 rounded-full transition-colors no-underline"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
       {/* Como eu entro */}
-      <section className="py-[72px] bg-background">
+      <section id="como-eu-comeco" className="py-[72px] bg-background">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             Como eu começo
