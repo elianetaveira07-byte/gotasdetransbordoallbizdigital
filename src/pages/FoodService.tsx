@@ -343,7 +343,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Dores */}
-      <section className="py-[72px] bg-secondary/40">
+      <section id="dores" className="py-[72px] bg-secondary/40">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             O que eu quase sempre encontro
@@ -568,7 +568,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Offline + parcerias */}
-      <section className="py-[72px] bg-background">
+      <section id="offline" className="py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -720,7 +720,7 @@ const FoodServicePage = () => {
       <ParceriasSection />
 
       {/* Formatos */}
-      <section className="py-[72px] bg-secondary/40">
+      <section id="formatos" className="py-[72px] bg-secondary/40">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -732,6 +732,13 @@ const FoodServicePage = () => {
             <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
               Tenho emprego fixo CLT em Goiânia e saio às 18h. Minha disponibilidade para outras empresas é à noite nos
               dias de semana e integral aos sábados, domingos e feriados — tudo presencial, aqui em Goiânia.
+            </p>
+            <p className="mt-4 text-foreground text-base md:text-lg leading-[1.75] border-l-[4px] border-guia-amber pl-4">
+              O freelancer de salão é a porta de entrada: eu entro pela operação, ganho confiança e entendo a casa de
+              verdade. A partir daí, se fizer sentido para o dono, a gente pode evoluir para um{' '}
+              <strong>acompanhamento mensal</strong> com setup técnico, marketing 360º e indicadores. Os dois formatos
+              se conversam — quem me conhece no salão entende que minha proposta de parceria vem de dentro, não de uma
+              apresentação bonita.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -767,7 +774,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-[72px] bg-[#0D1117] text-white px-4">
+      <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
             Vamos conversar sobre a{' '}
