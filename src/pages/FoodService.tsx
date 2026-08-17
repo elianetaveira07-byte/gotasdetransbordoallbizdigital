@@ -733,6 +733,13 @@ const FoodServicePage = () => {
               Tenho emprego fixo CLT em Goiânia e saio às 18h. Minha disponibilidade para outras empresas é à noite nos
               dias de semana e integral aos sábados, domingos e feriados — tudo presencial, aqui em Goiânia.
             </p>
+            <p className="mt-4 text-foreground text-base md:text-lg leading-[1.75] border-l-[4px] border-guia-amber pl-4">
+              O freelancer de salão é a porta de entrada: eu entro pela operação, ganho confiança e entendo a casa de
+              verdade. A partir daí, se fizer sentido para o dono, a gente pode evoluir para um{' '}
+              <strong>acompanhamento mensal</strong> com setup técnico, marketing 360º e indicadores. Os dois formatos
+              se conversam — quem me conhece no salão entende que minha proposta de parceria vem de dentro, não de uma
+              apresentação bonita.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {formatos.map((f, i) => {
