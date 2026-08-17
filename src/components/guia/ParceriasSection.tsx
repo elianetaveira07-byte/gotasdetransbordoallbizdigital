@@ -223,8 +223,8 @@ const ParceriasSection = () => {
             </ul>
             <div className="mt-6 rounded-xl border border-green-500/25 bg-green-500/[0.07] p-5">
               <p className="text-sm text-white/80 leading-[1.7]">
-                <strong className="text-green-300">Benefício incluso:</strong> serei o seu gestor de tráfego —
-                gratuitamente — durante a parceria.
+                <strong className="text-green-300">Benefício incluso no plano:</strong> gestão de tráfego durante toda
+                a parceria, sem custo adicional.
               </p>
             </div>
           </div>
