@@ -343,7 +343,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Dores */}
-      <section className="py-[72px] bg-secondary/40">
+      <section id="dores" className="py-[72px] bg-secondary/40">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             O que eu quase sempre encontro
@@ -568,7 +568,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Offline + parcerias */}
-      <section className="py-[72px] bg-background">
+      <section id="offline" className="py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -720,7 +720,7 @@ const FoodServicePage = () => {
       <ParceriasSection />
 
       {/* Formatos */}
-      <section className="py-[72px] bg-secondary/40">
+      <section id="formatos" className="py-[72px] bg-secondary/40">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -767,7 +767,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-[72px] bg-[#0D1117] text-white px-4">
+      <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
             Vamos conversar sobre a{' '}
