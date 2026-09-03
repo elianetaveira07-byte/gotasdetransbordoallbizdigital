@@ -1,6 +1,4 @@
 import Navbar from '@/components/guia/Navbar';
-import AlertaBanner from '@/components/guia/AlertaBanner';
-import AlertaModal from '@/components/guia/AlertaModal';
 import Hero from '@/components/guia/Hero';
 import IntroSection from '@/components/guia/IntroSection';
 import PerfilProfissionalSection from '@/components/guia/PerfilProfissionalSection';
@@ -18,9 +16,7 @@ import ScrollToTop from '@/components/guia/ScrollToTop';
 const Index = () => {
   return (
     <div className="scroll-smooth">
-      <AlertaModal />
       <Navbar />
-      <AlertaBanner />
       <Hero />
       <IntroSection />
       <PerfilProfissionalSection />
