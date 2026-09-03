@@ -1,4 +1,4 @@
-import { Heart, ArrowDown, MessageCircle, AlertCircle } from 'lucide-react';
+import { Heart, ArrowDown, MessageCircle } from 'lucide-react';
 import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
 
 const Hero = () => {
@@ -60,9 +60,6 @@ const Hero = () => {
               >
                 <MessageCircle className="w-4 h-4" /> WhatsApp: (62) 99968-8700
               </a>
-              <span className="inline-flex items-center gap-1.5 bg-yellow-500/15 border border-yellow-500/30 text-yellow-300 text-xs font-bold px-2.5 py-1 rounded-full animate-attention-pulse">
-                <AlertCircle className="w-3.5 h-3.5" /> Número novo
-              </span>
             </div>
           </div>
         </div>
