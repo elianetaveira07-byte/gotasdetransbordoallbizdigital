@@ -229,21 +229,20 @@ const FoodServicePage = () => {
       <header className="bg-[#0D1117] text-white py-16 md:py-24 px-4 md:px-6">
         <div className="container max-w-4xl">
           <span className="text-[11px] font-bold tracking-widest uppercase text-yellow-400 bg-yellow-500/10 border border-yellow-500/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
-            Food service · freelancer e serviços
+            Marketing 360º e gestão para food service · Goiânia
           </span>
           <h1 className="font-serif text-3xl md:text-5xl font-semibold leading-tight">
-            Eu conheço o food service{' '}
+            Eu construo o{' '}
             <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              por dentro
+              marketing que falta
             </span>{' '}
-            — do salão à planilha de custo
+            dentro do seu restaurante
           </h1>
           <p className="mt-5 text-white/70 text-base md:text-lg leading-[1.8]">
-            Mais de 10 anos de operação real (cozinha, salão, atendimento, gerência, compras e escritório) somados a
-            uma reconstrução técnica em marketing, IA e gestão. Estou disponível para atuar como{' '}
-            <strong className="text-white">freelancer de atendimento/garçom</strong> aos sábados, domingos e feriados —
-            e para <strong className="text-white">implantar o marketing e a gestão comercial</strong> que hoje faltam
-            dentro da maioria das casas.
+            Canal próprio de delivery, setup técnico Meta e Google, SEO local e GEO, CRM e recompra, precificação e
+            indicadores reais. Mais de 10 anos de operação de food service somados à parte técnica que quase nenhuma
+            casa tem feita por inteiro — implantação de verdade, presencial, com a equipe treinada e a estrutura no
+            nome do dono.
           </p>
           <div className="mt-7 flex flex-col sm:flex-row gap-3">
             <a
@@ -252,27 +251,27 @@ const FoodServicePage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
-              <MessageCircle className="w-4 h-4" /> Falar comigo no WhatsApp
-            </a>
-            <a
-              href="#biblioteca"
-              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
-            >
-              Biblioteca gratuita
+              <MessageCircle className="w-4 h-4" /> Solicitar diagnóstico
             </a>
             <a
               href="#servicos"
+              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
+            >
+              O que eu implanto
+            </a>
+            <a
+              href="#biblioteca"
               className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/10 text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
-              Ver o que eu faço
+              Meu acervo público
             </a>
           </div>
 
           <div className="mt-9 grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { icon: CalendarClock, t: 'Sábados, domingos e feriados', s: 'Dias livres · disponibilidade real' },
-              { icon: Clock, t: 'Dias de semana após as 18h', s: 'Emprego fixo CLT durante o dia' },
-              { icon: MapPin, t: 'Goiânia-GO · presencial', s: 'Moro no Vila Nova, trabalho no Setor Sul' },
+              { icon: Utensils, t: '10+ anos de food service', s: 'Cozinha, salão, gerência, compras e escritório' },
+              { icon: Settings2, t: 'Setup técnico Meta + Google', s: 'BM, pixel, CAPI, GA4, Ads e Perfil da Empresa' },
+              { icon: MapPin, t: 'Goiânia-GO · presencial', s: 'Implantação e treinamento dentro da casa' },
             ].map((c, i) => {
               const Icon = c.icon;
               return (
@@ -293,18 +292,19 @@ const FoodServicePage = () => {
           <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-3">Navegue pela página</p>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: '#como-eu-comeco', label: 'Como eu começo' },
+              { href: '#como-eu-comeco', label: 'Meu método' },
               { href: '#dores', label: 'Dores do food service' },
               { href: '#servicos', label: 'O que eu implanto' },
               { href: '#canais', label: 'Canais de aquisição' },
               { href: '#seo-geo', label: 'SEO local + GEO' },
               { href: '#ia', label: 'IA aplicada' },
               { href: '#setup-tecnico', label: 'Setup Meta + Google' },
-              { href: '#biblioteca', label: 'Biblioteca gratuita' },
+              { href: '#biblioteca', label: 'Acervo público' },
               { href: '#parcerias', label: 'Programa de Parcerias' },
-              { href: '#formatos', label: 'Formatos de trabalho' },
-              { href: '#contato', label: 'Falar comigo' },
+              { href: '#formatos', label: 'Como eu trabalho' },
+              { href: '#contato', label: 'Solicitar diagnóstico' },
             ].map((link) => (
+
               <a
                 key={link.href}
                 href={link.href}
