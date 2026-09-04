@@ -182,21 +182,22 @@ const canais = [
 
 const formatos = [
   {
-    icon: Utensils,
-    title: 'Freelancer de salão',
-    desc: 'Atendente ou garçom aos sábados à noite, domingos e feriados. Chego, somo na operação e faço o serviço bem feito — com mais de 10 anos de food service nas costas.',
+    icon: Presentation,
+    title: 'Diagnóstico presencial',
+    desc: 'Leitura completa da operação, dos canais e dos números, com relatório de prioridades e plano de ação. É o ponto de partida de qualquer trabalho comigo.',
   },
   {
     icon: Handshake,
-    title: 'Serviço ou projeto pontual',
-    desc: 'Diagnóstico, implantação ou correção de uma frente específica (canal próprio, delivery, iFood, Google, SEO local, precificação, tráfego). Escopo fechado, prazo e entrega definidos.',
+    title: 'Projeto de implantação',
+    desc: 'Escopo fechado para uma frente específica: setup técnico Meta e Google, canal próprio de delivery, SEO local e GEO, CRM, precificação ou engenharia de cardápio.',
   },
   {
     icon: TrendingUp,
     title: 'Acompanhamento mensal',
-    desc: 'Estruturação e condução do marketing e da gestão comercial da casa com rotina mensal, indicadores e reuniões presenciais.',
+    desc: 'Condução do marketing 360º e da gestão comercial da casa: rotina, calendário, tráfego, indicadores e reuniões presenciais com a direção.',
   },
 ];
+
 
 
 const FoodServicePage = () => {
