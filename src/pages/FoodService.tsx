@@ -317,30 +317,45 @@ const FoodServicePage = () => {
         </div>
       </nav>
 
-      {/* Como eu entro */}
+      {/* Método */}
       <section id="como-eu-comeco" className="py-[72px] bg-background">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
-            Como eu começo
+            Meu método
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Primeiro eu <span className="text-primary">sirvo</span>. Depois eu mostro o que dá para melhorar.
+            Diagnóstico <span className="text-primary">dentro da operação</span> — não a partir de um slide
           </h2>
           <div className="mt-6 bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary text-base leading-[1.8]">
             <p>
-              Confiança em food service não se compra com apresentação bonita — se ganha no turno cheio, na comanda
-              certa, no cliente bem atendido. Por isso eu começo trabalhando: entro como{' '}
-              <strong>atendente ou garçom</strong> nos meus dias livres, aprendo a casa por dentro, entendo o cardápio,
-              o fluxo, a equipe e o cliente.
+              Antes de propor qualquer coisa, eu leio a casa: cardápio, ficha técnica, CMV, mix de canais, margem por
+              pedido, fluxo de salão, rotina de equipe, perfil no Google, estrutura de contas e histórico de
+              avaliações. Vem de mais de 10 anos de food service — cozinha, salão, gerência, compras e escritório —
+              somados à parte técnica de marketing, dados e IA.
             </p>
             <p className="mt-4">
-              A partir dali, o que eu enxergo deixa de ser palpite. Quando eu levo uma proposta para o dono, ela vem com
-              o nome dos pratos, os horários fracos, as reclamações reais e os números daquela operação. É consultoria
-              feita de dentro para fora — e não de fora para dentro.
+              O resultado é um diagnóstico com nome de prato, horário fraco, número real e prioridade definida. A
+              partir dele eu digo o que dá para resolver em 30 dias, o que é estrutural e o que não vale a pena fazer
+              agora. Quando o encaixe não existe, eu falo — é mais barato para todo mundo.
             </p>
+          </div>
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-4 gap-4">
+            {[
+              { n: '01', t: 'Leitura da operação', d: 'Visita presencial, dados, canais e conversa com dono e equipe.' },
+              { n: '02', t: 'Diagnóstico priorizado', d: 'O que sangra dinheiro hoje e o que sustenta crescimento depois.' },
+              { n: '03', t: 'Implantação', d: 'Setup técnico, canal próprio, CRM, SEO local, tráfego e treinamento.' },
+              { n: '04', t: 'Indicadores', d: 'Margem por canal, recompra, CAC e origem da venda em rotina mensal.' },
+            ].map((s, i) => (
+              <div key={i} className="bg-card rounded-lg p-5 shadow-guia border-t-[4px] border-primary">
+                <span className="font-serif text-2xl font-semibold text-primary">{s.n}</span>
+                <h3 className="font-serif text-base font-semibold text-foreground mt-1.5 mb-1.5">{s.t}</h3>
+                <p className="text-sm text-guia-text-muted leading-[1.7]">{s.d}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* Dores */}
       <section id="dores" className="py-[72px] bg-secondary/40">
