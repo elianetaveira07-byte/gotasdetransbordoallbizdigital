@@ -777,14 +777,16 @@ const FoodServicePage = () => {
       <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
-            Vamos conversar sobre a{' '}
+            Solicite um{' '}
             <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              sua casa
-            </span>
+              diagnóstico
+            </span>{' '}
+            da sua operação
           </h2>
           <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
-            Me chame no WhatsApp e me conte o momento do seu negócio. Se fizer sentido, eu passo aí presencialmente,
-            olho a operação e volto com um diagnóstico honesto — sem enrolação e sem promessa de milagre.
+            Eu trabalho com poucas casas por vez, porque implantação séria exige presença. Me conte o momento do seu
+            negócio: se houver encaixe, eu vou até a operação, faço a leitura técnica e volto com um diagnóstico
+            honesto — sem promessa de milagre.
           </p>
           <a
             href={WA}
@@ -795,10 +797,11 @@ const FoodServicePage = () => {
             <MessageCircle className="w-4 h-4" /> (62) 99968-8700
           </a>
           <p className="mt-5 text-xs text-white/40">
-            Diego Allas · Goiânia-GO · food service, marketing e gestão
+            Diego Allas · Goiânia-GO · marketing 360º, delivery e gestão para food service
           </p>
         </div>
       </section>
+
 
       <Footer />
       <ScrollToTop />
