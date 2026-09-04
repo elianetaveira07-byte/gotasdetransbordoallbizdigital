@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   ArrowLeft,
   MessageCircle,
-  CalendarClock,
   MapPin,
   Utensils,
   Megaphone,
@@ -19,7 +18,6 @@ import {
   AlertTriangle,
   CheckCircle2,
   Handshake,
-  Clock,
   TrendingUp,
   Network,
   Search,
@@ -182,21 +180,22 @@ const canais = [
 
 const formatos = [
   {
-    icon: Utensils,
-    title: 'Freelancer de salão',
-    desc: 'Atendente ou garçom aos sábados à noite, domingos e feriados. Chego, somo na operação e faço o serviço bem feito — com mais de 10 anos de food service nas costas.',
+    icon: Presentation,
+    title: 'Diagnóstico presencial',
+    desc: 'Leitura completa da operação, dos canais e dos números, com relatório de prioridades e plano de ação. É o ponto de partida de qualquer trabalho comigo.',
   },
   {
     icon: Handshake,
-    title: 'Serviço ou projeto pontual',
-    desc: 'Diagnóstico, implantação ou correção de uma frente específica (canal próprio, delivery, iFood, Google, SEO local, precificação, tráfego). Escopo fechado, prazo e entrega definidos.',
+    title: 'Projeto de implantação',
+    desc: 'Escopo fechado para uma frente específica: setup técnico Meta e Google, canal próprio de delivery, SEO local e GEO, CRM, precificação ou engenharia de cardápio.',
   },
   {
     icon: TrendingUp,
     title: 'Acompanhamento mensal',
-    desc: 'Estruturação e condução do marketing e da gestão comercial da casa com rotina mensal, indicadores e reuniões presenciais.',
+    desc: 'Condução do marketing 360º e da gestão comercial da casa: rotina, calendário, tráfego, indicadores e reuniões presenciais com a direção.',
   },
 ];
+
 
 
 const FoodServicePage = () => {
@@ -229,21 +228,20 @@ const FoodServicePage = () => {
       <header className="bg-[#0D1117] text-white py-16 md:py-24 px-4 md:px-6">
         <div className="container max-w-4xl">
           <span className="text-[11px] font-bold tracking-widest uppercase text-yellow-400 bg-yellow-500/10 border border-yellow-500/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
-            Food service · freelancer e serviços
+            Marketing 360º e gestão para food service · Goiânia
           </span>
           <h1 className="font-serif text-3xl md:text-5xl font-semibold leading-tight">
-            Eu conheço o food service{' '}
+            Eu construo o{' '}
             <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              por dentro
+              marketing que falta
             </span>{' '}
-            — do salão à planilha de custo
+            dentro do seu restaurante
           </h1>
           <p className="mt-5 text-white/70 text-base md:text-lg leading-[1.8]">
-            Mais de 10 anos de operação real (cozinha, salão, atendimento, gerência, compras e escritório) somados a
-            uma reconstrução técnica em marketing, IA e gestão. Estou disponível para atuar como{' '}
-            <strong className="text-white">freelancer de atendimento/garçom</strong> aos sábados, domingos e feriados —
-            e para <strong className="text-white">implantar o marketing e a gestão comercial</strong> que hoje faltam
-            dentro da maioria das casas.
+            Canal próprio de delivery, setup técnico Meta e Google, SEO local e GEO, CRM e recompra, precificação e
+            indicadores reais. Mais de 10 anos de operação de food service somados à parte técnica que quase nenhuma
+            casa tem feita por inteiro — implantação de verdade, presencial, com a equipe treinada e a estrutura no
+            nome do dono.
           </p>
           <div className="mt-7 flex flex-col sm:flex-row gap-3">
             <a
@@ -252,27 +250,27 @@ const FoodServicePage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
-              <MessageCircle className="w-4 h-4" /> Falar comigo no WhatsApp
-            </a>
-            <a
-              href="#biblioteca"
-              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
-            >
-              Biblioteca gratuita
+              <MessageCircle className="w-4 h-4" /> Solicitar diagnóstico
             </a>
             <a
               href="#servicos"
+              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
+            >
+              O que eu implanto
+            </a>
+            <a
+              href="#biblioteca"
               className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/10 text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
-              Ver o que eu faço
+              Meu acervo público
             </a>
           </div>
 
           <div className="mt-9 grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { icon: CalendarClock, t: 'Sábados, domingos e feriados', s: 'Dias livres · disponibilidade real' },
-              { icon: Clock, t: 'Dias de semana após as 18h', s: 'Emprego fixo CLT durante o dia' },
-              { icon: MapPin, t: 'Goiânia-GO · presencial', s: 'Moro no Vila Nova, trabalho no Setor Sul' },
+              { icon: Utensils, t: '10+ anos de food service', s: 'Cozinha, salão, gerência, compras e escritório' },
+              { icon: Settings2, t: 'Setup técnico Meta + Google', s: 'BM, pixel, CAPI, GA4, Ads e Perfil da Empresa' },
+              { icon: MapPin, t: 'Goiânia-GO · presencial', s: 'Implantação e treinamento dentro da casa' },
             ].map((c, i) => {
               const Icon = c.icon;
               return (
@@ -293,18 +291,19 @@ const FoodServicePage = () => {
           <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-3">Navegue pela página</p>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: '#como-eu-comeco', label: 'Como eu começo' },
+              { href: '#como-eu-comeco', label: 'Meu método' },
               { href: '#dores', label: 'Dores do food service' },
               { href: '#servicos', label: 'O que eu implanto' },
               { href: '#canais', label: 'Canais de aquisição' },
               { href: '#seo-geo', label: 'SEO local + GEO' },
               { href: '#ia', label: 'IA aplicada' },
               { href: '#setup-tecnico', label: 'Setup Meta + Google' },
-              { href: '#biblioteca', label: 'Biblioteca gratuita' },
+              { href: '#biblioteca', label: 'Acervo público' },
               { href: '#parcerias', label: 'Programa de Parcerias' },
-              { href: '#formatos', label: 'Formatos de trabalho' },
-              { href: '#contato', label: 'Falar comigo' },
+              { href: '#formatos', label: 'Como eu trabalho' },
+              { href: '#contato', label: 'Solicitar diagnóstico' },
             ].map((link) => (
+
               <a
                 key={link.href}
                 href={link.href}
@@ -317,30 +316,45 @@ const FoodServicePage = () => {
         </div>
       </nav>
 
-      {/* Como eu entro */}
+      {/* Método */}
       <section id="como-eu-comeco" className="py-[72px] bg-background">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
-            Como eu começo
+            Meu método
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Primeiro eu <span className="text-primary">sirvo</span>. Depois eu mostro o que dá para melhorar.
+            Diagnóstico <span className="text-primary">dentro da operação</span> — não a partir de um slide
           </h2>
           <div className="mt-6 bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary text-base leading-[1.8]">
             <p>
-              Confiança em food service não se compra com apresentação bonita — se ganha no turno cheio, na comanda
-              certa, no cliente bem atendido. Por isso eu começo trabalhando: entro como{' '}
-              <strong>atendente ou garçom</strong> nos meus dias livres, aprendo a casa por dentro, entendo o cardápio,
-              o fluxo, a equipe e o cliente.
+              Antes de propor qualquer coisa, eu leio a casa: cardápio, ficha técnica, CMV, mix de canais, margem por
+              pedido, fluxo de salão, rotina de equipe, perfil no Google, estrutura de contas e histórico de
+              avaliações. Vem de mais de 10 anos de food service — cozinha, salão, gerência, compras e escritório —
+              somados à parte técnica de marketing, dados e IA.
             </p>
             <p className="mt-4">
-              A partir dali, o que eu enxergo deixa de ser palpite. Quando eu levo uma proposta para o dono, ela vem com
-              o nome dos pratos, os horários fracos, as reclamações reais e os números daquela operação. É consultoria
-              feita de dentro para fora — e não de fora para dentro.
+              O resultado é um diagnóstico com nome de prato, horário fraco, número real e prioridade definida. A
+              partir dele eu digo o que dá para resolver em 30 dias, o que é estrutural e o que não vale a pena fazer
+              agora. Quando o encaixe não existe, eu falo — é mais barato para todo mundo.
             </p>
+          </div>
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-4 gap-4">
+            {[
+              { n: '01', t: 'Leitura da operação', d: 'Visita presencial, dados, canais e conversa com dono e equipe.' },
+              { n: '02', t: 'Diagnóstico priorizado', d: 'O que sangra dinheiro hoje e o que sustenta crescimento depois.' },
+              { n: '03', t: 'Implantação', d: 'Setup técnico, canal próprio, CRM, SEO local, tráfego e treinamento.' },
+              { n: '04', t: 'Indicadores', d: 'Margem por canal, recompra, CAC e origem da venda em rotina mensal.' },
+            ].map((s, i) => (
+              <div key={i} className="bg-card rounded-lg p-5 shadow-guia border-t-[4px] border-primary">
+                <span className="font-serif text-2xl font-semibold text-primary">{s.n}</span>
+                <h3 className="font-serif text-base font-semibold text-foreground mt-1.5 mb-1.5">{s.t}</h3>
+                <p className="text-sm text-guia-text-muted leading-[1.7]">{s.d}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* Dores */}
       <section id="dores" className="py-[72px] bg-secondary/40">
@@ -724,21 +738,14 @@ const FoodServicePage = () => {
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
-              Formatos de trabalho
+              Como eu trabalho
             </span>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-              Sem vínculo CLT — <span className="text-primary">freelancer, projeto ou mensal</span>
+              Três formatos, um mesmo <span className="text-primary">padrão de entrega</span>
             </h2>
             <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
-              Tenho emprego fixo CLT em Goiânia e saio às 18h. Minha disponibilidade para outras empresas é à noite nos
-              dias de semana e integral aos sábados, domingos e feriados — tudo presencial, aqui em Goiânia.
-            </p>
-            <p className="mt-4 text-foreground text-base md:text-lg leading-[1.75] border-l-[4px] border-guia-amber pl-4">
-              O freelancer de salão é a porta de entrada: eu entro pela operação, ganho confiança e entendo a casa de
-              verdade. A partir daí, se fizer sentido para o dono, a gente pode evoluir para um{' '}
-              <strong>acompanhamento mensal</strong> com setup técnico, marketing 360º e indicadores. Os dois formatos
-              se conversam — quem me conhece no salão entende que minha proposta de parceria vem de dentro, não de uma
-              apresentação bonita.
+              Atendo um número limitado de casas em Goiânia, sempre presencialmente. A porta de entrada é o
+              diagnóstico: sem entender a operação por dentro, eu não proponho nada.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -755,13 +762,15 @@ const FoodServicePage = () => {
           </div>
 
           <div className="mt-8 bg-card rounded-lg p-7 shadow-guia border-l-[5px] border-guia-amber">
-            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Combinados claros desde o início</h3>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Como eu conduzo</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2.5">
               {[
-                'Nada de CLT: freelancer, PJ, projeto fechado ou mensalidade.',
-                'Atendimento sempre presencial — treinamentos e aulas não são online.',
-                'Escopo, prazo e valor combinados antes de começar.',
-                'Discrição total com números, receitas e informações da casa.',
+                'Escopo, prazo, indicadores e valor definidos antes de começar.',
+                'Trabalho por projeto ou mensalidade — atuação como prestador, não como funcionário.',
+                'Treinamento e implantação presenciais: ferramenta configurada e equipe usando de verdade.',
+                'Todos os ativos no CNPJ do cliente. Se a parceria acabar, a estrutura fica com a empresa.',
+                'Relatório com número real de origem de venda, margem por canal e recompra.',
+                'Discrição total com receitas, custos e informações da casa.',
               ].map((t, i) => (
                 <div key={i} className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
@@ -773,18 +782,21 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+
       {/* CTA */}
       <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
-            Vamos conversar sobre a{' '}
+            Solicite um{' '}
             <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              sua casa
-            </span>
+              diagnóstico
+            </span>{' '}
+            da sua operação
           </h2>
           <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
-            Me chame no WhatsApp e me conte o momento do seu negócio. Se fizer sentido, eu passo aí presencialmente,
-            olho a operação e volto com um diagnóstico honesto — sem enrolação e sem promessa de milagre.
+            Eu trabalho com poucas casas por vez, porque implantação séria exige presença. Me conte o momento do seu
+            negócio: se houver encaixe, eu vou até a operação, faço a leitura técnica e volto com um diagnóstico
+            honesto — sem promessa de milagre.
           </p>
           <a
             href={WA}
@@ -795,10 +807,11 @@ const FoodServicePage = () => {
             <MessageCircle className="w-4 h-4" /> (62) 99968-8700
           </a>
           <p className="mt-5 text-xs text-white/40">
-            Diego Allas · Goiânia-GO · food service, marketing e gestão
+            Diego Allas · Goiânia-GO · marketing 360º, delivery e gestão para food service
           </p>
         </div>
       </section>
+
 
       <Footer />
       <ScrollToTop />
