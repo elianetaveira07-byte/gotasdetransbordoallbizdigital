@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   ArrowLeft,
   MessageCircle,
-  CalendarClock,
   MapPin,
   Utensils,
   Megaphone,
@@ -19,7 +18,6 @@ import {
   AlertTriangle,
   CheckCircle2,
   Handshake,
-  Clock,
   TrendingUp,
   Network,
   Search,
