@@ -724,21 +724,14 @@ const FoodServicePage = () => {
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
-              Formatos de trabalho
+              Como eu trabalho
             </span>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-              Sem vínculo CLT — <span className="text-primary">freelancer, projeto ou mensal</span>
+              Três formatos, um mesmo <span className="text-primary">padrão de entrega</span>
             </h2>
             <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
-              Tenho emprego fixo CLT em Goiânia e saio às 18h. Minha disponibilidade para outras empresas é à noite nos
-              dias de semana e integral aos sábados, domingos e feriados — tudo presencial, aqui em Goiânia.
-            </p>
-            <p className="mt-4 text-foreground text-base md:text-lg leading-[1.75] border-l-[4px] border-guia-amber pl-4">
-              O freelancer de salão é a porta de entrada: eu entro pela operação, ganho confiança e entendo a casa de
-              verdade. A partir daí, se fizer sentido para o dono, a gente pode evoluir para um{' '}
-              <strong>acompanhamento mensal</strong> com setup técnico, marketing 360º e indicadores. Os dois formatos
-              se conversam — quem me conhece no salão entende que minha proposta de parceria vem de dentro, não de uma
-              apresentação bonita.
+              Atendo um número limitado de casas em Goiânia, sempre presencialmente. A porta de entrada é o
+              diagnóstico: sem entender a operação por dentro, eu não proponho nada.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -755,13 +748,15 @@ const FoodServicePage = () => {
           </div>
 
           <div className="mt-8 bg-card rounded-lg p-7 shadow-guia border-l-[5px] border-guia-amber">
-            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Combinados claros desde o início</h3>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Como eu conduzo</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2.5">
               {[
-                'Nada de CLT: freelancer, PJ, projeto fechado ou mensalidade.',
-                'Atendimento sempre presencial — treinamentos e aulas não são online.',
-                'Escopo, prazo e valor combinados antes de começar.',
-                'Discrição total com números, receitas e informações da casa.',
+                'Escopo, prazo, indicadores e valor definidos antes de começar.',
+                'Trabalho por projeto ou mensalidade — atuação como prestador, não como funcionário.',
+                'Treinamento e implantação presenciais: ferramenta configurada e equipe usando de verdade.',
+                'Todos os ativos no CNPJ do cliente. Se a parceria acabar, a estrutura fica com a empresa.',
+                'Relatório com número real de origem de venda, margem por canal e recompra.',
+                'Discrição total com receitas, custos e informações da casa.',
               ].map((t, i) => (
                 <div key={i} className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
@@ -772,6 +767,7 @@ const FoodServicePage = () => {
           </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
