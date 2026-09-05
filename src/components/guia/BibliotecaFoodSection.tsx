@@ -64,7 +64,7 @@ const blocos = [
 
 const BibliotecaFoodSection = () => {
   return (
-    <section id="biblioteca" className="relative bg-[#0D1117] text-white py-[72px] overflow-hidden">
+    <section id="biblioteca" className="scroll-mt-[150px] relative bg-[#0D1117] text-white py-[72px] overflow-hidden">
       <img
         src={capaHero}
         alt="Salão de restaurante iluminado à noite"

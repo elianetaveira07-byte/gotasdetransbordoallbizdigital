@@ -92,7 +92,7 @@ const meuComplemento = [
 
 const ParceriasSection = () => {
   return (
-    <section id="parcerias" className="bg-[#080B11] text-white">
+    <section id="parcerias" className="scroll-mt-[150px] bg-[#080B11] text-white">
       {/* Capa cinematográfica */}
       <div className="relative">
         <img
