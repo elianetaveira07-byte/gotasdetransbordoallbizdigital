@@ -33,6 +33,7 @@ import {
   Globe,
   Smartphone,
   Presentation,
+  BookOpen,
 } from 'lucide-react';
 
 import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
@@ -44,21 +45,13 @@ const WA = 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20p%C3
 
 const dores = [
   'Não existe setor interno de marketing — tudo é feito no improviso, sem responsável, sem rotina e sem calendário.',
-  'Dependência quase total do iFood: a casa vive de um único canal e paga comissão que hoje vai de ~12% (entrega própria) a 27–30% quando entra a logística do app.',
+  'Dependência quase total do marketplace: a casa vive de um único canal e paga comissão que vai de ~12% (entrega própria) a 27–30% quando entra a logística do app.',
   'Não existe canal próprio de delivery — nenhum cardápio digital, nenhum link direto, nenhum pedido chegando sem intermediário.',
   'Preço definido "no olho", sem ficha técnica nem CMV real — o prato que mais vende costuma ser o que menos dá lucro.',
   'Margem por canal desconhecida: ninguém sabe quanto sobra de um pedido do salão, do app e do WhatsApp.',
-  'Perfil da Empresa no Google abandonado: sem fotos, sem posts, sem categorias certas, sem responder avaliação — fora do mapa do bairro.',
-  'A casa não aparece quando alguém pergunta ao ChatGPT, Gemini ou Perplexity onde comer na região — e em 2026 isso já é canal de descoberta.',
+  'Perfil da Empresa no Google abandonado e ausência nas respostas de ChatGPT, Gemini e Perplexity — fora do mapa e fora da busca por IA.',
   'Tráfego pago sem setup técnico correto — pixel, conversões e catálogo mal configurados queimando verba.',
   'Base de clientes perdida: nenhum CRM, nenhuma recompra trabalhada, nenhuma lista para reativar em dia fraco.',
-  'WhatsApp bagunçado: pedido, reserva, reclamação e fornecedor no mesmo lugar, sem etiqueta, sem funil e sem histórico.',
-  'Segunda a quinta com salão vazio e nenhuma ação estruturada para preencher os horários fracos.',
-  'Avaliações negativas sem resposta e sem processo de recuperação do cliente insatisfeito.',
-  'Rotatividade alta e equipe de salão sem treinamento de atendimento e venda sugestiva — que é onde o ticket médio nasce.',
-  'Conteúdo social feito quando "dá tempo": sem linha editorial, sem foto boa do prato e sem vídeo que gere pedido.',
-  'Cardápio sem engenharia: itens âncora, campeões e "abacaxis" misturados, sem destaque visual para o que dá margem.',
-  'Ruptura de item e cardápio desatualizado no app, derrubando posicionamento e gerando cancelamento.',
   'Zero leitura de dados: nada de origem de venda, curva ABC, ticket por canal ou taxa de recompra.',
 ];
 
@@ -94,44 +87,19 @@ const servicos = [
     desc: 'Campanhas com foco em movimento de salão, delivery próprio e pedido direto: geolocalização por raio, públicos de recompra, catálogo, criativos testados e verba controlada.',
   },
   {
-    icon: Search,
-    title: 'SEO local + GEO (busca por IA)',
-    desc: 'Perfil da Empresa no Google trabalhado de verdade (categorias, fotos, posts, avaliações, perguntas) somado a site com dados estruturados, NAP consistente e conteúdo local — para ranquear no mapa e também ser citado por ChatGPT, Gemini, Perplexity e AI Overviews.',
-  },
-  {
-    icon: Bot,
-    title: 'IA e automação aplicadas à operação',
-    desc: 'Uso prático de LLMs no dia a dia: atendimento e triagem no WhatsApp, respostas a avaliações, análise de comentários, previsão de demanda, criação de conteúdo, relatórios automáticos e apoio à decisão do dono.',
-  },
-  {
     icon: BarChart3,
     title: 'Dados e indicadores',
     desc: 'Painel simples com o que importa: origem da venda, ticket médio por canal, curva ABC, taxa de recompra, custo de aquisição e margem real. Decisão com número, não com achismo.',
   },
   {
-    icon: MapPinned,
-    title: 'Presença offline e ponto de venda',
-    desc: 'Cardápio impresso e engenharia visual, sinalização e fachada, QR Code e NFC na mesa, materiais de PDV, parcerias com o comércio da região, ações de bairro e eventos.',
-  },
-  {
-    icon: Wrench,
-    title: 'Implantação de ferramentas e integrações',
-    desc: 'Escolha, configuração e integração dos sistemas do setor (cardápio digital, PDV, robô de WhatsApp, CRM, fidelidade) — com treino da equipe para usar de verdade.',
-  },
-  {
     icon: Settings2,
     title: 'Setup técnico ponta a ponta',
-    desc: 'Contas, pixel, tags, eventos, conversões, catálogo, UTMs e rastreamento — Google e Meta configurados corretamente desde a base.',
+    desc: 'Contas, pixel, tags, eventos, conversões, catálogo, UTMs e rastreamento — Google e Meta configurados corretamente desde a base, além da implantação e integração das ferramentas do setor.',
   },
   {
     icon: GraduationCap,
-    title: 'Treinamento, consultoria e aulas presenciais',
-    desc: 'Aulas e treinamento para dono, gestão, cozinha e salão: atendimento, venda sugestiva, padrão de serviço, uso das ferramentas e leitura de indicadores. Presencial sempre.',
-  },
-  {
-    icon: Camera,
-    title: 'Social media e audiovisual (com parceiros)',
-    desc: 'Linha editorial, calendário e roteiro eu faço. Produção pesada de foto e vídeo entra com minha rede de parceiros — e estou montando estrutura própria de câmera, iluminação, lapela e drone.',
+    title: 'Treinamento e aulas presenciais',
+    desc: 'Treinamento para dono, gestão, cozinha e salão: atendimento, venda sugestiva, padrão de serviço, uso das ferramentas e leitura de indicadores. Presencial sempre.',
   },
 ];
 
@@ -168,13 +136,8 @@ const canais = [
   },
   {
     icon: QrCode,
-    title: 'Presencial e PDV',
-    desc: 'QR Code e NFC na mesa, cardápio bem construído, venda sugestiva no salão e captação de cadastro no balcão.',
-  },
-  {
-    icon: Handshake,
-    title: 'Parcerias e comunidade local',
-    desc: 'Comércio vizinho, empresas do entorno, condomínios, eventos de bairro e criadores locais.',
+    title: 'Presencial, PDV e comunidade local',
+    desc: 'QR Code e NFC na mesa, venda sugestiva no salão, captação de cadastro no balcão e parceria com o comércio vizinho.',
   },
 ];
 
@@ -198,9 +161,17 @@ const formatos = [
 
 
 
+const provas = [
+  { icon: Utensils, t: '10+ anos dentro da operação', d: 'Cozinha, salão, gerência, compras e escritório — inclusive gestão de rede de pastelaria com matriz e 3 filiais.' },
+  { icon: Settings2, t: 'Setup técnico Meta + Google', d: 'BM, pixel, API de Conversões, GA4, Ads e Perfil da Empresa configurados do zero, no CNPJ do dono.' },
+  { icon: GraduationCap, t: 'Ciência de Dados e IA · PUC Goiás', d: 'Graduação em andamento, aplicada em indicadores, previsão de demanda e IA na operação.' },
+  { icon: BookOpen, t: 'Acervo público e gratuito', d: 'Aulas, e-books, apps e podcast do food service abertos para qualquer dono — antes de qualquer proposta.' },
+];
+
 const FoodServicePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'Marketing 360º para food service em Goiânia · Diego Allas';
   }, []);
 
   return (
@@ -285,8 +256,27 @@ const FoodServicePage = () => {
         </div>
       </header>
 
+      {/* Provas / credenciais */}
+      <section className="bg-[#0D1117] border-t border-white/10 px-4 md:px-6 pb-14">
+        <div className="container max-w-5xl">
+          <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-4">Por que eu</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {provas.map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <div key={i} className="bg-white/[0.04] border border-white/10 rounded-xl p-5">
+                  <Icon className="w-5 h-5 text-yellow-400 mb-2.5" />
+                  <h2 className="text-sm font-bold text-white mb-1.5 leading-snug">{p.t}</h2>
+                  <p className="text-xs text-white/55 leading-[1.7]">{p.d}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Índice */}
-      <nav className="bg-[#0D1117] border-b border-white/10 px-4 md:px-6 py-4">
+      <nav className="sticky top-[57px] z-40 bg-[#0D1117]/95 backdrop-blur-md border-y border-white/10 px-4 md:px-6 py-4">
         <div className="container max-w-5xl">
           <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-3">Navegue pela página</p>
           <div className="flex flex-wrap gap-2">
@@ -297,12 +287,14 @@ const FoodServicePage = () => {
               { href: '#canais', label: 'Canais de aquisição' },
               { href: '#seo-geo', label: 'SEO local + GEO' },
               { href: '#ia', label: 'IA aplicada' },
+              { href: '#offline', label: 'Salão e PDV' },
               { href: '#setup-tecnico', label: 'Setup Meta + Google' },
               { href: '#biblioteca', label: 'Acervo público' },
-              { href: '#parcerias', label: 'Programa de Parcerias' },
               { href: '#formatos', label: 'Como eu trabalho' },
+              { href: '#parcerias', label: 'Plano Parceiro' },
               { href: '#contato', label: 'Solicitar diagnóstico' },
             ].map((link) => (
+
 
               <a
                 key={link.href}
@@ -317,7 +309,7 @@ const FoodServicePage = () => {
       </nav>
 
       {/* Método */}
-      <section id="como-eu-comeco" className="py-[72px] bg-background">
+      <section id="como-eu-comeco" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             Meu método
@@ -357,7 +349,7 @@ const FoodServicePage = () => {
 
 
       {/* Dores */}
-      <section id="dores" className="py-[72px] bg-secondary/40">
+      <section id="dores" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             O que eu quase sempre encontro
@@ -381,7 +373,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Serviços */}
-      <section id="servicos" className="py-[72px] bg-background">
+      <section id="servicos" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -412,7 +404,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Multicanal */}
-      <section id="canais" className="py-[72px] bg-secondary/40">
+      <section id="canais" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -474,7 +466,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* SEO local + GEO */}
-      <section id="seo-geo" className="py-[72px] bg-background">
+      <section id="seo-geo" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -538,7 +530,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* IA */}
-      <section id="ia" className="py-[72px] bg-[#0D1117] text-white">
+      <section id="ia" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-[11px] font-bold tracking-widest uppercase text-yellow-400 bg-yellow-500/10 border border-yellow-500/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
@@ -565,8 +557,6 @@ const FoodServicePage = () => {
               { icon: Sparkles, t: 'Conteúdo em escala', d: 'Roteiro, legenda, descrição de prato, resposta padrão e criativo de anúncio produzidos em minutos.' },
               { icon: Calculator, t: 'Apoio a custo e preço', d: 'Simulação de cenário de CMV, taxa e margem por canal para decidir preço com segurança.' },
               { icon: BarChart3, t: 'Relatório automático', d: 'Resumo semanal de vendas, canais e indicadores em linguagem que o dono entende.' },
-              { icon: Users2, t: 'Segmentação de base', d: 'Classificação de clientes por frequência, ticket e recência para campanha de recompra certeira.' },
-              { icon: Presentation, t: 'Treino da equipe', d: 'Material de treinamento, script de atendimento e simulação de situação real do salão.' },
             ].map((c, i) => {
               const Icon = c.icon;
               return (
@@ -582,7 +572,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Offline + parcerias */}
-      <section id="offline" className="py-[72px] bg-background">
+      <section id="offline" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -603,9 +593,7 @@ const FoodServicePage = () => {
               'Cardápio impresso e digital com foto, descrição e ordem que aumentam ticket',
               'QR Code e NFC na mesa ligados a cardápio, avaliação e cadastro no CRM',
               'Treinamento de atendimento e venda sugestiva com a equipe de salão',
-              'Materiais de PDV: display, encarte na embalagem, adesivo de fachada e sinalização',
               'Ações de bairro, parceria com o comércio vizinho, empresas e condomínios do entorno',
-              'Panfletagem e mídia geolocalizada com QR rastreável (dá para medir de verdade)',
               'Datas comemorativas, eventos na casa e calendário de ações para os dias fracos',
               'Padrão de embalagem e experiência de entrega — o delivery também é vitrine',
               'Captação de cadastro no balcão e no salão para alimentar a base própria',
@@ -636,7 +624,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Setup técnico Meta + Google */}
-      <section id="setup-tecnico" className="py-[72px] bg-[#0B1220] text-white">
+      <section id="setup-tecnico" className="scroll-mt-[150px] py-[72px] bg-[#0B1220] text-white">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-[11px] font-bold tracking-widest uppercase text-sky-300 bg-sky-500/10 border border-sky-400/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
@@ -669,11 +657,9 @@ const FoodServicePage = () => {
                   'Verificação do negócio, domínio verificado e propriedade dos ativos no nome do dono — nunca da agência',
                   'Conta de anúncios, formas de pagamento, limite de gasto, fuso e moeda corretos',
                   'Pixel instalado, eventos padronizados e API de Conversões (server-side) para não perder dado',
-                  'Priorização de eventos com Agregação de Eventos e domínio de destino configurado',
                   'Catálogo de produtos/cardápio, conjuntos e integração com o canal próprio de delivery',
                   'Instagram e página ligados ao BM, caixa unificada, mensagens e botões de ação',
                   'Públicos personalizados, similares, exclusões e regras de remarketing por comportamento',
-                  'Nomenclatura de campanha, UTMs e estrutura de conta que dá para ler no relatório',
                 ].map((t, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-[18px] h-[18px] text-sky-300 flex-shrink-0 mt-0.5" />
@@ -693,12 +679,10 @@ const FoodServicePage = () => {
                   'Conta Google Ads estruturada, faturamento, fuso, moeda e acesso administrativo do dono',
                   'GA4 + Google Tag Manager instalados, eventos e conversões importadas de verdade',
                   'Conversões que importam: pedido no canal próprio, clique no WhatsApp, ligação, rota e reserva',
-                  'Merchant Center e feed quando o negócio comporta, além de extensões e ativos completos',
                   'Perfil da Empresa no Google: criação, verificação, reivindicação e recuperação de perfil perdido',
                   'Categoria principal e secundárias corretas para o tipo de negócio local (aqui muita casa erra)',
                   'NAP consistente, horários, feriados, área de atendimento, atributos, serviços e cardápio no perfil',
                   'Fotos, posts, perguntas e respostas, produtos e rotina de avaliações com resposta',
-                  'Search Console, sitemap, dados estruturados e monitoramento de chamadas e rotas',
                 ].map((t, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-[18px] h-[18px] text-sky-300 flex-shrink-0 mt-0.5" />
@@ -731,10 +715,8 @@ const FoodServicePage = () => {
 
       <BibliotecaFoodSection />
 
-      <ParceriasSection />
-
       {/* Formatos */}
-      <section id="formatos" className="py-[72px] bg-secondary/40">
+      <section id="formatos" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -745,7 +727,8 @@ const FoodServicePage = () => {
             </h2>
             <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
               Atendo um número limitado de casas em Goiânia, sempre presencialmente. A porta de entrada é o
-              diagnóstico: sem entender a operação por dentro, eu não proponho nada.
+              diagnóstico: sem entender a operação por dentro, eu não proponho nada. O acompanhamento mensal tem um
+              formato pronto e com valores publicados — o Plano Parceiro, logo abaixo.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -782,9 +765,12 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+      <ParceriasSection />
+
+
 
       {/* CTA */}
-      <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
+      <section id="contato" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
             Solicite um{' '}
