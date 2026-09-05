@@ -723,8 +723,6 @@ const FoodServicePage = () => {
 
       <BibliotecaFoodSection />
 
-      <ParceriasSection />
-
       {/* Formatos */}
       <section id="formatos" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container">
@@ -737,7 +735,8 @@ const FoodServicePage = () => {
             </h2>
             <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
               Atendo um número limitado de casas em Goiânia, sempre presencialmente. A porta de entrada é o
-              diagnóstico: sem entender a operação por dentro, eu não proponho nada.
+              diagnóstico: sem entender a operação por dentro, eu não proponho nada. O acompanhamento mensal tem um
+              formato pronto e com valores publicados — o Plano Parceiro, logo abaixo.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
