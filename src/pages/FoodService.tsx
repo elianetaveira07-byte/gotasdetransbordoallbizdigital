@@ -773,6 +773,9 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+      <ParceriasSection />
+
+
 
       {/* CTA */}
       <section id="contato" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white px-4">
