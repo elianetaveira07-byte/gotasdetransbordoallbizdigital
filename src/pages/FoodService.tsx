@@ -44,21 +44,13 @@ const WA = 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20p%C3
 
 const dores = [
   'Não existe setor interno de marketing — tudo é feito no improviso, sem responsável, sem rotina e sem calendário.',
-  'Dependência quase total do iFood: a casa vive de um único canal e paga comissão que hoje vai de ~12% (entrega própria) a 27–30% quando entra a logística do app.',
+  'Dependência quase total do marketplace: a casa vive de um único canal e paga comissão que vai de ~12% (entrega própria) a 27–30% quando entra a logística do app.',
   'Não existe canal próprio de delivery — nenhum cardápio digital, nenhum link direto, nenhum pedido chegando sem intermediário.',
   'Preço definido "no olho", sem ficha técnica nem CMV real — o prato que mais vende costuma ser o que menos dá lucro.',
   'Margem por canal desconhecida: ninguém sabe quanto sobra de um pedido do salão, do app e do WhatsApp.',
-  'Perfil da Empresa no Google abandonado: sem fotos, sem posts, sem categorias certas, sem responder avaliação — fora do mapa do bairro.',
-  'A casa não aparece quando alguém pergunta ao ChatGPT, Gemini ou Perplexity onde comer na região — e em 2026 isso já é canal de descoberta.',
+  'Perfil da Empresa no Google abandonado e ausência nas respostas de ChatGPT, Gemini e Perplexity — fora do mapa e fora da busca por IA.',
   'Tráfego pago sem setup técnico correto — pixel, conversões e catálogo mal configurados queimando verba.',
   'Base de clientes perdida: nenhum CRM, nenhuma recompra trabalhada, nenhuma lista para reativar em dia fraco.',
-  'WhatsApp bagunçado: pedido, reserva, reclamação e fornecedor no mesmo lugar, sem etiqueta, sem funil e sem histórico.',
-  'Segunda a quinta com salão vazio e nenhuma ação estruturada para preencher os horários fracos.',
-  'Avaliações negativas sem resposta e sem processo de recuperação do cliente insatisfeito.',
-  'Rotatividade alta e equipe de salão sem treinamento de atendimento e venda sugestiva — que é onde o ticket médio nasce.',
-  'Conteúdo social feito quando "dá tempo": sem linha editorial, sem foto boa do prato e sem vídeo que gere pedido.',
-  'Cardápio sem engenharia: itens âncora, campeões e "abacaxis" misturados, sem destaque visual para o que dá margem.',
-  'Ruptura de item e cardápio desatualizado no app, derrubando posicionamento e gerando cancelamento.',
   'Zero leitura de dados: nada de origem de venda, curva ABC, ticket por canal ou taxa de recompra.',
 ];
 
