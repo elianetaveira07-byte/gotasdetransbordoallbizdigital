@@ -33,6 +33,7 @@ import {
   Globe,
   Smartphone,
   Presentation,
+  BookOpen,
 } from 'lucide-react';
 
 import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
