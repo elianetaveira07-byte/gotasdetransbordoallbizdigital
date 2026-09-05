@@ -135,13 +135,8 @@ const canais = [
   },
   {
     icon: QrCode,
-    title: 'Presencial e PDV',
-    desc: 'QR Code e NFC na mesa, cardápio bem construído, venda sugestiva no salão e captação de cadastro no balcão.',
-  },
-  {
-    icon: Handshake,
-    title: 'Parcerias e comunidade local',
-    desc: 'Comércio vizinho, empresas do entorno, condomínios, eventos de bairro e criadores locais.',
+    title: 'Presencial, PDV e comunidade local',
+    desc: 'QR Code e NFC na mesa, venda sugestiva no salão, captação de cadastro no balcão e parceria com o comércio vizinho.',
   },
 ];
 
