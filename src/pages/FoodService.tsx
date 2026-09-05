@@ -86,44 +86,19 @@ const servicos = [
     desc: 'Campanhas com foco em movimento de salão, delivery próprio e pedido direto: geolocalização por raio, públicos de recompra, catálogo, criativos testados e verba controlada.',
   },
   {
-    icon: Search,
-    title: 'SEO local + GEO (busca por IA)',
-    desc: 'Perfil da Empresa no Google trabalhado de verdade (categorias, fotos, posts, avaliações, perguntas) somado a site com dados estruturados, NAP consistente e conteúdo local — para ranquear no mapa e também ser citado por ChatGPT, Gemini, Perplexity e AI Overviews.',
-  },
-  {
-    icon: Bot,
-    title: 'IA e automação aplicadas à operação',
-    desc: 'Uso prático de LLMs no dia a dia: atendimento e triagem no WhatsApp, respostas a avaliações, análise de comentários, previsão de demanda, criação de conteúdo, relatórios automáticos e apoio à decisão do dono.',
-  },
-  {
     icon: BarChart3,
     title: 'Dados e indicadores',
     desc: 'Painel simples com o que importa: origem da venda, ticket médio por canal, curva ABC, taxa de recompra, custo de aquisição e margem real. Decisão com número, não com achismo.',
   },
   {
-    icon: MapPinned,
-    title: 'Presença offline e ponto de venda',
-    desc: 'Cardápio impresso e engenharia visual, sinalização e fachada, QR Code e NFC na mesa, materiais de PDV, parcerias com o comércio da região, ações de bairro e eventos.',
-  },
-  {
-    icon: Wrench,
-    title: 'Implantação de ferramentas e integrações',
-    desc: 'Escolha, configuração e integração dos sistemas do setor (cardápio digital, PDV, robô de WhatsApp, CRM, fidelidade) — com treino da equipe para usar de verdade.',
-  },
-  {
     icon: Settings2,
     title: 'Setup técnico ponta a ponta',
-    desc: 'Contas, pixel, tags, eventos, conversões, catálogo, UTMs e rastreamento — Google e Meta configurados corretamente desde a base.',
+    desc: 'Contas, pixel, tags, eventos, conversões, catálogo, UTMs e rastreamento — Google e Meta configurados corretamente desde a base, além da implantação e integração das ferramentas do setor.',
   },
   {
     icon: GraduationCap,
-    title: 'Treinamento, consultoria e aulas presenciais',
-    desc: 'Aulas e treinamento para dono, gestão, cozinha e salão: atendimento, venda sugestiva, padrão de serviço, uso das ferramentas e leitura de indicadores. Presencial sempre.',
-  },
-  {
-    icon: Camera,
-    title: 'Social media e audiovisual (com parceiros)',
-    desc: 'Linha editorial, calendário e roteiro eu faço. Produção pesada de foto e vídeo entra com minha rede de parceiros — e estou montando estrutura própria de câmera, iluminação, lapela e drone.',
+    title: 'Treinamento e aulas presenciais',
+    desc: 'Treinamento para dono, gestão, cozinha e salão: atendimento, venda sugestiva, padrão de serviço, uso das ferramentas e leitura de indicadores. Presencial sempre.',
   },
 ];
 
