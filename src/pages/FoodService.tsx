@@ -557,8 +557,6 @@ const FoodServicePage = () => {
               { icon: Sparkles, t: 'Conteúdo em escala', d: 'Roteiro, legenda, descrição de prato, resposta padrão e criativo de anúncio produzidos em minutos.' },
               { icon: Calculator, t: 'Apoio a custo e preço', d: 'Simulação de cenário de CMV, taxa e margem por canal para decidir preço com segurança.' },
               { icon: BarChart3, t: 'Relatório automático', d: 'Resumo semanal de vendas, canais e indicadores em linguagem que o dono entende.' },
-              { icon: Users2, t: 'Segmentação de base', d: 'Classificação de clientes por frequência, ticket e recência para campanha de recompra certeira.' },
-              { icon: Presentation, t: 'Treino da equipe', d: 'Material de treinamento, script de atendimento e simulação de situação real do salão.' },
             ].map((c, i) => {
               const Icon = c.icon;
               return (
@@ -595,9 +593,7 @@ const FoodServicePage = () => {
               'Cardápio impresso e digital com foto, descrição e ordem que aumentam ticket',
               'QR Code e NFC na mesa ligados a cardápio, avaliação e cadastro no CRM',
               'Treinamento de atendimento e venda sugestiva com a equipe de salão',
-              'Materiais de PDV: display, encarte na embalagem, adesivo de fachada e sinalização',
               'Ações de bairro, parceria com o comércio vizinho, empresas e condomínios do entorno',
-              'Panfletagem e mídia geolocalizada com QR rastreável (dá para medir de verdade)',
               'Datas comemorativas, eventos na casa e calendário de ações para os dias fracos',
               'Padrão de embalagem e experiência de entrega — o delivery também é vitrine',
               'Captação de cadastro no balcão e no salão para alimentar a base própria',
@@ -661,11 +657,9 @@ const FoodServicePage = () => {
                   'Verificação do negócio, domínio verificado e propriedade dos ativos no nome do dono — nunca da agência',
                   'Conta de anúncios, formas de pagamento, limite de gasto, fuso e moeda corretos',
                   'Pixel instalado, eventos padronizados e API de Conversões (server-side) para não perder dado',
-                  'Priorização de eventos com Agregação de Eventos e domínio de destino configurado',
                   'Catálogo de produtos/cardápio, conjuntos e integração com o canal próprio de delivery',
                   'Instagram e página ligados ao BM, caixa unificada, mensagens e botões de ação',
                   'Públicos personalizados, similares, exclusões e regras de remarketing por comportamento',
-                  'Nomenclatura de campanha, UTMs e estrutura de conta que dá para ler no relatório',
                 ].map((t, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-[18px] h-[18px] text-sky-300 flex-shrink-0 mt-0.5" />
@@ -685,12 +679,10 @@ const FoodServicePage = () => {
                   'Conta Google Ads estruturada, faturamento, fuso, moeda e acesso administrativo do dono',
                   'GA4 + Google Tag Manager instalados, eventos e conversões importadas de verdade',
                   'Conversões que importam: pedido no canal próprio, clique no WhatsApp, ligação, rota e reserva',
-                  'Merchant Center e feed quando o negócio comporta, além de extensões e ativos completos',
                   'Perfil da Empresa no Google: criação, verificação, reivindicação e recuperação de perfil perdido',
                   'Categoria principal e secundárias corretas para o tipo de negócio local (aqui muita casa erra)',
                   'NAP consistente, horários, feriados, área de atendimento, atributos, serviços e cardápio no perfil',
                   'Fotos, posts, perguntas e respostas, produtos e rotina de avaliações com resposta',
-                  'Search Console, sitemap, dados estruturados e monitoramento de chamadas e rotas',
                 ].map((t, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-[18px] h-[18px] text-sky-300 flex-shrink-0 mt-0.5" />
