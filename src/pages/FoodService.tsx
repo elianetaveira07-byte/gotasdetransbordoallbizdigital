@@ -256,8 +256,27 @@ const FoodServicePage = () => {
         </div>
       </header>
 
+      {/* Provas / credenciais */}
+      <section className="bg-[#0D1117] border-t border-white/10 px-4 md:px-6 pb-14">
+        <div className="container max-w-5xl">
+          <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-4">Por que eu</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {provas.map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <div key={i} className="bg-white/[0.04] border border-white/10 rounded-xl p-5">
+                  <Icon className="w-5 h-5 text-yellow-400 mb-2.5" />
+                  <h2 className="text-sm font-bold text-white mb-1.5 leading-snug">{p.t}</h2>
+                  <p className="text-xs text-white/55 leading-[1.7]">{p.d}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Índice */}
-      <nav className="bg-[#0D1117] border-b border-white/10 px-4 md:px-6 py-4">
+      <nav className="sticky top-[57px] z-40 bg-[#0D1117]/95 backdrop-blur-md border-y border-white/10 px-4 md:px-6 py-4">
         <div className="container max-w-5xl">
           <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-3">Navegue pela página</p>
           <div className="flex flex-wrap gap-2">
@@ -268,12 +287,14 @@ const FoodServicePage = () => {
               { href: '#canais', label: 'Canais de aquisição' },
               { href: '#seo-geo', label: 'SEO local + GEO' },
               { href: '#ia', label: 'IA aplicada' },
+              { href: '#offline', label: 'Salão e PDV' },
               { href: '#setup-tecnico', label: 'Setup Meta + Google' },
               { href: '#biblioteca', label: 'Acervo público' },
-              { href: '#parcerias', label: 'Programa de Parcerias' },
               { href: '#formatos', label: 'Como eu trabalho' },
+              { href: '#parcerias', label: 'Plano Parceiro' },
               { href: '#contato', label: 'Solicitar diagnóstico' },
             ].map((link) => (
+
 
               <a
                 key={link.href}
