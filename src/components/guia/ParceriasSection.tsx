@@ -116,8 +116,9 @@ const ParceriasSection = () => {
               </span>
             </h2>
             <p className="mt-4 max-w-2xl text-white/70 text-base md:text-lg leading-[1.8]">
-              Crescimento real para negócios locais — estruturado, medido e sem dependência de agência. Consultoria
-              prática que constrói base, processo e escala, respeitando a realidade de cada casa.
+              É o formato de acompanhamento mensal com escopo e valores publicados, para negócios locais. Começa
+              sempre pelo diagnóstico dentro da operação — depois vêm base técnica, processo e escala, sem
+              dependência de agência e sem promessa milagrosa.
             </p>
           </div>
         </div>
