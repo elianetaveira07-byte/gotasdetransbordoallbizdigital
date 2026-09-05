@@ -309,7 +309,7 @@ const FoodServicePage = () => {
       </nav>
 
       {/* Método */}
-      <section id="como-eu-comeco" className="py-[72px] bg-background">
+      <section id="como-eu-comeco" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             Meu método
@@ -349,7 +349,7 @@ const FoodServicePage = () => {
 
 
       {/* Dores */}
-      <section id="dores" className="py-[72px] bg-secondary/40">
+      <section id="dores" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container max-w-4xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             O que eu quase sempre encontro
@@ -373,7 +373,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Serviços */}
-      <section id="servicos" className="py-[72px] bg-background">
+      <section id="servicos" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -404,7 +404,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Multicanal */}
-      <section id="canais" className="py-[72px] bg-secondary/40">
+      <section id="canais" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -466,7 +466,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* SEO local + GEO */}
-      <section id="seo-geo" className="py-[72px] bg-background">
+      <section id="seo-geo" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-amber bg-guia-amber-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -530,7 +530,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* IA */}
-      <section id="ia" className="py-[72px] bg-[#0D1117] text-white">
+      <section id="ia" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-[11px] font-bold tracking-widest uppercase text-yellow-400 bg-yellow-500/10 border border-yellow-500/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
@@ -574,7 +574,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Offline + parcerias */}
-      <section id="offline" className="py-[72px] bg-background">
+      <section id="offline" className="scroll-mt-[150px] py-[72px] bg-background">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -628,7 +628,7 @@ const FoodServicePage = () => {
       </section>
 
       {/* Setup técnico Meta + Google */}
-      <section id="setup-tecnico" className="py-[72px] bg-[#0B1220] text-white">
+      <section id="setup-tecnico" className="scroll-mt-[150px] py-[72px] bg-[#0B1220] text-white">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-[11px] font-bold tracking-widest uppercase text-sky-300 bg-sky-500/10 border border-sky-400/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
@@ -726,7 +726,7 @@ const FoodServicePage = () => {
       <ParceriasSection />
 
       {/* Formatos */}
-      <section id="formatos" className="py-[72px] bg-secondary/40">
+      <section id="formatos" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
@@ -776,7 +776,7 @@ const FoodServicePage = () => {
 
 
       {/* CTA */}
-      <section id="contato" className="py-[72px] bg-[#0D1117] text-white px-4">
+      <section id="contato" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
             Solicite um{' '}
