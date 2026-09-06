@@ -281,6 +281,7 @@ const FoodServicePage = () => {
           <div className="flex flex-wrap gap-2">
             {[
               { href: '#como-eu-comeco', label: 'Meu método' },
+              { href: '#realidade', label: 'Básico bem feito' },
               { href: '#dores', label: 'Dores do food service' },
               { href: '#servicos', label: 'O que eu implanto' },
               { href: '#canais', label: 'Canais de aquisição' },
