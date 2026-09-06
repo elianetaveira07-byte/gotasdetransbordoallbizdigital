@@ -208,7 +208,7 @@ const FoodServicePage = () => {
             dentro do seu restaurante
           </h1>
           <p className="mt-5 text-white/70 text-base md:text-lg leading-[1.8]">
-            Canal próprio de delivery, setup técnico Meta e Google, SEO local e GEO, CRM e recompra, precificação e
+            Canal próprio de delivery, setup técnico Meta e Google, SEO local, CRM e recompra, precificação e
             indicadores reais. Mais de 10 anos de operação de food service somados à parte técnica que quase nenhuma
             casa tem feita por inteiro — implantação de verdade, presencial, com a equipe treinada e a estrutura no
             nome do dono.
