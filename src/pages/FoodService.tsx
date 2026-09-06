@@ -259,7 +259,7 @@ const FoodServicePage = () => {
       <section className="bg-[#0D1117] border-t border-white/10 px-4 md:px-6 pb-14">
         <div className="container max-w-5xl">
           <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-4">Por que eu</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {provas.map((p, i) => {
               const Icon = p.icon;
               return (
