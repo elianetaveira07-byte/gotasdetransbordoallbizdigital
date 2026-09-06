@@ -321,7 +321,7 @@ const FoodServicePage = () => {
               Antes de propor qualquer coisa, eu leio a casa: cardápio, ficha técnica, CMV, mix de canais, margem por
               pedido, fluxo de salão, rotina de equipe, perfil no Google, estrutura de contas e histórico de
               avaliações. Vem de mais de 10 anos de food service — cozinha, salão, gerência, compras e escritório —
-              somados à parte técnica de marketing, dados e IA.
+              somados à parte técnica de marketing e dados.
             </p>
             <p className="mt-4">
               O resultado é um diagnóstico com nome de prato, horário fraco, número real e prioridade definida. A
