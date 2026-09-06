@@ -162,9 +162,8 @@ const formatos = [
 
 
 const provas = [
-  { icon: Utensils, t: '10+ anos dentro da operação', d: 'Cozinha, salão, gerência, compras e escritório — inclusive gestão de rede de pastelaria com matriz e 3 filiais.' },
+  { icon: Utensils, t: 'Mais de 10 anos dentro da operação', d: 'Cozinha, salão, gerência, compras e escritório — passei por cada ponto do restaurante antes de tocar em campanha, pixel ou indicador.' },
   { icon: Settings2, t: 'Setup técnico Meta + Google', d: 'BM, pixel, API de Conversões, GA4, Ads e Perfil da Empresa configurados do zero, no CNPJ do dono.' },
-  { icon: GraduationCap, t: 'Ciência de Dados e IA · PUC Goiás', d: 'Graduação em andamento, aplicada em indicadores, previsão de demanda e IA na operação.' },
   { icon: BookOpen, t: 'Acervo público e gratuito', d: 'Aulas, e-books, apps e podcast do food service abertos para qualquer dono — antes de qualquer proposta.' },
 ];
 
@@ -209,7 +208,7 @@ const FoodServicePage = () => {
             dentro do seu restaurante
           </h1>
           <p className="mt-5 text-white/70 text-base md:text-lg leading-[1.8]">
-            Canal próprio de delivery, setup técnico Meta e Google, SEO local e GEO, CRM e recompra, precificação e
+            Canal próprio de delivery, setup técnico Meta e Google, SEO local, CRM e recompra, precificação e
             indicadores reais. Mais de 10 anos de operação de food service somados à parte técnica que quase nenhuma
             casa tem feita por inteiro — implantação de verdade, presencial, com a equipe treinada e a estrutura no
             nome do dono.
@@ -260,7 +259,7 @@ const FoodServicePage = () => {
       <section className="bg-[#0D1117] border-t border-white/10 px-4 md:px-6 pb-14">
         <div className="container max-w-5xl">
           <p className="text-[11px] font-bold tracking-widest uppercase text-white/40 mb-4">Por que eu</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {provas.map((p, i) => {
               const Icon = p.icon;
               return (
@@ -282,6 +281,7 @@ const FoodServicePage = () => {
           <div className="flex flex-wrap gap-2">
             {[
               { href: '#como-eu-comeco', label: 'Meu método' },
+              { href: '#realidade', label: 'Básico bem feito' },
               { href: '#dores', label: 'Dores do food service' },
               { href: '#servicos', label: 'O que eu implanto' },
               { href: '#canais', label: 'Canais de aquisição' },
@@ -322,7 +322,7 @@ const FoodServicePage = () => {
               Antes de propor qualquer coisa, eu leio a casa: cardápio, ficha técnica, CMV, mix de canais, margem por
               pedido, fluxo de salão, rotina de equipe, perfil no Google, estrutura de contas e histórico de
               avaliações. Vem de mais de 10 anos de food service — cozinha, salão, gerência, compras e escritório —
-              somados à parte técnica de marketing, dados e IA.
+              somados à parte técnica de marketing e dados.
             </p>
             <p className="mt-4">
               O resultado é um diagnóstico com nome de prato, horário fraco, número real e prioridade definida. A
@@ -347,6 +347,44 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+      {/* Realidade: básico bem feito */}
+      <section id="realidade" className="scroll-mt-[150px] py-[72px] bg-[#0B1220] text-white">
+        <div className="container max-w-4xl">
+          <span className="text-[11px] font-bold tracking-widest uppercase text-sky-300 bg-sky-500/10 border border-sky-400/30 inline-block px-3.5 py-1.5 rounded-full mb-5">
+            O que pouca gente faz
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
+            Nem toda casa precisa de tudo.{' '}
+            <span className="bg-gradient-to-b from-sky-200 via-sky-400 to-sky-600 bg-clip-text text-transparent">
+              A maioria só precisa do básico bem feito.
+            </span>
+          </h2>
+          <p className="mt-5 text-white/70 text-base md:text-lg leading-[1.8]">
+            O que eu mais vejo não é falta de ferramenta. É falta dos 3 ou 4 pilares básicos funcionando juntos: Perfil
+            da Empresa no Google atualizado, WhatsApp organizado, canal próprio de delivery funcionando e preço com
+            margem real. Quando esses quatro estão no lugar, o restaurante já sai na frente de 90% dos concorrentes do
+            bairro — sem gastar rios de dinheiro em anúncio.
+          </p>
+          <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
+            Se a casa precisar de mais, a gente avança por etapas: primeiro o que para o sangramento, depois o que
+            sustenta o crescimento. Nada de comprar pacote pronto cheio de coisa que não vai usar. Meu trabalho é
+            desenhar o caminho certo para o tamanho e momento do seu negócio — e entregar cada etapa no lugar.
+          </p>
+          <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { t: 'Google e WhatsApp organizados', d: 'São gratuitos e, ainda assim, a maioria não tem funcionando direito.' },
+              { t: 'Canal próprio de delivery', d: 'Um link da casa que entrega sem comissão de app é o ativo mais barato do mundo.' },
+              { t: 'Preço com margem real', d: 'Ficha técnica e CMV por canal — o básico que poucos donos têm na mão.' },
+              { t: 'Base de clientes ativa', d: 'Aniversariante, dia fraco e quem sumiu: quem já comprou é o cliente mais barato.' },
+            ].map((item, i) => (
+              <div key={i} className="bg-white/[0.04] border border-white/10 rounded-xl p-5">
+                <h3 className="text-sm font-bold text-white mb-1.5">{item.t}</h3>
+                <p className="text-xs text-white/55 leading-[1.7]">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Dores */}
       <section id="dores" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
