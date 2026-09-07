@@ -235,11 +235,13 @@ const FoodServicePage = () => {
               O que eu implanto
             </a>
             <a
-              href="#biblioteca"
+              href={ebookAsset.url}
+              download="A-Estrutura-Invisivel-Diego-Allas.pdf"
               className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/10 text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
-              Meu acervo público
+              <Download className="w-4 h-4" /> Guia gratuito “A Estrutura Invisível”
             </a>
+
           </div>
 
           <div className="mt-9 grid grid-cols-1 sm:grid-cols-3 gap-3">
