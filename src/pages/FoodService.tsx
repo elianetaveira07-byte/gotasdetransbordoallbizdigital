@@ -34,12 +34,18 @@ import {
   Smartphone,
   Presentation,
   BookOpen,
+  Download,
 } from 'lucide-react';
 
+import ebookAsset from '@/assets/estrutura_invisivel.pdf.asset.json';
 import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
+import EstruturaInvisivelSection from '@/components/guia/EstruturaInvisivelSection';
+import PareceAtivoSection from '@/components/guia/PareceAtivoSection';
+import AuditoriaSection from '@/components/guia/AuditoriaSection';
 import ParceriasSection from '@/components/guia/ParceriasSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
+
 
 const WA = 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20p%C3%A1gina%20de%20food%20service.';
 
