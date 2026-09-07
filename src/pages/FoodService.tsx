@@ -392,6 +392,12 @@ const FoodServicePage = () => {
         </div>
       </section>
 
+      <EstruturaInvisivelSection />
+      <PareceAtivoSection />
+      <AuditoriaSection />
+
+
+
       {/* Dores */}
       <section id="dores" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container max-w-4xl">
