@@ -34,12 +34,18 @@ import {
   Smartphone,
   Presentation,
   BookOpen,
+  Download,
 } from 'lucide-react';
 
+import ebookAsset from '@/assets/estrutura_invisivel.pdf.asset.json';
 import BibliotecaFoodSection from '@/components/guia/BibliotecaFoodSection';
+import EstruturaInvisivelSection from '@/components/guia/EstruturaInvisivelSection';
+import PareceAtivoSection from '@/components/guia/PareceAtivoSection';
+import AuditoriaSection from '@/components/guia/AuditoriaSection';
 import ParceriasSection from '@/components/guia/ParceriasSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
+
 
 const WA = 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20p%C3%A1gina%20de%20food%20service.';
 
@@ -165,6 +171,8 @@ const provas = [
   { icon: Utensils, t: 'Mais de 10 anos dentro da operação', d: 'Cozinha, salão, gerência, compras e escritório — passei por cada ponto do restaurante antes de tocar em campanha, pixel ou indicador.' },
   { icon: Settings2, t: 'Setup técnico Meta + Google', d: 'BM, pixel, API de Conversões, GA4, Ads e Perfil da Empresa configurados do zero, no CNPJ do dono.' },
   { icon: BookOpen, t: 'Acervo público e gratuito', d: 'Aulas, e-books, apps e podcast do food service abertos para qualquer dono — antes de qualquer proposta.' },
+  { icon: Search, t: 'Auditoria de estrutura digital', d: 'Mapeamento, recuperação de acesso, 2FA, Business Manager no CNPJ certo, LGPD e contratos — o que o guia “A Estrutura Invisível” descreve, feito na prática.' },
+
 ];
 
 const FoodServicePage = () => {
@@ -229,11 +237,13 @@ const FoodServicePage = () => {
               O que eu implanto
             </a>
             <a
-              href="#biblioteca"
+              href={ebookAsset.url}
+              download="A-Estrutura-Invisivel-Diego-Allas.pdf"
               className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/10 text-white text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
             >
-              Meu acervo público
+              <Download className="w-4 h-4" /> Guia gratuito “A Estrutura Invisível”
             </a>
+
           </div>
 
           <div className="mt-9 grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -282,7 +292,13 @@ const FoodServicePage = () => {
             {[
               { href: '#como-eu-comeco', label: 'Meu método' },
               { href: '#realidade', label: 'Básico bem feito' },
+              { href: '#estrutura-invisivel', label: 'A Estrutura Invisível' },
+              { href: '#essencial', label: 'Os 9 essenciais' },
+              { href: '#por-que-agora', label: 'Por que agora' },
+              { href: '#parece-ativo', label: 'Parece ativo, mas não é' },
+              { href: '#auditoria', label: 'Auditoria e checklist' },
               { href: '#dores', label: 'Dores do food service' },
+
               { href: '#servicos', label: 'O que eu implanto' },
               { href: '#canais', label: 'Canais de aquisição' },
               { href: '#seo-geo', label: 'SEO local + GEO' },
@@ -385,6 +401,12 @@ const FoodServicePage = () => {
           </div>
         </div>
       </section>
+
+      <EstruturaInvisivelSection />
+      <PareceAtivoSection />
+      <AuditoriaSection />
+
+
 
       {/* Dores */}
       <section id="dores" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
@@ -811,27 +833,35 @@ const FoodServicePage = () => {
       <section id="contato" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
-            Solicite um{' '}
+            Antes que a estrutura pare por conta própria,{' '}
             <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              diagnóstico
-            </span>{' '}
-            da sua operação
+              vamos organizar ela juntos
+            </span>
           </h2>
           <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
-            Eu trabalho com poucas casas por vez, porque implantação séria exige presença. Me conte o momento do seu
-            negócio: se houver encaixe, eu vou até a operação, faço a leitura técnica e volto com um diagnóstico
-            honesto — sem promessa de milagre.
+            Eu olho a sua operação de graça e te devolvo um retrato honesto do que está em risco hoje — sem
+            compromisso e sem letra miúda. Se houver encaixe para irmos além, aí sim a gente fala de escopo, prazo e
+            valor.
           </p>
-          <a
-            href={WA}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-7 py-4 rounded-full transition-colors no-underline"
-          >
-            <MessageCircle className="w-4 h-4" /> (62) 99968-8700
-          </a>
+          <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href={WA}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-7 py-4 rounded-full transition-colors no-underline"
+            >
+              <MessageCircle className="w-4 h-4" /> (62) 99968-8700
+            </a>
+            <a
+              href={ebookAsset.url}
+              download="A-Estrutura-Invisivel-Diego-Allas.pdf"
+              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-7 py-4 rounded-full transition-colors no-underline"
+            >
+              <Download className="w-4 h-4" /> Baixar “A Estrutura Invisível” (PDF)
+            </a>
+          </div>
           <p className="mt-5 text-xs text-white/40">
-            Diego Allas · Goiânia-GO · marketing 360º, delivery e gestão para food service
+            Diagnóstico gratuito · Resposta em até 24h úteis · Goiânia e região
           </p>
         </div>
       </section>
