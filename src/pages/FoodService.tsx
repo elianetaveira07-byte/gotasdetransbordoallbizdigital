@@ -171,6 +171,8 @@ const provas = [
   { icon: Utensils, t: 'Mais de 10 anos dentro da operação', d: 'Cozinha, salão, gerência, compras e escritório — passei por cada ponto do restaurante antes de tocar em campanha, pixel ou indicador.' },
   { icon: Settings2, t: 'Setup técnico Meta + Google', d: 'BM, pixel, API de Conversões, GA4, Ads e Perfil da Empresa configurados do zero, no CNPJ do dono.' },
   { icon: BookOpen, t: 'Acervo público e gratuito', d: 'Aulas, e-books, apps e podcast do food service abertos para qualquer dono — antes de qualquer proposta.' },
+  { icon: Search, t: 'Auditoria de estrutura digital', d: 'Mapeamento, recuperação de acesso, 2FA, Business Manager no CNPJ certo, LGPD e contratos — o que o guia “A Estrutura Invisível” descreve, feito na prática.' },
+
 ];
 
 const FoodServicePage = () => {
