@@ -844,8 +844,6 @@ const FoodServicePage = () => {
         </div>
       </section>
 
-      </section>
-
 
       <Footer />
       <ScrollToTop />
