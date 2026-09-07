@@ -288,7 +288,13 @@ const FoodServicePage = () => {
             {[
               { href: '#como-eu-comeco', label: 'Meu método' },
               { href: '#realidade', label: 'Básico bem feito' },
+              { href: '#estrutura-invisivel', label: 'A Estrutura Invisível' },
+              { href: '#essencial', label: 'Os 9 essenciais' },
+              { href: '#por-que-agora', label: 'Por que agora' },
+              { href: '#parece-ativo', label: 'Parece ativo, mas não é' },
+              { href: '#auditoria', label: 'Auditoria e checklist' },
               { href: '#dores', label: 'Dores do food service' },
+
               { href: '#servicos', label: 'O que eu implanto' },
               { href: '#canais', label: 'Canais de aquisição' },
               { href: '#seo-geo', label: 'SEO local + GEO' },
