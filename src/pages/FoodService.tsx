@@ -811,29 +811,39 @@ const FoodServicePage = () => {
       <section id="contato" className="scroll-mt-[150px] py-[72px] bg-[#0D1117] text-white px-4">
         <div className="container max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold leading-tight">
-            Solicite um{' '}
+            Antes que a estrutura pare por conta própria,{' '}
             <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              diagnóstico
-            </span>{' '}
-            da sua operação
+              vamos organizar ela juntos
+            </span>
           </h2>
           <p className="mt-4 text-white/70 text-base md:text-lg leading-[1.8]">
-            Eu trabalho com poucas casas por vez, porque implantação séria exige presença. Me conte o momento do seu
-            negócio: se houver encaixe, eu vou até a operação, faço a leitura técnica e volto com um diagnóstico
-            honesto — sem promessa de milagre.
+            Eu olho a sua operação de graça e te devolvo um retrato honesto do que está em risco hoje — sem
+            compromisso e sem letra miúda. Se houver encaixe para irmos além, aí sim a gente fala de escopo, prazo e
+            valor.
           </p>
-          <a
-            href={WA}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-7 py-4 rounded-full transition-colors no-underline"
-          >
-            <MessageCircle className="w-4 h-4" /> (62) 99968-8700
-          </a>
+          <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href={WA}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-7 py-4 rounded-full transition-colors no-underline"
+            >
+              <MessageCircle className="w-4 h-4" /> (62) 99968-8700
+            </a>
+            <a
+              href={ebookAsset.url}
+              download="A-Estrutura-Invisivel-Diego-Allas.pdf"
+              className="inline-flex items-center justify-center gap-2 border border-yellow-500/40 hover:bg-yellow-500/10 text-yellow-300 text-sm font-semibold px-7 py-4 rounded-full transition-colors no-underline"
+            >
+              <Download className="w-4 h-4" /> Baixar “A Estrutura Invisível” (PDF)
+            </a>
+          </div>
           <p className="mt-5 text-xs text-white/40">
-            Diego Allas · Goiânia-GO · marketing 360º, delivery e gestão para food service
+            Diagnóstico gratuito · Resposta em até 24h úteis · Goiânia e região
           </p>
         </div>
+      </section>
+
       </section>
 
 
