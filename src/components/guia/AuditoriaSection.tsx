@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   KeyRound,
   ShieldCheck,
@@ -9,6 +10,8 @@ import {
   AlertTriangle,
   CheckCircle2,
   HelpCircle,
+  ClipboardList,
+  ArrowRight,
 } from 'lucide-react';
 
 import ebookAsset from '@/assets/estrutura_invisivel.pdf.asset.json';
@@ -235,6 +238,36 @@ const AuditoriaSection = () => {
               </div>
             </div>
           )}
+        </div>
+
+        {/* CTA para o diagnóstico completo */}
+        <div className="mt-8 rounded-2xl border border-yellow-500/30 bg-gradient-to-br from-yellow-500/[0.10] to-transparent p-6 md:p-9">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-6 justify-between">
+            <div className="max-w-2xl">
+              <span className="text-[11px] font-bold tracking-widest uppercase text-yellow-400">
+                Quatro perguntas mostram o sintoma. Vinte e quatro mostram a causa.
+              </span>
+              <h3 className="mt-3 font-serif text-2xl md:text-3xl font-semibold leading-snug">
+                Faça o diagnóstico completo da estrutura digital da sua casa
+              </h3>
+              <p className="mt-3 text-sm md:text-base text-white/70 leading-[1.8]">
+                Uma página inteira, gratuita e sem cadastro: 24 pontos em seis áreas — acesso, segurança, LGPD,
+                canais, dados e rotina. Cada pergunta explica por que aquilo importa e o que fazer. No final você
+                recebe a pontuação por área, o nível de risco e um plano de ação priorizado para baixar em arquivo de
+                texto e levar para a reunião com sua equipe.
+              </p>
+              <p className="mt-3 text-xs text-white/45">
+                Leva cerca de 6 minutos · nada é enviado, tudo acontece na sua tela.
+              </p>
+            </div>
+            <Link
+              to="/diagnostico"
+              className="inline-flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-[#0D1117] text-sm font-bold px-8 py-4 rounded-full transition-colors no-underline flex-shrink-0 whitespace-nowrap"
+            >
+              <ClipboardList className="w-4 h-4" /> Acessar o diagnóstico completo
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
 
         <p className="mt-7 max-w-3xl text-sm md:text-base text-white/60 leading-[1.8]">
