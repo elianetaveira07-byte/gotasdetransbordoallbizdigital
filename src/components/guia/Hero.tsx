@@ -1,4 +1,5 @@
-import { Heart, ArrowDown, MessageCircle } from 'lucide-react';
+import { Heart, ArrowDown, MessageCircle, FileCheck2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
 
 const Hero = () => {
@@ -30,18 +31,18 @@ const Hero = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
               <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse-dot" />
-              Perfil pessoal · contratado desde 03/08/2026
+              Goiânia · situação atualizada em 05/10/2026
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Pai, marido, filho.
               <br />
-              Agora <em className="text-yellow-300 not-italic">em Goiânia</em>, construindo do zero.
+              Agora <em className="text-yellow-300 not-italic">em Goiânia</em>, pronto para o próximo ciclo.
             </h1>
             <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Cheguei com minha família em 19/07/2026, encerrando quase 3 anos de imersão na Chapada do
-              Araripe. Poucos dias depois, fui contratado: desde 03/08/2026 sou o responsável por criar o
-              setor de marketing interno de uma empresa no Setor Sul, em Goiânia — fora do food service, com
-              estrutura completa do CRM à automação, do web design ao treinamento do comercial.
+              Desde 03/08/2026, implantei a fundação de um setor de marketing interno em uma empresa no Setor
+              Sul: acessos, Google, Meta, mensuração, CRM, comercial, compliance e sistemas de apoio. Sigo
+              contratado e vou propor uma transição responsável de CLT para PJ, enquanto abro conversas
+              seletivas com empresas e agências onde esse repertório possa gerar mais impacto.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
@@ -50,6 +51,12 @@ const Hero = () => {
               >
                 <Heart className="w-5 h-5 text-red-400" /> Conheça minha história
               </a>
+              <Link
+                to="/apresentacao-emerson"
+                className="bg-yellow-400 text-[#0D1117] text-base font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-yellow-300 no-underline"
+              >
+                <FileCheck2 className="w-5 h-5" /> Ver caso documentado
+              </Link>
             </div>
             <div className="mt-6 inline-flex flex-col sm:flex-row sm:items-center gap-3">
               <a

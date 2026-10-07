@@ -7,6 +7,7 @@ import ScrollToTopOnMount from "./components/ScrollToTopOnMount";
 import Diagnostico from "./pages/Diagnostico.tsx";
 import FoodService from "./pages/FoodService.tsx";
 import Index from "./pages/Index.tsx";
+import ApresentacaoEmerson from "./pages/ApresentacaoEmerson.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/food-service" element={<FoodService />} />
           <Route path="/diagnostico" element={<Diagnostico />} />
+          <Route path="/apresentacao-emerson" element={<ApresentacaoEmerson />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

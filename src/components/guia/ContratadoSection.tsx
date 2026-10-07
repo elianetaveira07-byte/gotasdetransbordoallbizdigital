@@ -46,7 +46,7 @@ const ContratadoSection = () => {
             Capítulo novo · desde 03/08/2026
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Fui <span className="text-guia-green">contratado</span> — e estou construindo o setor de marketing interno
+            A fundação foi <span className="text-guia-green">implantada</span> — agora começa um novo ciclo
           </h2>
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
             Depois de chegar em Goiânia com minha família, foram poucos dias de busca até as primeiras
@@ -54,7 +54,8 @@ const ContratadoSection = () => {
             mais tinha interesse, me escolheu. Preferi não desmarcar nenhuma entrevista já agendada, e foi
             justamente essa decisão que abriu a porta certa. Desde <strong>03/08/2026</strong> faço parte
             dessa equipe, no <strong>Setor Sul, em Goiânia</strong>, como responsável principal por criar o
-            setor de marketing da empresa do zero.
+            setor de marketing da empresa do zero. Em sete semanas, a base necessária saiu do improviso para
+            uma estrutura documentada; a continuidade agora depende de rotina, dados e decisão de investimento.
           </p>
         </div>
 
@@ -69,7 +70,7 @@ const ContratadoSection = () => {
                 Status atual
               </p>
               <p className="text-base font-semibold text-foreground leading-snug">
-                Contratado e atuando presencialmente
+                Contratado e preparando proposta de transição CLT → PJ
               </p>
             </div>
           </div>
@@ -77,7 +78,7 @@ const ContratadoSection = () => {
             <Building2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
             <div>
               <div className="text-sm font-semibold text-foreground leading-snug">Setor Sul · Goiânia-GO</div>
-              <div className="text-xs text-guia-text-muted">Equipe e direção excepcionais</div>
+              <div className="text-xs text-guia-text-muted">Transição planejada e respeitosa</div>
             </div>
           </div>
           <div className="flex items-start gap-2.5">
@@ -120,15 +121,13 @@ const ContratadoSection = () => {
         {/* Fechamento */}
         <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary">
           <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
-            Escolhi a empresa certa — e vim para somar de verdade
+            O trabalho continua. O formato pode evoluir.
           </h3>
           <p className="text-[0.98rem] text-guia-text-muted leading-[1.8]">
-            Havia outra proposta com início marcado para 27/08, com documentação já solicitada e seleção
-            aprovada. Ainda assim, mantive as entrevistas que já estavam agendadas porque acreditava que o
-            encaixe certo apareceria. Apareceu. Hoje trabalho em uma empresa incrível, com uma equipe
-            maravilhosa e uma direção que entende o valor de ter marketing dentro de casa. É exatamente o
-            ambiente em que eu queria aplicar mais de 15 anos de operação real somados a quase 3 anos de
-            imersão em marketing, IA e construção de produto.
+            Continuo cumprindo integralmente meu papel. Minha proposta será preservar a continuidade por meio
+            de uma prestação de serviços bem definida, com escopo, rotina e documentação. Ao mesmo tempo,
+            estou disponível para conversas seletivas sobre projetos, parcerias ou oportunidades profissionais
+            em que minha combinação de operação, marketing, dados e inteligência artificial seja necessária.
           </p>
         </div>
       </div>

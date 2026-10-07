@@ -5,7 +5,7 @@ const trajetoriaAtual = [
     icon: Building2,
     period: 'Desde 08/2026',
     role: 'Responsável pelo setor de Marketing interno — Goiânia (Setor Sul)',
-    detail: 'Criação do setor de marketing da empresa de ponta a ponta: estrutura, processos, CRM, automação, web design, campanhas e treinamento do time comercial. Empresa de outro segmento, fora do food service.',
+    detail: 'Em sete semanas, implantação documentada de acessos, segurança, Google, Meta, mensuração, CRM, formulários, playbooks, compliance e três sistemas de apoio. Em 05/10/2026, continuo contratado e preparo uma proposta de transição CLT para PJ.',
   },
 ];
 
@@ -148,10 +148,10 @@ const PerfilProfissionalSection = () => {
             ))}
           </div>
           <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
-            <strong>Compromisso real:</strong> me preparei fisicamente, mentalmente e psicologicamente para
-            entregar em alto ritmo, sem comprometer saúde nem família. No horário da empresa, foco total no
-            que ela precisa. Fora dele, sigo estudando e construindo minhas frentes próprias — sem que uma
-            coisa atrapalhe a outra.
+            <strong>Disponibilidade com responsabilidade:</strong> sigo cumprindo minha função atual e vou
+            propor uma transição formal, com continuidade e documentação. Estou aberto a conversas seletivas
+            com empresas, agências e operações de food service sobre projetos, parceria PJ ou oportunidade
+            profissional — sem conflito de agenda e sem expor informações confidenciais.
           </p>
         </div>
 
