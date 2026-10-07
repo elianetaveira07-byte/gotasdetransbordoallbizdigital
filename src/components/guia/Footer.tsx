@@ -27,7 +27,6 @@ const Footer = () => {
 
         <div className="flex flex-wrap justify-center gap-4 text-xs text-white/35">
           <Link to="/apresentacao-emerson" className="text-inherit hover:text-white">Caso documentado</Link>
-          <Link to="/food-service" className="text-inherit hover:text-white">Food service</Link>
           <Link to="/diagnostico" className="text-inherit hover:text-white">Diagnóstico</Link>
         </div>
 
