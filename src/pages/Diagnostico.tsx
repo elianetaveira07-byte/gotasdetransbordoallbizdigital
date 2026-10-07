@@ -21,6 +21,7 @@ import {
 
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
+import { setPageMeta } from '@/lib/pageMeta';
 import heroImg from '@/assets/diagnostico_hero.jpg';
 import relatorioImg from '@/assets/diagnostico_relatorio.jpg';
 import ebookAsset from '@/assets/estrutura_invisivel.pdf.asset.json';
@@ -319,13 +320,10 @@ const Diagnostico = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Diagnóstico da estrutura digital · food service · Diego Allas';
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta)
-      meta.setAttribute(
-        'content',
-        'Checklist interativo e gratuito de 24 pontos para avaliar acesso, segurança, LGPD, canais e dados do seu restaurante. Resultado na hora e relatório em texto.',
-      );
+    setPageMeta(
+      'Diagnóstico da estrutura digital · Allbiz Digital',
+      'Checklist interativo e gratuito de 24 pontos para avaliar acesso, segurança, LGPD, canais e dados do seu restaurante. Resultado na hora e relatório em texto.',
+    );
   }, []);
 
   const respondidas = Object.keys(respostas).length;
@@ -451,7 +449,7 @@ const Diagnostico = () => {
             <ArrowLeft className="w-4 h-4" /> Voltar
           </Link>
           <span className="font-serif text-sm sm:text-base tracking-[0.18em] bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-            DIEGO ALLAS
+            ALLBIZ DIGITAL
           </span>
         </div>
         <div className="h-1 w-full bg-white/5">
@@ -516,6 +514,9 @@ const Diagnostico = () => {
               </div>
             ))}
           </div>
+          <Link to="/apresentacao-emerson" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-sky-300 no-underline hover:text-sky-200">
+            <FileText className="h-4 w-4" /> Conheça uma implantação real documentada
+          </Link>
         </div>
       </section>
 

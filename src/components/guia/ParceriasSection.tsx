@@ -27,8 +27,8 @@ const WA =
 const pilares = [
   {
     icon: CalendarClock,
-    title: 'Parceria de 6 meses, sem fidelidade',
-    desc: 'Seis meses é o tempo mínimo honesto para estruturar e medir. Mas não existe contrato amarrado: o parceiro sai quando quiser.',
+    title: 'Ciclo recomendado de 6 meses',
+    desc: 'Seis meses é o período recomendado para estruturar, operar e medir. O início depende de disponibilidade, escopo e cronograma formalizados.',
   },
   {
     icon: Handshake,
@@ -116,9 +116,9 @@ const ParceriasSection = () => {
               </span>
             </h2>
             <p className="mt-4 max-w-2xl text-white/70 text-base md:text-lg leading-[1.8]">
-              É o formato de acompanhamento mensal com escopo e valores publicados, para negócios locais. Começa
-              sempre pelo diagnóstico dentro da operação — depois vêm base técnica, processo e escala, sem
-              dependência de agência e sem promessa milagrosa.
+              É uma proposta de acompanhamento mensal com escopo e valores de referência para negócios locais.
+              Começa sempre pelo diagnóstico dentro da operação — depois vêm base técnica, processo e escala, sem
+              promessa milagrosa. Novos trabalhos serão agendados conforme minha transição profissional.
             </p>
           </div>
         </div>
@@ -151,8 +151,11 @@ const ParceriasSection = () => {
               Plano Parceiro
             </span>
             <h3 className="mt-3 font-serif text-2xl md:text-3xl font-semibold leading-tight">
-              Investimento transparente, do primeiro dia ao sexto mês
+              Investimento de referência para planejar a parceria
             </h3>
+            <p className="mt-3 text-sm leading-[1.7] text-white/55">
+              Valores, início e condições são confirmados em proposta após o diagnóstico e a disponibilidade de agenda.
+            </p>
           </div>
           <div className="mt-7 grid grid-cols-1 md:grid-cols-3 gap-5">
             {investimento.map((v, i) => (
@@ -212,7 +215,7 @@ const ParceriasSection = () => {
               Fundação do crescimento digital
             </span>
             <h3 className="mt-3 font-serif text-2xl md:text-3xl font-semibold leading-tight">
-              Setup técnico completo em 48h — feito junto com você
+              Setup técnico com prazo definido após o diagnóstico
             </h3>
             <ul className="mt-5 space-y-3">
               {setupItens.map((t, i) => (
@@ -282,7 +285,7 @@ const ParceriasSection = () => {
             </h3>
             <p className="mt-4 text-white/70 text-sm md:text-lg leading-[1.8]">
               Crescer junto, fortalecer negócios locais, criar conexões reais e gerar resultado sustentável. Baixe a
-              apresentação completa e vamos marcar uma conversa.
+              apresentação completa e vamos marcar uma conversa exploratória, sem compromisso de início imediato.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <a

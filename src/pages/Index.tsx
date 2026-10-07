@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from '@/components/guia/Navbar';
 import Hero from '@/components/guia/Hero';
 import IntroSection from '@/components/guia/IntroSection';
@@ -12,8 +13,16 @@ import MarketingSection from '@/components/guia/MarketingSection';
 import ConclusaoSection from '@/components/guia/ConclusaoSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
+import { setPageMeta } from '@/lib/pageMeta';
 
 const Index = () => {
+  useEffect(() => {
+    setPageMeta(
+      'Diego Allas · Allbiz Digital — Marketing, operação e IA',
+      'Conheça a história, a trajetória e os projetos de Diego Allas em marketing, food service, operação e inteligência artificial em Goiânia.',
+    );
+  }, []);
+
   return (
     <div className="scroll-smooth">
       <Navbar />

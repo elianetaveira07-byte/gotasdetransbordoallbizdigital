@@ -45,6 +45,7 @@ import AuditoriaSection from '@/components/guia/AuditoriaSection';
 import ParceriasSection from '@/components/guia/ParceriasSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
+import { setPageMeta } from '@/lib/pageMeta';
 
 
 const WA = 'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Vi%20sua%20p%C3%A1gina%20de%20food%20service.';
@@ -178,7 +179,10 @@ const provas = [
 const FoodServicePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Marketing 360º para food service em Goiânia · Diego Allas';
+    setPageMeta(
+      'Marketing 360º para food service em Goiânia · Allbiz Digital',
+      'Diagnóstico, implantação e marketing 360º para food service em Goiânia, com experiência real de operação e estrutura técnica documentada.',
+    );
   }, []);
 
   return (
@@ -221,6 +225,11 @@ const FoodServicePage = () => {
             casa tem feita por inteiro — implantação de verdade, presencial, com a equipe treinada e a estrutura no
             nome do dono.
           </p>
+          <p className="mt-4 max-w-3xl border-l-2 border-sky-400 pl-4 text-sm leading-[1.75] text-white/55">
+            Em 05/10/2026, sigo em regime CLT e preparo uma transição negociada para PJ. Estou abrindo conversas
+            seletivas para projetos, parcerias com agências e oportunidades em que operação e marketing precisem
+            funcionar juntos.
+          </p>
           <div className="mt-7 flex flex-col sm:flex-row gap-3">
             <a
               href={WA}
@@ -243,6 +252,12 @@ const FoodServicePage = () => {
             >
               <Download className="w-4 h-4" /> Guia gratuito “A Estrutura Invisível”
             </a>
+            <Link
+              to="/apresentacao-emerson"
+              className="inline-flex items-center justify-center gap-2 border border-sky-400/40 hover:bg-sky-400/10 text-sky-300 text-sm font-semibold px-6 py-3.5 rounded-full transition-colors no-underline"
+            >
+              <BookOpen className="w-4 h-4" /> Ver implantação documentada
+            </Link>
 
           </div>
 
@@ -775,6 +790,23 @@ const FoodServicePage = () => {
 
       <BibliotecaFoodSection />
 
+      <section className="bg-[#0C1320] px-4 py-[72px] text-white">
+        <div className="container grid max-w-5xl gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="max-w-3xl">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-sky-300">Método transferível</span>
+            <h2 className="mt-3 font-serif text-3xl font-semibold md:text-4xl">A estrutura que ensino aqui já foi implantada em outro setor.</h2>
+            <p className="mt-4 text-base leading-[1.8] text-white/65">
+              Em sete semanas, organizei acessos, segurança, Google, Meta, mensuração, CRM, comercial, compliance e
+              sistemas de apoio em uma operação de proteção veicular. O cliente permanece confidencial; o processo,
+              as datas e os limites estão documentados em um relatório disponível para leitura.
+            </p>
+          </div>
+          <Link to="/apresentacao-emerson" className="inline-flex items-center justify-center gap-2 bg-sky-400 px-7 py-4 text-sm font-bold text-[#0C1320] no-underline transition-colors hover:bg-sky-300">
+            Ver o caso completo <ArrowLeft className="h-4 w-4 rotate-180" />
+          </Link>
+        </div>
+      </section>
+
       {/* Formatos */}
       <section id="formatos" className="scroll-mt-[150px] py-[72px] bg-secondary/40">
         <div className="container">
@@ -786,9 +818,9 @@ const FoodServicePage = () => {
               Três formatos, um mesmo <span className="text-primary">padrão de entrega</span>
             </h2>
             <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
-              Atendo um número limitado de casas em Goiânia, sempre presencialmente. A porta de entrada é o
-              diagnóstico: sem entender a operação por dentro, eu não proponho nada. O acompanhamento mensal tem um
-              formato pronto e com valores publicados — o Plano Parceiro, logo abaixo.
+              Estou abrindo um número limitado de conversas em Goiânia para trabalhos com início alinhado à minha
+              transição profissional. A porta de entrada é o diagnóstico: sem entender a operação por dentro, eu não
+              proponho nada. Projetos e acompanhamentos só começam com disponibilidade, escopo e prazo formalizados.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -809,7 +841,7 @@ const FoodServicePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2.5">
               {[
                 'Escopo, prazo, indicadores e valor definidos antes de começar.',
-                'Trabalho por projeto ou mensalidade — atuação como prestador, não como funcionário.',
+                'Trabalho por projeto ou mensalidade após alinhamento da transição e da disponibilidade.',
                 'Treinamento e implantação presenciais: ferramenta configurada e equipe usando de verdade.',
                 'Todos os ativos no CNPJ do cliente. Se a parceria acabar, a estrutura fica com a empresa.',
                 'Relatório com número real de origem de venda, margem por canal e recompra.',
