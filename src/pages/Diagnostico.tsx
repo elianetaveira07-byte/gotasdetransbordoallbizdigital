@@ -443,7 +443,7 @@ const Diagnostico = () => {
       <header className="sticky top-0 z-50 bg-[#080B11]/95 backdrop-blur-md border-b border-white/10">
         <div className="container flex items-center justify-between gap-3 py-3">
           <Link
-            to="/food-service"
+            to="/"
             className="inline-flex items-center gap-2 text-sm font-semibold text-white/60 hover:text-white no-underline transition-colors"
           >
             <ArrowLeft className="w-4 h-4" /> Voltar

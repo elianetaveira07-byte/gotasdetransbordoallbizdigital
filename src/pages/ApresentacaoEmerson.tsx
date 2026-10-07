@@ -265,8 +265,8 @@ const ApresentacaoEmerson = () => {
                 <div className="border-t border-[#D6DAE2] pt-4"><strong className="font-serif text-2xl text-primary">Goiânia</strong><p className="mt-1 text-xs text-[#697180]">presencial ou híbrido</p></div>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Button asChild><Link to="/food-service" className="no-underline">Conhecer a visão para food service <ArrowRight /></Link></Button>
-                <Button asChild variant="outline"><Link to="/diagnostico" className="no-underline">Abrir ferramenta de diagnóstico</Link></Button>
+                <Button asChild><Link to="/diagnostico" className="no-underline">Abrir ferramenta de diagnóstico <ArrowRight /></Link></Button>
+                <Button asChild variant="outline"><Link to="/" className="no-underline">Voltar ao guia</Link></Button>
               </div>
             </div>
           </div>
