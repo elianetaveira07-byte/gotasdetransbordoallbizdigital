@@ -40,6 +40,7 @@ const Index = () => {
       <ConclusaoSection />
       <Footer />
       <ScrollToTop />
+      <WelcomeModal />
     </div>
   );
 };
