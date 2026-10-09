@@ -13,9 +13,9 @@ const socials = [
   {
     icon: Instagram,
     title: 'Instagram',
-    handle: '@allbizdigitalmkt',
-    desc: 'Bastidores, família e estudos',
-    href: 'https://www.instagram.com/allbizdigitalmkt',
+    handle: '@diegoallas',
+    desc: 'Meu Instagram pessoal, de volta agora',
+    href: 'https://www.instagram.com/diegoallas',
     gradient: 'from-pink-500 via-fuchsia-500 to-orange-500',
   },
   {
@@ -83,8 +83,9 @@ const SocialSection = () => {
             Vamos nos conectar
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-            Meu Instagram pessoal está em pausa, mas estou ativo nessas redes da ALLBIZ DIGITAL.
-            Me segue, manda mensagem, comenta — gosto de conversar.
+            Meu Instagram pessoal <span className="text-yellow-300 font-medium not-italic">@diegoallas</span> está de
+            volta, e essas redes da ALLBIZ DIGITAL seguem ativas. Me segue, manda mensagem, comenta — quem escreve,
+            sou eu que respondo.
           </p>
         </div>
 

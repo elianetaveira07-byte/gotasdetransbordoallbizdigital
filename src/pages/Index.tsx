@@ -13,6 +13,7 @@ import MarketingSection from '@/components/guia/MarketingSection';
 import ConclusaoSection from '@/components/guia/ConclusaoSection';
 import Footer from '@/components/guia/Footer';
 import ScrollToTop from '@/components/guia/ScrollToTop';
+import WelcomeModal from '@/components/guia/WelcomeModal';
 import { setPageMeta } from '@/lib/pageMeta';
 
 const Index = () => {
@@ -39,6 +40,7 @@ const Index = () => {
       <ConclusaoSection />
       <Footer />
       <ScrollToTop />
+      <WelcomeModal />
     </div>
   );
 };
