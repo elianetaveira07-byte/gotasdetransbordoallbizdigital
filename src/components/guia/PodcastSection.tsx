@@ -46,7 +46,7 @@ const PodcastSection = () => {
         </div>
 
         <h2 className="font-serif text-3xl md:text-5xl font-semibold mb-4 text-white leading-tight">
-          Allbiz Digital{' '}
+          Diego Allas{' '}
           <em className="not-italic bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
             Podcast
           </em>

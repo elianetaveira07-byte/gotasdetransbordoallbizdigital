@@ -112,7 +112,7 @@ const ParceriasSection = () => {
             <h2 className="mt-4 font-serif text-3xl md:text-5xl font-semibold leading-[1.1] max-w-3xl">
               Programa de Parcerias{' '}
               <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                ALLBIZ
+                Diego Allas
               </span>
             </h2>
             <p className="mt-4 max-w-2xl text-white/70 text-base md:text-lg leading-[1.8]">
