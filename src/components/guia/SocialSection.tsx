@@ -13,9 +13,9 @@ const socials = [
   {
     icon: Instagram,
     title: 'Instagram',
-    handle: '@allbizdigitalmkt',
-    desc: 'Bastidores, família e estudos',
-    href: 'https://www.instagram.com/allbizdigitalmkt',
+    handle: '@diegoallas',
+    desc: 'Meu Instagram pessoal, de volta agora',
+    href: 'https://www.instagram.com/diegoallas',
     gradient: 'from-pink-500 via-fuchsia-500 to-orange-500',
   },
   {
