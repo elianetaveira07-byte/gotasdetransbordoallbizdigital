@@ -22,7 +22,7 @@ import redeImg from '@/assets/parcerias_rede.jpg';
 import setupImg from '@/assets/parcerias_setup.jpg';
 
 const WA =
-  'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Quero%20entender%20o%20Programa%20de%20Parcerias%20ALLBIZ.';
+  'https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Quero%20entender%20o%20Programa%20de%20Parcerias%20Diego%20Allas.';
 
 const pilares = [
   {
@@ -107,12 +107,12 @@ const ParceriasSection = () => {
         <div className="absolute inset-0 flex items-end">
           <div className="container pb-10 md:pb-14">
             <span className="inline-flex items-center gap-2 text-[0.68rem] font-bold tracking-[0.22em] uppercase text-yellow-300/90 border border-yellow-500/30 bg-yellow-500/10 px-3.5 py-1.5 rounded-full">
-              <BadgeCheck className="w-3.5 h-3.5" /> ALLBIZ Digital · Goiânia 2026
+              <BadgeCheck className="w-3.5 h-3.5" /> Diego Allas · Goiânia 2026
             </span>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl font-semibold leading-[1.1] max-w-3xl">
               Programa de Parcerias{' '}
               <span className="bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                ALLBIZ
+                Diego Allas
               </span>
             </h2>
             <p className="mt-4 max-w-2xl text-white/70 text-base md:text-lg leading-[1.8]">
@@ -290,7 +290,7 @@ const ParceriasSection = () => {
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={pdfAsset.url}
-                download="Programa-de-Parcerias-ALLBIZ-2026-Goiania.pdf"
+                download="Programa-de-Parcerias-Diego-Allas-2026-Goiania.pdf"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-b from-yellow-300 to-yellow-600 text-[#1a1200] text-sm font-bold px-7 py-4 rounded-full no-underline hover:brightness-110 transition-all shadow-lg shadow-yellow-900/40"
               >
                 <Download className="w-4 h-4" /> Baixar apresentação (PDF)
@@ -305,7 +305,7 @@ const ParceriasSection = () => {
               </a>
             </div>
             <p className="mt-5 text-xs text-white/40">
-              ALLBIZ Digital · Diego Allas · Goiânia-GO · Programa de Parcerias 2026
+              Diego Allas · Goiânia-GO · Programa de Parcerias 2026
             </p>
           </div>
         </div>

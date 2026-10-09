@@ -19,7 +19,7 @@ import { setPageMeta } from '@/lib/pageMeta';
 const Index = () => {
   useEffect(() => {
     setPageMeta(
-      'Diego Allas · Allbiz Digital — Marketing, operação e IA',
+      'Diego Allas — Marketing, operação e IA',
       'Conheça a história, a trajetória e os projetos de Diego Allas em marketing, food service, operação e inteligência artificial em Goiânia.',
     );
   }, []);

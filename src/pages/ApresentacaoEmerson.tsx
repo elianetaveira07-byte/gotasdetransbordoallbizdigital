@@ -96,7 +96,7 @@ const ApresentacaoEmerson = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     setPageMeta(
-      'Apresentação para Emerson Xavier · Allbiz Digital — Diego Allas',
+      'Apresentação para Emerson Xavier · Diego Allas',
       'Caso documentado de implantação de marketing interno em proteção veicular e proposta de conversa profissional com Diego Allas.',
     );
   }, []);
@@ -109,7 +109,7 @@ const ApresentacaoEmerson = () => {
             <ArrowLeft className="h-4 w-4" /> Início
           </Link>
           <div className="text-center leading-none">
-            <p className="font-serif text-base font-semibold text-yellow-300">ALLBIZ DIGITAL</p>
+            <p className="font-serif text-base font-semibold text-yellow-300">DIEGO ALLAS</p>
             <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.2em] text-white/35">Diego Allas</p>
           </div>
           <Button asChild size="sm" className="bg-emerald-600 text-white hover:bg-emerald-500">
@@ -143,7 +143,7 @@ const ApresentacaoEmerson = () => {
               </Button>
             </div>
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-xs uppercase tracking-[0.14em] text-white/40">
-              <span>Goiânia · GO</span><span>Atualizado em 05/10/2026</span><span>Caso anonimizado</span>
+              <span>Goiânia · GO</span><span>Atualizado em 09/10/2026</span><span>Caso anonimizado</span>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ const ApresentacaoEmerson = () => {
               <h2 className="mt-3 font-serif text-3xl font-semibold md:text-4xl">Ainda estou na empresa. A próxima etapa é uma conversa responsável.</h2>
             </div>
             <div className="space-y-4 text-sm leading-[1.8] text-white/65 md:text-base">
-              <p>Em <strong className="text-white">05/10/2026</strong>, sigo contratado em regime CLT e cumprindo integralmente minhas responsabilidades. A fundação necessária foi implantada; agora a operação entra em uma fase contínua de dados, otimização e rotina.</p>
+              <p>Em <strong className="text-white">09/10/2026</strong>, sigo contratado em regime CLT e cumprindo integralmente minhas responsabilidades. A fundação necessária foi implantada; agora a operação entra em uma fase contínua de dados, otimização e rotina.</p>
               <p>Minha intenção é propor uma transição negociada para prestação de serviços PJ, preservando continuidade, documentação e respeito à empresa. Paralelamente, estou aberto a conversas seletivas com organizações nas quais meu escopo, minha velocidade de execução e minha experiência operacional possam ser mais bem aproveitados.</p>
             </div>
           </div>
@@ -307,7 +307,7 @@ const ApresentacaoEmerson = () => {
             <p className="mx-auto mt-6 max-w-2xl text-base leading-[1.8] text-white/65">Sem apresentação ensaiada e sem pedido de decisão imediata. Quero ouvir como vocês trabalham, mostrar os detalhes que importam e entender se posso somar em uma frente real.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-emerald-600 text-white hover:bg-emerald-500"><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="no-underline"><MessageCircle /> Conversar pelo WhatsApp</a></Button>
-              <Button asChild size="lg" variant="outline" className="border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white"><a href="mailto:anfitriaonexialista@gmail.com?subject=Conversa%20profissional%20-%20Allbiz%20Digital" className="no-underline"><Mail /> Enviar e-mail</a></Button>
+              <Button asChild size="lg" variant="outline" className="border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white"><a href="mailto:anfitriaonexialista@gmail.com?subject=Conversa%20profissional%20-%20Diego%20Allas" className="no-underline"><Mail /> Enviar e-mail</a></Button>
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-5 text-xs text-white/40"><a href="https://www.ahamagencia.com.br/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">AHAM Agência <ExternalLink className="h-3 w-3" /></a><a href="https://www.ahamagencia.com.br/pvsummit" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">PV Summit <ExternalLink className="h-3 w-3" /></a><Link to="/" className="inline-flex items-center gap-1 text-inherit hover:text-white"><BookOpen className="h-3 w-3" /> História pessoal</Link></div>
           </div>
