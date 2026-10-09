@@ -65,7 +65,7 @@ const IntroSection = () => {
                     implantação do setor de marketing interno de uma empresa no Setor Sul, em Goiânia.
                   </p>
                   <p>
-                    Em 05/10/2026, continuo contratado e preparo uma{' '}
+                    Em 09/10/2026, continuo contratado e preparo uma{' '}
                     <span className="text-guia-blue-light font-medium">transição responsável</span> para atuação como
                     prestador, preservando a continuidade do que foi construído.
                   </p>

@@ -321,7 +321,7 @@ const Diagnostico = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     setPageMeta(
-      'Diagnóstico da estrutura digital · Allbiz Digital',
+      'Diagnóstico da estrutura digital · Diego Allas',
       'Checklist interativo e gratuito de 24 pontos para avaliar acesso, segurança, LGPD, canais e dados do seu restaurante. Resultado na hora e relatório em texto.',
     );
   }, []);
@@ -449,7 +449,7 @@ const Diagnostico = () => {
             <ArrowLeft className="w-4 h-4" /> Voltar
           </Link>
           <span className="font-serif text-sm sm:text-base tracking-[0.18em] bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-            ALLBIZ DIGITAL
+            DIEGO ALLAS
           </span>
         </div>
         <div className="h-1 w-full bg-white/5">

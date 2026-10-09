@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto flex flex-col items-center gap-4">
         <div className="flex flex-col items-center leading-none">
           <span className="font-serif font-semibold text-lg tracking-[0.22em] bg-gradient-to-b from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-            ALLBIZ DIGITAL
+            DIEGO ALLAS
           </span>
           <span className="mt-2 text-[9px] uppercase tracking-[0.2em] text-white/30">Diego Allas</span>
         </div>

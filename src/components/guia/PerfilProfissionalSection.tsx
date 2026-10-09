@@ -5,7 +5,7 @@ const trajetoriaAtual = [
     icon: Building2,
     period: 'Desde 08/2026',
     role: 'Responsável pelo setor de Marketing interno — Goiânia (Setor Sul)',
-    detail: 'Em sete semanas, implantação documentada de acessos, segurança, Google, Meta, mensuração, CRM, formulários, playbooks, compliance e três sistemas de apoio. Em 05/10/2026, continuo contratado e preparo uma proposta de transição CLT para PJ.',
+    detail: 'Em sete semanas, implantação documentada de acessos, segurança, Google, Meta, mensuração, CRM, formulários, playbooks, compliance e três sistemas de apoio. Em 09/10/2026, continuo contratado e preparo uma proposta de transição CLT para PJ.',
   },
 ];
 

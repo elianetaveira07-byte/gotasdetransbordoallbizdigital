@@ -34,7 +34,7 @@ const destaques = [
     img: capaEstudos,
     icon: Mic,
     tag: 'Podcast e biblioteca',
-    title: 'Podcast Allbiz Digital + e-books e PDFs',
+    title: 'Podcast Diego Allas + e-books e PDFs',
     desc: 'Playlist do podcast no SoundCloud, biblioteca de leitura, materiais em PDF e o ecossistema de gestão de uma rede de pastelaria (matriz + 3 filiais) aberto por dentro.',
   },
 ];

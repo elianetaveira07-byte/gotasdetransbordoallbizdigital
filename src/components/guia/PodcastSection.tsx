@@ -72,7 +72,7 @@ const PodcastSection = () => {
               <div className="relative rounded-full bg-black p-2">
                 <img
                   src={logoPodcast}
-                  alt="Allbiz Digital Podcast"
+                  alt="Diego Allas Podcast"
                   className="w-56 h-56 md:w-72 md:h-72 rounded-full object-contain block"
                 />
                 {/* Floating mic badge */}
