@@ -290,7 +290,7 @@ const ParceriasSection = () => {
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={pdfAsset.url}
-                download="Programa-de-Parcerias-ALLBIZ-2026-Goiania.pdf"
+                download="Programa-de-Parcerias-Diego-Allas-2026-Goiania.pdf"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-b from-yellow-300 to-yellow-600 text-[#1a1200] text-sm font-bold px-7 py-4 rounded-full no-underline hover:brightness-110 transition-all shadow-lg shadow-yellow-900/40"
               >
                 <Download className="w-4 h-4" /> Baixar apresentação (PDF)
