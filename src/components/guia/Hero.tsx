@@ -31,18 +31,18 @@ const Hero = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
               <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse-dot" />
-              Goiânia · situação atualizada em 09/10/2026
+              Goiânia · atualizado em 12/10/2026
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
-              Pai, marido, filho.
+              A base está plantada.
               <br />
-              Agora <em className="text-yellow-300 not-italic">em Goiânia</em>, pronto para o próximo ciclo.
+              Agora é <em className="text-yellow-300 not-italic">fazer crescer</em>.
             </h1>
             <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Desde 03/08/2026, implantei a fundação de um setor de marketing interno em uma empresa no Setor
-              Sul: acessos, Google, Meta, mensuração, CRM, comercial, compliance e sistemas de apoio. Sigo
-              contratado e vou propor uma transição responsável de CLT para PJ, enquanto abro conversas
-              seletivas com empresas e agências onde esse repertório possa gerar mais impacto.
+              Em Goiânia, construí com calma a fundação de um setor de marketing interno: acessos, Google, Meta,
+              mensuração, CRM, comercial e rotinas. O que começou como semente em 03/08/2026 hoje é estrutura.
+              Sigo presente, cuidando do que foi construído com responsabilidade — e aberto a conversas serenas
+              com empresas e agências que valorizam trabalho bem feito.
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
