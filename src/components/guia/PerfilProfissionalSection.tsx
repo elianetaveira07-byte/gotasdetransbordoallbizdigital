@@ -55,12 +55,12 @@ const PerfilProfissionalSection = () => {
             Perfil profissional
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Trajetória, <span className="text-primary">transição</span> e o que estou construindo agora
+            Execução prática, <span className="text-primary">com visão do negócio</span>
           </h2>
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75] max-w-3xl">
-            Uma leitura honesta de onde venho, o que entrego hoje e para onde estou caminhando. A empresa
-            atual é de outro segmento — fora do food service — e o histórico em operação, logística e food
-            service é o que sustenta a forma como eu construo o marketing interno.
+            Conteúdo, anúncios, dados e rotina comercial precisam conversar com quem atende e entrega.
+            Minha experiência em food service, logística e gestão sustenta esse olhar; a implantação
+            recente em outro setor mostra como adapto o método a um contexto diferente.
           </p>
         </div>
 
@@ -137,7 +137,8 @@ const PerfilProfissionalSection = () => {
             service, logística e gestão de equipe. Esse histórico muda a forma de construir um setor
             interno: campanha, CRM, automação e treinamento comercial nascem colados na realidade de quem
             vende, atende e entrega. Hoje aplico esse repertório na empresa em que atuo, que é de outro
-            segmento, fora do food service.
+            segmento, fora do food service. Não parto do algoritmo: começo ouvindo o dono e a equipe,
+            entendendo a oferta, o atendimento e a capacidade de entrega. Depois organizo as ferramentas.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
             {areasAbertas.map((a, i) => (
@@ -150,8 +151,9 @@ const PerfilProfissionalSection = () => {
           <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
             <strong>Disponibilidade com responsabilidade:</strong> sigo cumprindo minha função atual e vou
             propor uma transição formal, com continuidade e documentação. Estou aberto a conversas seletivas
-            com empresas, agências e operações de food service sobre projetos, parceria PJ ou oportunidade
-            profissional — sem conflito de agenda e sem expor informações confidenciais.
+            com empresas e agências, inclusive para processos seletivos e entrevistas. Função, formato
+            de contratação e data de início precisam ser alinhados — sem conflito de agenda e sem expor
+            informações confidenciais.
           </p>
         </div>
 

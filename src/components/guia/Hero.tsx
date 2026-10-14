@@ -1,69 +1,47 @@
-import { Heart, ArrowDown, MessageCircle, FileCheck2 } from 'lucide-react';
+import { ArrowDown, MessageCircle, FileCheck2, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
 
 const Hero = () => {
   return (
     <section
       id="intro"
-      className="relative overflow-hidden px-6 py-16 md:py-24"
-      style={{ background: 'linear-gradient(135deg, #0D1117 0%, #1a1f2b 50%, #0D1117 100%)' }}
+      className="relative overflow-hidden bg-professional text-professional-ink py-12 md:py-16"
     >
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212,175,55,0.15) 0%, transparent 70%)' }}
-      />
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.7fr_1.3fr] gap-8 lg:gap-12 items-center">
           {/* Photo */}
           <div className="flex justify-center lg:justify-end order-2 lg:order-1">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-yellow-400/20 via-amber-500/10 to-transparent rounded-3xl blur-2xl" />
               <img
                 src={diegoPerfil.url}
                 alt="Diego Allas"
-                className="relative w-full max-w-sm md:max-w-md h-auto object-contain rounded-2xl shadow-2xl"
+                width={800}
+                height={1000}
+                className="relative w-full max-w-[230px] lg:max-w-[300px] h-auto object-contain rounded-lg"
               />
             </div>
           </div>
 
           {/* Text */}
           <div className="order-1 lg:order-2 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-300 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse-dot" />
-              Goiânia · atualizado em 12/10/2026
+            <div className="inline-flex items-center gap-2 text-professional-highlight text-xs font-semibold uppercase mb-4">
+              <MapPin className="h-4 w-4" /> Goiânia · Marketing e operação
             </div>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
-              A base está plantada.
-              <br />
-              Agora é <em className="text-yellow-300 not-italic">fazer crescer</em>.
-            </h1>
-            <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Em Goiânia, construí com calma a fundação de um setor de marketing interno: acessos, Google, Meta,
-              mensuração, CRM, comercial e rotinas. O que começou como semente em 03/08/2026 hoje é estrutura.
-              Sigo presente, cuidando do que foi construído com responsabilidade — e aberto a conversas serenas
-              com empresas e agências que valorizam trabalho bem feito.
-            </p>
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold leading-tight mb-4">Diego Allas</h1>
+            <p className="text-2xl md:text-3xl font-serif leading-tight text-professional-highlight mb-5">Marketing que conecta anúncio, atendimento e operação.</p>
+            <p className="text-base text-professional-muted max-w-xl mx-auto lg:mx-0 mb-7 leading-relaxed">Executo conteúdo, mídia paga e organização comercial com a visão de quem já viveu a operação. Em Goiânia, implantei uma base de marketing interno em sete semanas — com acessos, Google, Meta, mensuração, CRM e rotinas documentadas.</p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-              <a
-                href="#familia"
-                className="border-2 border-white/30 text-white text-base font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-white/10 no-underline"
-              >
-                <Heart className="w-5 h-5 text-red-400" /> Conheça minha história
-              </a>
-              <Link
-                to="/apresentacao-emerson"
-                className="bg-yellow-400 text-[#0D1117] text-base font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-yellow-300 no-underline"
-              >
-                <FileCheck2 className="w-5 h-5" /> Ver caso documentado
-              </Link>
+              <Button asChild variant="professional" size="lg" className="h-auto whitespace-normal py-3"><Link to="/caso-documentado"><FileCheck2 /> Ver o que já implantei</Link></Button>
+              <Button asChild variant="professional-outline" size="lg" className="h-auto whitespace-normal py-3"><a href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!%20Gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20profissional." target="_blank" rel="noopener noreferrer"><MessageCircle /> Conversar sobre uma oportunidade</a></Button>
             </div>
             <div className="mt-6 inline-flex flex-col sm:flex-row sm:items-center gap-3">
               <a
                 href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-green-400/90 hover:text-green-300 text-sm no-underline"
+                className="inline-flex items-center gap-2 text-professional-muted hover:text-professional-ink text-sm no-underline"
               >
                 <MessageCircle className="w-4 h-4" /> WhatsApp: (62) 99968-8700
               </a>
@@ -72,8 +50,8 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center mt-12">
-          <a href="#intro-bio" className="text-white/40 hover:text-yellow-300 transition-colors">
-            <ArrowDown className="w-6 h-6 animate-bounce" />
+          <a href="#metodo" aria-label="Conhecer o método de trabalho" className="text-professional-muted hover:text-professional-highlight transition-colors">
+            <ArrowDown className="w-6 h-6" />
           </a>
         </div>
       </div>

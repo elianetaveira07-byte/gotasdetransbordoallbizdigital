@@ -97,8 +97,8 @@ const ContratadoSection = () => {
           </h3>
           <p className="text-guia-text-muted text-[0.98rem] leading-[1.75] max-w-3xl mb-6">
             Não é apenas "cuidar das redes". É montar um setor de marketing interno completo, com estrutura,
-            processo e time preparado — algo que hoje é decisivo para qualquer empresa que quer crescer com
-            previsibilidade.
+            processo e time preparado. A estrutura precisa respeitar o porte, o orçamento, as regras e a
+            rotina de cada negócio; não é uma receita igual para todos os setores.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {escopo.map((item, i) => {

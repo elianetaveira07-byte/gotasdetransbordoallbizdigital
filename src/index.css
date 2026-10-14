@@ -42,6 +42,12 @@
     --amber: 28 91% 37%;
     --amber-light: 44 96% 89%;
     --gold: 43 75% 46%;
+    --professional-surface: 220 20% 8%;
+    --professional-panel: 220 16% 13%;
+    --professional-ink: 0 0% 98%;
+    --professional-muted: 220 9% 72%;
+    --professional-line: 220 12% 25%;
+    --professional-highlight: 45 86% 68%;
     --text-color: 240 33% 15%;
     --text-muted-color: 243 10% 40%;
 
@@ -163,4 +169,12 @@
 
 .welcome-ring {
   animation: welcome-ring 2.2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -54,8 +54,9 @@ const IntroSection = () => {
 
                 <div className="space-y-6 leading-relaxed text-background/70">
                   <p>
-                    Esta página é meu espaço pessoal e também minha história profissional: aqui você conhece minha
-                    família, o lugar de onde vim e para onde estou indo.
+                    Minha trajetória profissional não está separada da minha vida. Vim para Goiânia com minha
+                    família em busca de cuidado para o Matheuzinho. É daqui que quero seguir trabalhando e
+                    construindo, com responsabilidade e presença.
                   </p>
                   <p>
                     Cheguei inteiro, com mais de{' '}
