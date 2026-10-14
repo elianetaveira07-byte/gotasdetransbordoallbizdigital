@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/guia/Navbar';
 import Hero from '@/components/guia/Hero';
-import MetodoSection from '@/components/guia/MetodoSection';
 import IntroSection from '@/components/guia/IntroSection';
 import PerfilProfissionalSection from '@/components/guia/PerfilProfissionalSection';
 import ContratadoSection from '@/components/guia/ContratadoSection';
@@ -20,8 +19,8 @@ import { setPageMeta } from '@/lib/pageMeta';
 const Index = () => {
   useEffect(() => {
     setPageMeta(
-      'Diego Allas — Marketing conectado à operação em Goiânia',
-      'Conteúdo, anúncios, mensuração e CRM conectados ao atendimento e à operação. Conheça o trabalho documentado e a trajetória de Diego Allas em Goiânia.',
+      'Diego Allas — Marketing, operação e IA',
+      'Conheça a história, a trajetória e os projetos de Diego Allas em marketing, food service, operação e inteligência artificial em Goiânia.',
     );
   }, []);
 
@@ -29,7 +28,6 @@ const Index = () => {
     <div className="scroll-smooth">
       <Navbar />
       <Hero />
-      <MetodoSection />
       <IntroSection />
       <PerfilProfissionalSection />
       <ContratadoSection />

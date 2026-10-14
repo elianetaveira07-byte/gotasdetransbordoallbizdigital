@@ -18,14 +18,6 @@ export default {
         sans: ['"DM Sans"', 'sans-serif'],
       },
       colors: {
-        professional: {
-          DEFAULT: "hsl(var(--professional-surface))",
-          panel: "hsl(var(--professional-panel))",
-          ink: "hsl(var(--professional-ink))",
-          muted: "hsl(var(--professional-muted))",
-          line: "hsl(var(--professional-line))",
-          highlight: "hsl(var(--professional-highlight))",
-        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
