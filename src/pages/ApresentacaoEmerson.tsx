@@ -92,14 +92,14 @@ const collaboration = [
   { icon: BriefcaseBusiness, title: 'Oportunidade profissional', text: 'Conversar sobre uma função em que execução, operação e visão estratégica sejam aproveitadas juntas.' },
 ];
 
-const ApresentacaoEmerson = () => {
+const ApresentacaoEmerson = ({ general = false }: { general?: boolean }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
     setPageMeta(
-      'Apresentação para Emerson Xavier · Diego Allas',
-      'Caso documentado de implantação de marketing interno em proteção veicular e proposta de conversa profissional com Diego Allas.',
+      general ? 'Caso documentado de marketing interno · Diego Allas' : 'Apresentação para Emerson Xavier · Diego Allas',
+      'Implantação documentada de acessos, Google, Meta, mensuração e CRM. Entregas, limites e método de Diego Allas, com relatório anonimizado.',
     );
-  }, []);
+  }, [general]);
 
   return (
     <div className="min-h-screen bg-[#080B11] text-white scroll-smooth">
@@ -126,13 +126,13 @@ const ApresentacaoEmerson = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#080B11] via-transparent to-transparent" />
         <div className="container relative flex min-h-[calc(92vh-4rem)] items-center py-16">
           <div className="max-w-3xl">
-            <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">Uma apresentação preparada para Emerson Xavier</p>
+            <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">{general ? 'Caso documentado · Marketing conectado à operação' : 'Uma apresentação preparada para Emerson Xavier'}</p>
             <h1 className="font-serif text-4xl font-semibold leading-[1.08] md:text-6xl lg:text-7xl">
-              Eu não cheguei à proteção veicular por um briefing.
-              <span className="mt-2 block text-yellow-300">Cheguei pela implantação.</span>
+              {general ? 'Diego Allas' : 'Eu não cheguei à proteção veicular por um briefing.'}
+              <span className="mt-2 block text-yellow-300">{general ? 'Uma base de marketing construída na prática.' : 'Cheguei pela implantação.'}</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-[1.8] text-white/70 md:text-lg">
-              Em sete semanas, estruturei a base de um marketing interno que não existia formalmente: acessos, segurança, Google, Meta, mensuração, CRM, comercial, compliance e sistemas de apoio. Quero apresentar o que foi feito — e entender onde essa capacidade pode somar ao ecossistema que você já constrói.
+              Em sete semanas, estruturei a base de um marketing interno que não existia formalmente: acessos, segurança, Google, Meta, mensuração, CRM, comercial, compliance e sistemas de apoio. {general ? 'Aqui estão as entregas, as validações e os limites do trabalho — para avaliar meu repertório além de uma apresentação.' : 'Quero apresentar o que foi feito — e entender onde essa capacidade pode somar ao ecossistema que você já constrói.'}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-yellow-400 text-[#080B11] hover:bg-yellow-300">
@@ -155,10 +155,10 @@ const ApresentacaoEmerson = () => {
           <div className="container grid gap-8 py-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-sky-300">Contexto transparente</p>
-              <h2 className="mt-3 font-serif text-3xl font-semibold md:text-4xl">Ainda estou na empresa. A próxima etapa é uma conversa responsável.</h2>
+              <h2 className="mt-3 font-serif text-3xl font-semibold md:text-4xl">Situação profissional registrada, sem antecipar a próxima etapa.</h2>
             </div>
             <div className="space-y-4 text-sm leading-[1.8] text-white/65 md:text-base">
-              <p>Em <strong className="text-white">09/10/2026</strong>, sigo contratado em regime CLT e cumprindo integralmente minhas responsabilidades. A fundação necessária foi implantada; agora a operação entra em uma fase contínua de dados, otimização e rotina.</p>
+              <p>Na última atualização profissional confirmada, em <strong className="text-white">09/10/2026</strong>, eu permanecia contratado em regime CLT. A fundação necessária foi implantada; a continuidade envolve dados, otimização e rotina.</p>
               <p>Minha intenção é propor uma transição negociada para prestação de serviços PJ, preservando continuidade, documentação e respeito à empresa. Paralelamente, estou aberto a conversas seletivas com organizações nas quais meu escopo, minha velocidade de execução e minha experiência operacional possam ser mais bem aproveitados.</p>
             </div>
           </div>
@@ -235,8 +235,8 @@ const ApresentacaoEmerson = () => {
           <div className="container">
             <div className="max-w-3xl">
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-sky-300">Por que esta conversa faz sentido</p>
-              <h2 className="mt-3 font-serif text-3xl font-semibold md:text-5xl">Não é uma abordagem genérica para uma agência.</h2>
-              <p className="mt-5 text-base leading-[1.8] text-white/65">A comunicação pública da AHAM fala de estratégia, posicionamento, conteúdo, tráfego e apoio ao comercial para associações de proteção veicular. O PV Summit reúne temas como vendas, liderança, regulamentação, finanças e gestão de times. São justamente as fronteiras onde minha implantação recente aconteceu na prática.</p>
+              <h2 className="mt-3 font-serif text-3xl font-semibold md:text-5xl">{general ? 'Fundamentos transferíveis. Contexto próprio de cada negócio.' : 'Não é uma abordagem genérica para uma agência.'}</h2>
+              <p className="mt-5 text-base leading-[1.8] text-white/65">{general ? 'Este caso aconteceu em proteção veicular. Controle de acessos, mensuração, CRM e alinhamento comercial podem orientar outras operações, mas canais, regras e prioridades precisam ser avaliados em cada setor. Não apresento esta implantação como experiência em todos os mercados.' : 'A comunicação pública da AHAM fala de estratégia, posicionamento, conteúdo, tráfego e apoio ao comercial para associações de proteção veicular. O PV Summit reúne temas como vendas, liderança, regulamentação, finanças e gestão de times. São justamente as fronteiras onde minha implantação recente aconteceu na prática.'}</p>
             </div>
             <div className="mt-10 grid gap-x-8 gap-y-6 md:grid-cols-2">
               {alignments.map(({ icon: Icon, title, text }) => (
@@ -246,7 +246,7 @@ const ApresentacaoEmerson = () => {
                 </article>
               ))}
             </div>
-            <p className="mt-8 max-w-3xl text-xs leading-[1.7] text-white/35">Referências consultadas: canais públicos de Emerson Xavier, AHAM Agência e página do PV Summit. Esta página não presume propriedade do evento nem vínculo anterior entre as partes.</p>
+            {!general && <p className="mt-8 max-w-3xl text-xs leading-[1.7] text-white/35">Referências consultadas: canais públicos de Emerson Xavier, AHAM Agência e página do PV Summit. Esta página não presume propriedade do evento nem vínculo anterior entre as partes.</p>}
           </div>
         </section>
 
@@ -302,14 +302,14 @@ const ApresentacaoEmerson = () => {
 
         <section id="conversa" className="scroll-mt-20 py-24 text-center">
           <div className="container max-w-3xl">
-            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">Emerson, obrigado pela atenção</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">{general ? 'Obrigado por conhecer meu trabalho' : 'Emerson, obrigado pela atenção'}</p>
             <h2 className="mt-3 font-serif text-4xl font-semibold md:text-6xl">Vinte minutos são suficientes para descobrir se existe encaixe.</h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-[1.8] text-white/65">Sem apresentação ensaiada e sem pedido de decisão imediata. Quero ouvir como vocês trabalham, mostrar os detalhes que importam e entender se posso somar em uma frente real.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-emerald-600 text-white hover:bg-emerald-500"><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="no-underline"><MessageCircle /> Conversar pelo WhatsApp</a></Button>
               <Button asChild size="lg" variant="outline" className="border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white"><a href="mailto:anfitriaonexialista@gmail.com?subject=Conversa%20profissional%20-%20Diego%20Allas" className="no-underline"><Mail /> Enviar e-mail</a></Button>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-5 text-xs text-white/40"><a href="https://www.ahamagencia.com.br/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">AHAM Agência <ExternalLink className="h-3 w-3" /></a><a href="https://www.ahamagencia.com.br/pvsummit" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">PV Summit <ExternalLink className="h-3 w-3" /></a><Link to="/" className="inline-flex items-center gap-1 text-inherit hover:text-white"><BookOpen className="h-3 w-3" /> História pessoal</Link></div>
+            <div className="mt-8 flex flex-wrap justify-center gap-5 text-xs text-white/40">{!general && <><a href="https://www.ahamagencia.com.br/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">AHAM Agência <ExternalLink className="h-3 w-3" /></a><a href="https://www.ahamagencia.com.br/pvsummit" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">PV Summit <ExternalLink className="h-3 w-3" /></a></>}<Link to="/" className="inline-flex items-center gap-1 text-inherit hover:text-white"><BookOpen className="h-3 w-3" /> História pessoal</Link></div>
           </div>
         </section>
       </main>
