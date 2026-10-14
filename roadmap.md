@@ -1,8 +1,7 @@
 # Roadmap
 
-- [x] Criar a apresentação personalizada da Allbiz Digital para Emerson/AHAM.
-- [x] Publicar o relatório anonimizado para download e explicar seus limites.
-- [x] Atualizar a página inicial e o perfil profissional com a situação em 05/10/2026.
-- [x] Integrar o caso documentado às páginas Food Service e Diagnóstico.
-- [x] Consolidar marca, contatos, navegação e metadados; remover endereço residencial.
-- [x] Validar visualmente desktop/mobile e testar links e download.
+- [ ] Reposicionar a abertura e o perfil para execução de marketing conectada à operação.
+- [ ] Criar uma apresentação direta para a vaga da Imóveis Goiânia, com provas e limites claros.
+- [ ] Tornar o caso documentado compartilhável sem personalização de outro destinatário e conectar o diagnóstico.
+- [ ] Verificar navegação, contatos, relatório e leitura em telas grandes e pequenas.
+- [ ] Preparar mensagem curta de candidatura com o link certo para publicar.
