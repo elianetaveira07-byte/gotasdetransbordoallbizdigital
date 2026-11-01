@@ -1,6 +1,6 @@
 import { Heart, ArrowDown, MessageCircle, FileCheck2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
+import diegoPerfil from '@/assets/diego_allas_perfil_2026.webp.asset.json';
 
 const Hero = () => {
   return (

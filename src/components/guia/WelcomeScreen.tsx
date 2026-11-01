@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Instagram, ArrowRight, Sparkles } from 'lucide-react';
-import diegoPerfil from '@/assets/diego_allas_perfil.webp.asset.json';
+import diegoPerfil from '@/assets/diego_allas_perfil_2026.webp.asset.json';
 
 const STORAGE_KEY = 'allbiz_welcome_seen_at';
 const DAY_MS = 24 * 60 * 60 * 1000;
