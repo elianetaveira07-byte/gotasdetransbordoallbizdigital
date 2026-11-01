@@ -11,7 +11,6 @@ import {
   Clock3,
   Database,
   Download,
-  ExternalLink,
   FileCheck2,
   Gauge,
   Handshake,
@@ -92,12 +91,12 @@ const collaboration = [
   { icon: BriefcaseBusiness, title: 'Oportunidade profissional', text: 'Conversar sobre uma função em que execução, operação e visão estratégica sejam aproveitadas juntas.' },
 ];
 
-const ApresentacaoEmerson = () => {
+const Apresentacao = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     setPageMeta(
-      'Apresentação para Emerson Xavier · Diego Allas',
-      'Caso documentado de implantação de marketing interno em proteção veicular e proposta de conversa profissional com Diego Allas.',
+      'Apresentação profissional · Diego Allas',
+      'Caso documentado de implantação de um setor interno de marketing em proteção veicular e proposta de conversa profissional com Diego Allas.',
     );
   }, []);
 
@@ -126,13 +125,13 @@ const ApresentacaoEmerson = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#080B11] via-transparent to-transparent" />
         <div className="container relative flex min-h-[calc(92vh-4rem)] items-center py-16">
           <div className="max-w-3xl">
-            <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">Uma apresentação preparada para Emerson Xavier</p>
+            <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">Apresentação profissional · Diego Allas</p>
             <h1 className="font-serif text-4xl font-semibold leading-[1.08] md:text-6xl lg:text-7xl">
               Eu não cheguei à proteção veicular por um briefing.
               <span className="mt-2 block text-yellow-300">Cheguei pela implantação.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-[1.8] text-white/70 md:text-lg">
-              Em sete semanas, estruturei a base de um marketing interno que não existia formalmente: acessos, segurança, Google, Meta, mensuração, CRM, comercial, compliance e sistemas de apoio. Quero apresentar o que foi feito — e entender onde essa capacidade pode somar ao ecossistema que você já constrói.
+              Em sete semanas, estruturei a base de um setor interno de marketing que não existia formalmente: acessos, segurança, Google, Meta, mensuração, CRM, comercial, compliance e sistemas de apoio. Quero apresentar o que foi feito — e entender onde essa capacidade pode somar à operação que você já constrói.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-yellow-400 text-[#080B11] hover:bg-yellow-300">
@@ -236,7 +235,7 @@ const ApresentacaoEmerson = () => {
             <div className="max-w-3xl">
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-sky-300">Por que esta conversa faz sentido</p>
               <h2 className="mt-3 font-serif text-3xl font-semibold md:text-5xl">Não é uma abordagem genérica para uma agência.</h2>
-              <p className="mt-5 text-base leading-[1.8] text-white/65">A comunicação pública da AHAM fala de estratégia, posicionamento, conteúdo, tráfego e apoio ao comercial para associações de proteção veicular. O PV Summit reúne temas como vendas, liderança, regulamentação, finanças e gestão de times. São justamente as fronteiras onde minha implantação recente aconteceu na prática.</p>
+              <p className="mt-5 text-base leading-[1.8] text-white/65">São justamente as fronteiras entre marketing, comercial, dados e conformidade onde minha implantação recente aconteceu na prática — e onde a maior parte das empresas trava por não ter quem una essas pontas.</p>
             </div>
             <div className="mt-10 grid gap-x-8 gap-y-6 md:grid-cols-2">
               {alignments.map(({ icon: Icon, title, text }) => (
@@ -246,7 +245,6 @@ const ApresentacaoEmerson = () => {
                 </article>
               ))}
             </div>
-            <p className="mt-8 max-w-3xl text-xs leading-[1.7] text-white/35">Referências consultadas: canais públicos de Emerson Xavier, AHAM Agência e página do PV Summit. Esta página não presume propriedade do evento nem vínculo anterior entre as partes.</p>
           </div>
         </section>
 
@@ -282,7 +280,7 @@ const ApresentacaoEmerson = () => {
             </div>
             <div className="border border-yellow-400/25 bg-yellow-400/[0.06] p-7">
               <FileCheck2 className="h-8 w-8 text-yellow-300" />
-              <h3 className="mt-5 font-serif text-2xl font-semibold">Relatório de implantação do marketing interno</h3>
+              <h3 className="mt-5 font-serif text-2xl font-semibold">Relatório de implantação do setor interno de marketing</h3>
               <p className="mt-3 text-sm leading-[1.75] text-white/55">Inclui sumário executivo, linha do tempo, frentes de trabalho, funções exercidas, uso de IA, situação real e próximos passos.</p>
               <Button asChild size="lg" className="mt-6 w-full bg-yellow-400 text-[#080B11] hover:bg-yellow-300">
                 <a href={reportAsset.url} download="Relatorio-Implantacao-Marketing-Anonimizado-Diego-Allas.docx" className="no-underline"><Download /> Baixar relatório completo</a>
@@ -302,14 +300,14 @@ const ApresentacaoEmerson = () => {
 
         <section id="conversa" className="scroll-mt-20 py-24 text-center">
           <div className="container max-w-3xl">
-            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">Emerson, obrigado pela atenção</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300">Obrigado pela atenção</p>
             <h2 className="mt-3 font-serif text-4xl font-semibold md:text-6xl">Vinte minutos são suficientes para descobrir se existe encaixe.</h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-[1.8] text-white/65">Sem apresentação ensaiada e sem pedido de decisão imediata. Quero ouvir como vocês trabalham, mostrar os detalhes que importam e entender se posso somar em uma frente real.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild size="lg" className="bg-emerald-600 text-white hover:bg-emerald-500"><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="no-underline"><MessageCircle /> Conversar pelo WhatsApp</a></Button>
               <Button asChild size="lg" variant="outline" className="border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white"><a href="mailto:anfitriaonexialista@gmail.com?subject=Conversa%20profissional%20-%20Diego%20Allas" className="no-underline"><Mail /> Enviar e-mail</a></Button>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-5 text-xs text-white/40"><a href="https://www.ahamagencia.com.br/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">AHAM Agência <ExternalLink className="h-3 w-3" /></a><a href="https://www.ahamagencia.com.br/pvsummit" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-inherit hover:text-white">PV Summit <ExternalLink className="h-3 w-3" /></a><Link to="/" className="inline-flex items-center gap-1 text-inherit hover:text-white"><BookOpen className="h-3 w-3" /> História pessoal</Link></div>
+            <div className="mt-8 flex flex-wrap justify-center gap-5 text-xs text-white/40"><Link to="/" className="inline-flex items-center gap-1 text-inherit hover:text-white"><BookOpen className="h-3 w-3" /> História pessoal</Link></div>
           </div>
         </section>
       </main>
@@ -320,4 +318,4 @@ const ApresentacaoEmerson = () => {
   );
 };
 
-export default ApresentacaoEmerson;
+export default Apresentacao;

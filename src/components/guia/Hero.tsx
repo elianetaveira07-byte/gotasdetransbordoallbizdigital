@@ -39,7 +39,7 @@ const Hero = () => {
               Agora é <em className="text-yellow-300 not-italic">fazer crescer</em>.
             </h1>
             <p className="text-lg text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Em Goiânia, construí com calma a fundação de um setor de marketing interno: acessos, Google, Meta,
+              Em Goiânia, construí com calma a fundação de um setor interno de marketing: acessos, Google, Meta,
               mensuração, CRM, comercial e rotinas. O que começou como semente em 03/08/2026 hoje é estrutura.
               Sigo presente, cuidando do que foi construído com responsabilidade — e aberto a conversas serenas
               com empresas e agências que valorizam trabalho bem feito.
@@ -52,7 +52,7 @@ const Hero = () => {
                 <Heart className="w-5 h-5 text-red-400" /> Conheça minha história
               </a>
               <Link
-                to="/apresentacao-emerson"
+                to="/apresentacao"
                 className="bg-yellow-400 text-[#0D1117] text-base font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2.5 transition-all hover:bg-yellow-300 no-underline"
               >
                 <FileCheck2 className="w-5 h-5" /> Ver caso documentado

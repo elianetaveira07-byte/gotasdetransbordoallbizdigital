@@ -62,7 +62,7 @@ const IntroSection = () => {
                     <span className="text-background font-medium">15 anos de operação real</span> e quase 3 anos de
                     reconstrução técnica contínua. Desde{' '}
                     <span className="text-background font-medium">03/08/2026</span> apliquei tudo isso na prática na
-                    implantação do setor de marketing interno de uma empresa no Setor Sul, em Goiânia.
+                    implantação do setor interno de marketing de uma empresa no Setor Sul, em Goiânia.
                   </p>
                   <p>
                     Em 09/10/2026, continuo contratado e preparo uma{' '}

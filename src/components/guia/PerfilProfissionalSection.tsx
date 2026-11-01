@@ -4,7 +4,7 @@ const trajetoriaAtual = [
   {
     icon: Building2,
     period: 'Desde 08/2026',
-    role: 'Responsável pelo setor de Marketing interno — Goiânia (Setor Sul)',
+    role: 'Responsável pelo setor interno de Marketing — Goiânia (Setor Sul)',
     detail: 'Em sete semanas, implantação documentada de acessos, segurança, Google, Meta, mensuração, CRM, formulários, playbooks, compliance e três sistemas de apoio. Em 09/10/2026, continuo contratado e preparo uma proposta de transição CLT para PJ.',
   },
 ];
@@ -31,7 +31,7 @@ const trajetoriaAnterior = [
 ];
 
 const areasAbertas = [
-  'Estruturação de setor de marketing interno do zero',
+  'Estruturação de setor interno de marketing do zero',
   'CRM, funis, cadências e relatórios de origem de venda',
   'Automação, integrações e IA aplicada à rotina comercial',
   'Web design, landing pages, SEO local e Perfil da Empresa',
@@ -60,7 +60,7 @@ const PerfilProfissionalSection = () => {
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75] max-w-3xl">
             Uma leitura honesta de onde venho, o que entrego hoje e para onde estou caminhando. A empresa
             atual é de outro segmento — fora do food service — e o histórico em operação, logística e food
-            service é o que sustenta a forma como eu construo o marketing interno.
+            service é o que sustenta a forma como eu construo o setor interno de marketing.
           </p>
         </div>
 

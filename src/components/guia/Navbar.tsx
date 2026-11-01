@@ -15,7 +15,7 @@ const Navbar = () => {
         {[
           { href: '#intro-bio', label: 'Sobre mim' },
           { href: '#contratado', label: 'Onde estou hoje' },
-          { href: '/apresentacao-emerson', label: 'Caso documentado' },
+          { href: '/apresentacao', label: 'Caso documentado' },
           { href: '#familia', label: 'Família' },
           { href: '#vantagens', label: 'Goiânia' },
           { href: '#galeria', label: 'Galeria' },

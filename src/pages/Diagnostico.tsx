@@ -514,7 +514,7 @@ const Diagnostico = () => {
               </div>
             ))}
           </div>
-          <Link to="/apresentacao-emerson" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-sky-300 no-underline hover:text-sky-200">
+          <Link to="/apresentacao" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-sky-300 no-underline hover:text-sky-200">
             <FileText className="h-4 w-4" /> Conheça uma implantação real documentada
           </Link>
         </div>
