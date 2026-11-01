@@ -5,7 +5,7 @@ const START_DATE = new Date(2026, 7, 3); // 03/08/2026
 const escopo = [
   {
     icon: Megaphone,
-    title: 'Marketing 360º interno',
+    title: 'Marketing 360º',
     text: 'Posicionamento, calendário de campanhas, conteúdo, mídia paga (Google e Meta), branding aplicado e métricas — tudo dentro de casa, sem depender de terceiros.',
   },
   {
@@ -54,7 +54,7 @@ const ContratadoSection = () => {
             mais tinha interesse, me escolheu. Preferi não desmarcar nenhuma entrevista já agendada, e foi
             justamente essa decisão que abriu a porta certa. Desde <strong>03/08/2026</strong> faço parte
             dessa equipe, no <strong>Setor Sul, em Goiânia</strong>, como responsável principal por criar o
-            setor de marketing da empresa do zero. Em sete semanas, a base necessária saiu do improviso para
+            setor interno de marketing da empresa do zero. Em sete semanas, a base necessária saiu do improviso para
             uma estrutura documentada; a continuidade agora depende de rotina, dados e decisão de investimento.
           </p>
         </div>
@@ -96,7 +96,7 @@ const ContratadoSection = () => {
             O que estou construindo, de ponta a ponta
           </h3>
           <p className="text-guia-text-muted text-[0.98rem] leading-[1.75] max-w-3xl mb-6">
-            Não é apenas "cuidar das redes". É montar um setor de marketing interno completo, com estrutura,
+            Não é apenas "cuidar das redes". É montar um setor interno de marketing completo, com estrutura,
             processo e time preparado — algo que hoje é decisivo para qualquer empresa que quer crescer com
             previsibilidade.
           </p>
