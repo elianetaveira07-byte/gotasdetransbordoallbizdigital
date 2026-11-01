@@ -1,4 +1,4 @@
-import { CheckCircle2, Building2, Users, Workflow, Megaphone, Database, MonitorSmartphone, GraduationCap, CalendarCheck } from 'lucide-react';
+import { CheckCircle2, Building2, Users, Workflow, Megaphone, Database, MonitorSmartphone, GraduationCap, CalendarCheck, Sprout, ShieldCheck } from 'lucide-react';
 
 const START_DATE = new Date(2026, 7, 3); // 03/08/2026
 
@@ -43,10 +43,10 @@ const ContratadoSection = () => {
       <div className="container">
         <div className="mb-10 max-w-3xl">
           <span className="text-xs font-semibold tracking-widest uppercase text-guia-green bg-guia-green-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
-            Capítulo novo · desde 03/08/2026
+            Portfólio 01 · construído em silêncio desde 03/08/2026
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            A fundação foi <span className="text-guia-green">implantada</span> — agora começa um novo ciclo
+            Primeiro a <span className="text-guia-green">estrutura</span>. A vitrine vem depois.
           </h2>
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75]">
             Depois de chegar em Goiânia com minha família, foram poucos dias de busca até as primeiras
@@ -115,6 +115,52 @@ const ContratadoSection = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* Por que portfólio primeiro */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
+          <div className="bg-card rounded-lg p-8 shadow-guia border-t-[4px] border-guia-amber">
+            <div className="w-11 h-11 rounded-full bg-guia-amber/15 flex items-center justify-center mb-3">
+              <Sprout className="w-5 h-5 text-guia-amber" />
+            </div>
+            <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
+              Por que mostro um caso, e não uma vitrine
+            </h3>
+            <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-4">
+              Este é o meu primeiro portfólio documentado — e é de propósito. Antes de aparecer, preferi
+              construir. O que você vê aqui é trabalho real, com datas, entregas e limites declarados, não
+              números inflados.
+            </p>
+            <p className="text-sm font-semibold text-foreground mb-2">O que vem nas próximas camadas, com calma:</p>
+            <ul className="space-y-1.5 text-sm text-guia-text-muted leading-[1.7]">
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-guia-amber flex-shrink-0 mt-1" />Depoimentos de alunos e clientes reais</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-guia-amber flex-shrink-0 mt-1" />Novos portfólios em segmentos diferentes</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-guia-amber flex-shrink-0 mt-1" />Parcerias com ferramentas (SaaS) adequadas a cada tipo de empresa</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-guia-amber flex-shrink-0 mt-1" />Reconhecimentos que venham como consequência, não como meta</li>
+            </ul>
+            <p className="mt-4 text-sm text-guia-text-muted leading-[1.7]">
+              Em paralelo, desenvolvo um produto próprio, sem pressa de anunciar. Quando estiver pronto, ele fala por si.
+            </p>
+          </div>
+
+          <div className="bg-foreground text-background rounded-lg p-8 shadow-guia">
+            <div className="w-11 h-11 rounded-full bg-background/10 flex items-center justify-center mb-3">
+              <ShieldCheck className="w-5 h-5 text-guia-amber" />
+            </div>
+            <h3 className="font-serif text-2xl font-semibold leading-tight mb-3">
+              Fora da bolha, por escolha
+            </h3>
+            <p className="text-[0.98rem] opacity-80 leading-[1.8] mb-4">
+              Não estou em grupos de networking pagos nem em eventos de palco toda semana. Boa parte desse
+              mercado vende urgência, escassez e prova social fabricada, técnicas de persuasão bem
+              conhecidas, para entregar o que hoje qualquer pessoa aprende com estudo sério e boas
+              ferramentas de IA.
+            </p>
+            <p className="text-[0.98rem] opacity-80 leading-[1.8]">
+              Meu caminho é outro: estudar, aplicar, documentar e deixar o resultado falar. Menos aparência,
+              mais estrutura. Quem decide com critério entende a diferença.
+            </p>
           </div>
         </div>
 
