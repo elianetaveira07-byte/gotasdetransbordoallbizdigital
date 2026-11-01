@@ -1,6 +1,6 @@
 # Roadmap
 
-- [x] Criar a apresentação personalizada da Allbiz Digital para Emerson/AHAM.
+- [x] Criar a apresentação profissional de Diego Allas com o caso documentado (página /apresentacao).
 - [x] Publicar o relatório anonimizado para download e explicar seus limites.
 - [x] Atualizar a página inicial e o perfil profissional com a situação em 05/10/2026.
 - [x] Integrar o caso documentado às páginas Food Service e Diagnóstico.

@@ -11,7 +11,6 @@ import {
   Clock3,
   Database,
   Download,
-  ExternalLink,
   FileCheck2,
   Gauge,
   Handshake,
