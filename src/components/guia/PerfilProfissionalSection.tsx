@@ -1,13 +1,4 @@
-import { Building2, TrendingUp, ChefHat, Truck, Rocket, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
-
-const trajetoriaAtual = [
-  {
-    icon: Building2,
-    period: 'Desde 08/2026',
-    role: 'Responsável pelo setor interno de Marketing — Goiânia (Setor Sul)',
-    detail: 'Em sete semanas, implantação documentada de acessos, segurança, Google, Meta, mensuração, CRM, formulários, playbooks, compliance e três sistemas de apoio. Em 09/10/2026, continuo contratado e preparo uma proposta de transição CLT para PJ.',
-  },
-];
+import { TrendingUp, ChefHat, Truck, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
 const trajetoriaAnterior = [
   {
@@ -48,151 +39,23 @@ const numeros = [
 
 const PerfilProfissionalSection = () => {
   return (
-    <section id="perfil-profissional" className="py-[72px] bg-secondary/40">
+    <section id="perfil-profissional" className="pt-28 pb-[72px] bg-secondary/40">
       <div className="container">
         <div className="mb-12">
           <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
             Perfil profissional
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Trajetória, <span className="text-primary">transição</span> e o que estou construindo agora
-          </h2>
+          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground leading-tight">
+            Marketing, IA e operação — <span className="text-primary">de 2024 para frente</span>
+          </h1>
           <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75] max-w-3xl">
-            Uma leitura honesta de onde venho, o que entrego hoje e para onde estou caminhando. A empresa
-            atual é de outro segmento — fora do food service — e o histórico em operação, logística e food
-            service é o que sustenta a forma como eu construo o setor interno de marketing.
+            Diego Allas · Goiânia. Formação intensa, repertório aplicado e uma base operacional que coloca o
+            setor interno de marketing colado na realidade de quem vende, atende e entrega.
           </p>
-        </div>
-
-        {/* Onde estou hoje */}
-        <div className="mb-8">
-          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-green-light text-guia-green mb-4">
-            Onde estou hoje
-          </span>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trajetoriaAtual.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <div key={i} className="md:col-span-2 lg:col-span-4 bg-card rounded-lg p-7 shadow-guia border-t-[4px] border-guia-green flex flex-col">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-11 h-11 rounded-full bg-guia-green-light flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-guia-green" />
-                    </div>
-                    <span className="text-xs font-bold tracking-wider uppercase text-guia-text-muted">
-                      {item.period}
-                    </span>
-                  </div>
-                  <h3 className="font-serif text-xl font-semibold text-foreground leading-snug mb-2">
-                    {item.role}
-                  </h3>
-                  <p className="text-[0.95rem] text-guia-text-muted leading-[1.7]">
-                    {item.detail}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Histórico */}
-        <div className="mb-12">
-          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-4">
-            Histórico que sustenta a entrega
-          </span>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {trajetoriaAnterior.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <div key={i} className="bg-card rounded-lg p-7 shadow-guia border-t-[4px] border-primary flex flex-col">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-11 h-11 rounded-full bg-guia-blue-light flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="text-xs font-bold tracking-wider uppercase text-guia-text-muted">
-                      {item.period}
-                    </span>
-                  </div>
-                  <h3 className="font-serif text-xl font-semibold text-foreground leading-snug mb-2">
-                    {item.role}
-                  </h3>
-                  <p className="text-[0.95rem] text-guia-text-muted leading-[1.7]">
-                    {item.detail}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Áreas abertas */}
-        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary mb-12">
-          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-3">
-            Repertório que sustenta a entrega
-          </span>
-          <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
-            Operação por dentro + marketing por inteiro
-          </h3>
-          <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-6">
-            Meu diferencial vem de ter vivido a operação de verdade antes de assumir o marketing — food
-            service, logística e gestão de equipe. Esse histórico muda a forma de construir um setor
-            interno: campanha, CRM, automação e treinamento comercial nascem colados na realidade de quem
-            vende, atende e entrega. Hoje aplico esse repertório na empresa em que atuo, que é de outro
-            segmento, fora do food service.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
-            {areasAbertas.map((a, i) => (
-              <div key={i} className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
-                <span className="text-[0.95rem] text-foreground leading-[1.6]">{a}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
-            <strong>Disponibilidade com responsabilidade:</strong> sigo cumprindo minha função atual e vou
-            propor uma transição formal, com continuidade e documentação. Estou aberto a conversas seletivas
-            com empresas, agências e operações de food service sobre projetos, parceria PJ ou oportunidade
-            profissional — sem conflito de agenda e sem expor informações confidenciais.
-          </p>
-        </div>
-
-
-        {/* Startup em construção */}
-        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-guia-amber mb-12">
-          <div className="flex items-start gap-4 mb-4">
-            <div className="w-12 h-12 rounded-full bg-guia-amber-light flex items-center justify-center flex-shrink-0">
-              <Rocket className="w-6 h-6 text-guia-amber" />
-            </div>
-            <div>
-              <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-amber-light text-guia-amber mb-2">
-                Em construção · pré-MVP
-              </span>
-              <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight">
-                HostConnectBR — construindo um SaaS do zero, sozinho
-              </h3>
-            </div>
-          </div>
-          <div className="text-[0.98rem] text-guia-text-muted leading-[1.8] space-y-3.5">
-            <p>
-              A HostConnectBR é um projeto autoral de SaaS que estou desenvolvendo de forma independente. Hoje
-              está na fase de <strong>concepção de produto</strong>, com <strong>demonstração publicada</strong> e
-              estrutura em estágio <strong>pré-MVP</strong>.
-            </p>
-            <p>
-              O projeto avança sem investidores e sem aporte externo. Estou construindo com o que existe de
-              gratuito e acessível no ecossistema — ferramentas open source, camadas gratuitas de nuvem,
-              comunidades técnicas e o próprio tempo dedicado à execução.
-            </p>
-            <p>
-              É um processo delicado, técnico e naturalmente demorado quando conduzido por uma única pessoa,
-              acumulando os papéis de produto, engenharia, design, marketing e operação. Ainda assim, o
-              planejamento é claro: <strong>chegar ao mercado em breve</strong>, com uma primeira versão
-              enxuta, funcional e pronta para validação real com usuários.
-            </p>
-          </div>
         </div>
 
         {/* Formação / Transição */}
-        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-guia-green">
+        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-guia-green mb-12">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-12 h-12 rounded-full bg-guia-green-light flex items-center justify-center flex-shrink-0">
               <GraduationCap className="w-6 h-6 text-guia-green" />
@@ -242,6 +105,68 @@ const PerfilProfissionalSection = () => {
                     <div className="text-sm text-foreground font-medium leading-snug">{n.label}</div>
                     <div className="text-xs text-guia-text-muted mt-0.5">{n.sub}</div>
                   </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+
+        {/* Áreas abertas */}
+        <div className="bg-card rounded-lg p-8 md:p-10 shadow-guia border-l-[5px] border-primary mb-12">
+          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-3">
+            Repertório que sustenta a entrega
+          </span>
+          <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight mb-3">
+            Operação por dentro + marketing por inteiro
+          </h3>
+          <p className="text-[0.98rem] text-guia-text-muted leading-[1.8] mb-6">
+            Meu diferencial vem de ter vivido a operação de verdade antes de assumir o marketing — food
+            service, logística e gestão de equipe. Esse histórico muda a forma de construir um setor
+            interno: campanha, CRM, automação e treinamento comercial nascem colados na realidade de quem
+            vende, atende e entrega. Hoje aplico esse repertório na empresa em que atuo, que é de outro
+            segmento, fora do food service.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+            {areasAbertas.map((a, i) => (
+              <div key={i} className="flex items-start gap-2.5">
+                <CheckCircle2 className="w-5 h-5 text-guia-green flex-shrink-0 mt-0.5" />
+                <span className="text-[0.95rem] text-foreground leading-[1.6]">{a}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-guia-text-muted leading-[1.75] mt-6 pt-5 border-t border-border">
+            <strong>Disponibilidade com responsabilidade:</strong> sigo cumprindo minha função atual e vou
+            propor uma transição formal, com continuidade e documentação. Estou aberto a conversas seletivas
+            com empresas, agências e operações de food service sobre projetos, parceria PJ ou oportunidade
+            profissional — sem conflito de agenda e sem expor informações confidenciais.
+          </p>
+        </div>
+
+        {/* Histórico */}
+        <div className="">
+          <span className="inline-block text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-guia-blue-light text-primary mb-4">
+            Experiências · em poucas palavras
+          </span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {trajetoriaAnterior.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div key={i} className="bg-card rounded-lg p-7 shadow-guia border-t-[4px] border-primary flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-full bg-guia-blue-light flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <span className="text-xs font-bold tracking-wider uppercase text-guia-text-muted">
+                      {item.period}
+                    </span>
+                  </div>
+                  <h3 className="font-serif text-xl font-semibold text-foreground leading-snug mb-2">
+                    {item.role}
+                  </h3>
+                  <p className="text-[0.95rem] text-guia-text-muted leading-[1.7]">
+                    {item.detail}
+                  </p>
                 </div>
               );
             })}
