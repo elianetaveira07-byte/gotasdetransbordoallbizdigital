@@ -2,9 +2,6 @@ import { useEffect } from 'react';
 import Navbar from '@/components/guia/Navbar';
 import PerfilProfissionalSection from '@/components/guia/PerfilProfissionalSection';
 import FamilySection from '@/components/guia/FamilySection';
-import VantagensSection from '@/components/guia/VantagensSection';
-import InstitutionsSection from '@/components/guia/InstitutionsSection';
-import GratuitosSection from '@/components/guia/GratuitosSection';
 import CarouselSection from '@/components/guia/CarouselSection';
 import MarketingSection from '@/components/guia/MarketingSection';
 import ConclusaoSection from '@/components/guia/ConclusaoSection';
@@ -26,9 +23,6 @@ const Index = () => {
       <Navbar />
       <PerfilProfissionalSection />
       <FamilySection />
-      <VantagensSection />
-      <InstitutionsSection />
-      <GratuitosSection />
       <CarouselSection />
       <MarketingSection />
       <ConclusaoSection />
