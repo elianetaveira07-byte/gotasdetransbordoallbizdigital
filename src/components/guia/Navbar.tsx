@@ -14,7 +14,6 @@ const Navbar = () => {
       <div className="hidden md:flex gap-1.5 flex-wrap">
         {[
           { href: '#perfil-profissional', label: 'Perfil' },
-          { href: '/apresentacao', label: 'Caso documentado' },
           { href: '#familia', label: 'Família' },
           { href: '#goiania', label: 'Goiânia' },
           { href: '#galeria', label: 'Galeria' },
