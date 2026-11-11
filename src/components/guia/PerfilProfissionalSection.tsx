@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { MapPin, Briefcase, Phone, Mail, FileText } from 'lucide-react';
+import { MapPin, Briefcase, Phone, Mail } from 'lucide-react';
 import diegoPerfil from '@/assets/diego_allas_perfil_2026.webp.asset.json';
 import { TrendingUp, ChefHat, Truck, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
@@ -69,9 +68,6 @@ const PerfilProfissionalSection = () => {
               <a href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground no-underline hover:opacity-90">
                 <Phone className="w-4 h-4" /> Chamar no WhatsApp
               </a>
-              <Link to="/apresentacao" className="inline-flex items-center gap-2 rounded-full border border-primary px-6 py-3 text-sm font-semibold text-primary no-underline hover:bg-guia-blue-light">
-                <FileText className="w-4 h-4" /> Ver caso documentado
-              </Link>
             </div>
           </div>
           <div className="flex justify-center">
