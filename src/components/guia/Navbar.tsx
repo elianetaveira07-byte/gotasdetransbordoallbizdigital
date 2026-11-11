@@ -13,11 +13,10 @@ const Navbar = () => {
       </Link>
       <div className="hidden md:flex gap-1.5 flex-wrap">
         {[
-          { href: '#intro-bio', label: 'Sobre mim' },
-          { href: '#contratado', label: 'Onde estou hoje' },
+          { href: '#perfil-profissional', label: 'Perfil' },
           { href: '/apresentacao', label: 'Caso documentado' },
           { href: '#familia', label: 'Família' },
-          { href: '#vantagens', label: 'Goiânia' },
+          { href: '#goiania', label: 'Goiânia' },
           { href: '#galeria', label: 'Galeria' },
         ].map(link => (
           <Link

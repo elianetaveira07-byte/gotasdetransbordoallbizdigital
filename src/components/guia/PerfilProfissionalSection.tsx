@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { MapPin, Briefcase, Phone, Mail, FileText } from 'lucide-react';
+import diegoPerfil from '@/assets/diego_allas_perfil_2026.webp.asset.json';
 import { TrendingUp, ChefHat, Truck, GraduationCap, BookOpen, Clock, Wallet, CheckCircle2 } from 'lucide-react';
 
 const trajetoriaAnterior = [
@@ -41,17 +44,39 @@ const PerfilProfissionalSection = () => {
   return (
     <section id="perfil-profissional" className="pt-28 pb-[72px] bg-secondary/40">
       <div className="container">
-        <div className="mb-12">
-          <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
-            Perfil profissional
-          </span>
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground leading-tight">
-            Marketing, IA e operação — <span className="text-primary">de 2024 para frente</span>
-          </h1>
-          <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75] max-w-3xl">
-            Diego Allas · Goiânia. Formação intensa, repertório aplicado e uma base operacional que coloca o
-            setor interno de marketing colado na realidade de quem vende, atende e entrega.
-          </p>
+        <div className="mb-14 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_340px] gap-10 items-center">
+          <div>
+            <span className="text-xs font-semibold tracking-widest uppercase text-primary bg-guia-blue-light inline-block px-3.5 py-1.5 rounded-full mb-3.5">
+              Perfil profissional · Goiânia-GO
+            </span>
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground leading-tight">
+              Diego Allas
+            </h1>
+            <p className="mt-2 font-serif text-xl md:text-2xl text-primary leading-snug">
+              Marketing, IA e operação — estruturação de setor interno de marketing
+            </p>
+            <p className="mt-4 text-guia-text-muted text-base md:text-lg leading-[1.75] max-w-2xl">
+              Formação intensa desde 2024, repertório aplicado e uma base operacional que coloca o setor
+              interno de marketing colado na realidade de quem vende, atende e entrega.
+            </p>
+            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-foreground">
+              <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-primary" />Goiânia-GO · presencial ou híbrido</li>
+              <li className="flex items-center gap-2"><Briefcase className="w-4 h-4 text-primary" />Aberto a CLT, PJ ou projeto</li>
+              <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" />(62) 99968-8700</li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" />anfitriaonexialista@gmail.com</li>
+            </ul>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href="https://wa.me/5562999688700?text=Ol%C3%A1%20Diego!" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground no-underline hover:opacity-90">
+                <Phone className="w-4 h-4" /> Chamar no WhatsApp
+              </a>
+              <Link to="/apresentacao" className="inline-flex items-center gap-2 rounded-full border border-primary px-6 py-3 text-sm font-semibold text-primary no-underline hover:bg-guia-blue-light">
+                <FileText className="w-4 h-4" /> Ver caso documentado
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img src={diegoPerfil.url} alt="Diego Allas" className="w-full max-w-[340px] h-auto object-contain rounded-2xl shadow-guia" />
+          </div>
         </div>
 
         {/* Formação / Transição */}
